@@ -27,8 +27,17 @@ RUN apt-get install -y unzip
 RUN apt-get install -y gnupg
 RUN apt-get install -y git
 
+RUN apt-get install -y libexif-dev
+
+RUN apt-get update -y && \
+    apt-get install -y libicu-dev
+
 # Install PHP extensions
 RUN docker-php-ext-install zip
+
+RUN docker-php-ext-install exif
+
+RUN docker-php-ext-install intl
 
 # Install Composer
 RUN cd ~
