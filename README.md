@@ -18,6 +18,11 @@ cd /var/www/html
 
 ## Local Container
 
+
+```
+docker run -d --name traefik --network traefik_proxy -p 4001:80 -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock traefik:latest --providers.docker --api.insecure=true --entrypoints.web.address=:80
+```
+
 ```
 docker compose -f local-docker-compose.yml up -d
 ```

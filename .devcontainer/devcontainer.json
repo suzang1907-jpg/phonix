@@ -1,0 +1,29 @@
+// https://aka.ms/devcontainer.json
+{
+	"name": "Existing Docker Compose (Extend)",
+	"dockerComposeFile": [
+		"../devcontainer-docker-compose.yml"
+	],
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker": "latest"
+		
+	},
+	"service": "laravel.testing",
+	"workspaceFolder": "/var/www/html",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"cweijan.vscode-mysql-client2",
+				"bmewburn.vscode-intelephense-client",
+				"esbenp.prettier-vscode"
+			],
+			"settings": {
+				"editor.fontSize": 14
+			}
+		}
+	},
+	"remoteUser": "sail",
+	"initializeCommand": "chmod +x ./.devcontainer/start.sh && chmod +x ./.devcontainer/init.sh && ./.devcontainer/init.sh",
+	"postCreateCommand": "chmod +x ./.devcontainer/start.sh"
+}
