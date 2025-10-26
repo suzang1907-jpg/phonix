@@ -1,0 +1,22 @@
+{
+  "name": "dev/php-sitemap",
+  "description": "PHP",
+  "keywords": [
+    "php"
+  ],
+    "license": [
+    "MIT"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Dev\\PHPSitemap\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

@@ -1,0 +1,2 @@
+id,user_id,title,description,main_image,tags,created_at,updated_at,location_connected_at,content,content_raw,country_id,city_id,district_id,unified_at,image_id
+1,1,Test Title,"Test Description",test_image,"[""Test Tag""]",2023-10-18 00:29:14,2024-01-13 12:35:06,2023-12-28 06:03:42,,,1,22,,2024-01-13 12:35:06,

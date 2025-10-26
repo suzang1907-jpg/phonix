@@ -1,0 +1,23 @@
+<?php
+
+return [
+    'read_more' => 'Devamını oku',
+    'search' => 'Ara',
+    'reader_mode' => 'Okuyucu modu',
+    'homepage' => 'Ana sayfa',
+    'posts' => 'Gönderiler',
+    'stories' => 'Hikayeler',
+    'cookies' => 'Çerezler',
+    'search_placeholder' => 'Gönderi / Hikaye / İlan / Etiket',
+    'next' => 'Devam',
+    'back' => 'Geri',
+    'referal_title' => 'Bu konu hakkında daha fazla bilgi edinmek isterseniz aşağıdaki web sitelerini öneririz:',
+    'dashboard' => 'Anasayfa',
+    'keywords' => 'Anahtar Kelimeler',
+    'domains' => 'Alanlar',
+    'articles' => 'İlanlar',
+    'tags' => 'Etiketler',
+    'websites' => 'Web siteleri',
+    'random_post' => 'Rasgele gönderi',
+    'about_us' => 'Hakkımızda'
+];

@@ -1,0 +1,56 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} ^.*(dataforseo|dotbot|YandexBot|mj12bot).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(Barkrowler|paloalto|YandexAccessibilityBot).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(Owler|openai|CFNetwork|SeznamBot|NetworkingExtension).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(GPTBot|ClaudeBot|sbintuitions|Trident|petalbot).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(imagesift|coccocbot|Bytespider).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(researchscan|Facebot|commoncrawl).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(Fedora|BonEcho|Sundance|SeaMonkey).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(BLEXBot|AwarioBot|FSL|Firefox|Crazy).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{QUERY_STRING} ^.*(CKRDM|CKRDM|Avant|FunWebProducts).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{QUERY_STRING} ^.*(GrandParadiso|Conkeror|ELinks|RealityCheats|meta-externalagent).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{QUERY_STRING} ^.*(meta-externalagent).*$ [NC]
+RewriteRule .* - [F,L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+</IfModule>

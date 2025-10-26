@@ -1,0 +1,1 @@
+<x-layout.amp.blogs :page="$page"/>

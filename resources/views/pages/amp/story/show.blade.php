@@ -1,0 +1,1 @@
+<x-layout.amp.stories :page="$page"/>

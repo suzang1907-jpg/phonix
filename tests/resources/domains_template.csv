@@ -1,0 +1,17 @@
+id,user_id,domain,type,article_show_domain_id,article_list_domain_id,created_at,updated_at,name,google_sitemap_submitted_at,country_id,city_id,district_id,google_site_id,google_permission_level,cloudflare_zone_identifier,unified_at
+1,1,thumbyai.app,primary,,5,2023-10-18 00:07:08,2024-02-14 20:51:33,,2024-02-14 20:51:33,,,,sc-domain:thumbyai.app,siteOwner,20912c12e41578813d751651942f1f81,2024-01-13 12:35:06
+21,1,test1.thumbyai.app,primary,,,2023-10-22 16:06:11,2024-01-13 12:45:07,test,2024-01-07 06:15:31,,,,sc-domain:yabanci.thumbyai.app,siteOwner,,2024-01-13 12:45:07
+211,1,bahcesaray.thumbyai.app,primary,,,2023-12-28 23:23:40,2024-01-13 14:45:10,,2024-01-07 06:20:13,1,73,787,sc-domain:bahcesaray.thumbyai.app,siteOwner,,2024-01-13 14:45:10
+212,1,basakale.thumbyai.app,primary,,,2023-12-28 23:23:44,2024-01-13 14:45:10,,2024-01-07 06:20:15,1,73,788,sc-domain:basakale.thumbyai.app,siteOwner,,2024-01-13 14:45:10
+213,1,caldiran.thumbyai.app,primary,,,2023-12-28 23:23:49,2024-01-13 14:45:10,,2024-01-07 06:20:16,1,73,789,sc-domain:caldiran.thumbyai.app,siteOwner,,2024-01-13 14:45:10
+214,1,catak.thumbyai.app,primary,,,2023-12-28 23:23:53,2024-01-13 14:45:10,,2024-01-07 06:20:18,1,73,790,sc-domain:catak.thumbyai.app,siteOwner,,2024-01-13 14:45:10
+215,1,edremit.thumbyai.app,primary,,,2023-12-28 23:23:58,2024-01-13 14:45:10,,2024-01-07 06:20:19,1,73,791,sc-domain:edremit.thumbyai.app,siteOwner,,2024-01-13 14:45:10
+216,1,ercis.thumbyai.app,primary,,,2023-12-28 23:24:02,2024-01-13 14:45:10,,2024-01-07 06:20:21,1,73,792,sc-domain:ercis.thumbyai.app,siteOwner,,2024-01-13 14:45:10
+217,1,gevas.thumbyai.app,primary,,,2023-12-28 23:24:06,2024-01-13 14:45:10,,2024-01-07 06:20:23,1,73,793,sc-domain:gevas.thumbyai.app,siteOwner,,2024-01-13 14:45:10
+218,1,gulpinar.thumbyai.app,primary,,,2023-12-28 23:24:10,2024-01-13 14:50:07,,2024-01-07 06:20:24,1,73,794,sc-domain:gulpinar.thumbyai.app,siteOwner,,2024-01-13 14:50:07
+219,1,ipekyolu.thumbyai.app,primary,,,2023-12-28 23:24:14,2024-01-13 14:50:07,,2024-01-07 06:20:26,1,73,795,sc-domain:ipekyolu.thumbyai.app,siteOwner,,2024-01-13 14:50:07
+22,1,test2.thumbyai.app,primary,,,2023-10-22 16:27:01,2024-01-13 12:45:07,test,2024-01-07 06:15:32,,,,sc-domain:turk.thumbyai.app,siteOwner,,2024-01-13 12:45:07
+220,1,muradiye.thumbyai.app,primary,,,2023-12-28 23:24:18,2024-01-13 14:50:07,,2024-01-07 06:20:27,1,73,796,sc-domain:muradiye.thumbyai.app,siteOwner,,2024-01-13 14:50:07
+221,1,ozalp.thumbyai.app,primary,,,2023-12-28 23:24:22,2024-01-13 14:50:07,,2024-01-07 06:20:29,1,73,797,sc-domain:ozalp.thumbyai.app,siteOwner,,2024-01-13 14:50:07
+222,1,saray.thumbyai.app,primary,,,2023-12-28 23:24:26,2024-01-13 14:50:08,,2024-01-07 06:20:30,1,68,743,sc-domain:saray.thumbyai.app,siteOwner,,2024-01-13 14:50:08
+223,1,tusba.thumbyai.app,primary,,,2023-12-28 23:24:29,2024-01-13 14:50:08,,2024-01-07 06:20:32,1,73,799,sc-domain:tusba.thumbyai.app,siteOwner,,2024-01-13 14:50:08

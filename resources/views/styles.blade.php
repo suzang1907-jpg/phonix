@@ -1,0 +1,14 @@
+<div class="text-xl"></div>
+<div class="text-2xl"></div>
+<div class="text-3xl"></div>
+<div class="text-4xl"></div>
+<div class="text-5xl"></div>
+<div class="text-6xl"></div>
+<div class="text-7xl"></div>
+<div class="text-8xl"></div>
+<div class="text-9xl"></div>
+<div class="border-l-4 p-2 text-sm transform transition-all ease-in duration-200"></div>
+<div class="translate-x-0"></div>
+<div class="translate-x-full"></div>
+<div class="border-l-4 p-2 bg-red-200 border-red-500 text-red-900 flex flex-col"></div>
+<div class="cover contain"></div>

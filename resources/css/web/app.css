@@ -1,0 +1,33 @@
+@config "../../../tailwind.web.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.no-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+  color-scheme: only light;
+}
+
+.contain > img {
+  object-fit: contain;
+  -o-object-fit: contain;
+}
+
+.cover > img {
+  object-fit: cover;
+  -o-object-fit: cover;
+  inset: 0;
+}
