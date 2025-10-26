@@ -38,7 +38,7 @@ RUN mv composer.phar /usr/local/bin/composer
 
 # Install Node.js
 RUN cd ~
-RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_20.x | bash -
 RUN apt-get install -y nodejs
 
 # Install gulp
