@@ -29,7 +29,7 @@ jobs:
         # This action sets up PHP and required extensions
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.2' # Specify the PHP version compatible with your Laravel version
+          php-version: '8.4' # Specify the PHP version compatible with your Laravel version
           extensions: mbstring, pdo, mysql, bcmath, ctype, fileinfo, json, tokenizer, xml, openssl, curl, zip
           # Caching dependencies speeds up the workflow
           # This should be configured for both Composer and NPM/Yarn dependencies
