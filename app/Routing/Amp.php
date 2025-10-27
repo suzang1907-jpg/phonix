@@ -120,8 +120,6 @@ $atmp->title = $article_copy->title;
 
         $rendered = $rawView->render();
 
-        FastService::save($rendered, 'html');
-
         return $rendered;
     }
 

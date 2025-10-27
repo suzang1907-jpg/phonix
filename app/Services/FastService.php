@@ -5,6 +5,7 @@ namespace App\Services;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
 use Exception;
+
 class FastService
 {
     protected static $excluded_params = [
@@ -14,28 +15,29 @@ class FastService
 
     public static function get(string $type = 'v')
     {
-try {     
-   $key = static::key($type);
+        try {
+            $key = static::key($type);
 
-        if (strlen($key) > 240) {
-            return null;
+            if (strlen($key) > 240) {
+                return null;
+            }
+
+            if (!Cache::has($key)) {
+                return null;
+            }
+
+            $cache = Cache::get($key);
+
+            if (empty($cache)) {
+                return null;
+            }
+
+            return $cache;
+        } catch (Exception $e) {
         }
 
-        if (!Cache::has($key)) {
-            return null;
-        }
-
-        $cache = Cache::get($key);
-
-        if (empty($cache)) {
-            return null;
-        }
-
-        return $cache;
-    }catch(Exception $e){}
-
-return null;
-}
+        return null;
+    }
     public static function save(mixed $value, string $type = 'v')
     {
         if (auth()->check()) {
@@ -47,9 +49,11 @@ return null;
         if (strlen($key) > 240) {
             return;
         }
-try {
-        Cache::put($key, $value, Carbon::now()->addWeek());
-    }catch(Exception $e){}}
+        try {
+            Cache::put($key, $value, Carbon::now()->addWeek());
+        } catch (Exception $e) {
+        }
+    }
 
     private static function key(string $type = 'v')
     {
