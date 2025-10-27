@@ -58,7 +58,7 @@ $date->addHours($hour_to_add);
 $current_date = Carbon::now();
 
 if ($current_date->isAfter($date)) {
-$article->update(['customer_id' => null,'telegram' => null,  'phone_number' => null, 'whatsapp_number' => null, 'title' => '**', 'info' => '*', 'description' => 'Merhaba!', 'meta' => []]);
+$article->update(['hidden_at' => Carbon::now(),]);
 }
         }
     }
