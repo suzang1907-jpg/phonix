@@ -72,8 +72,20 @@
 export default {
   props: ["item"],
   methods: {
+    formatDate: function (date) {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      const format = `${year}${month}${day}`;
+
+      return format;
+    },
     getGoogleAnalyticsLink: function () {
-      let link = 'https://analytics.google.com/analytics/web/#/a290955276p413408402/reports/explorer?params=_r.explorerCard..selmet%3D%5B"eventCount"%5D%26_r.explorerCard..seldim%3D%5B"eventName","landingPage"%5D%26_r.explorerCard..selectedRows%3D%5B"click_whatsapp"%5D%26_r.explorerCard..filterTerm%3Dclick_whatsapp%26_r.explorerCard..startRow%3D0%26_r..dataFilters%3D%5B%7B"type":1,"fieldName":"landingPage","evaluationType":3,"expressionList":%5B"' + this.item.id + '"%5D,"complement":false,"isCaseSensitive":true,"expression":""%7D%5D%26_u.comparisonOption%3Ddisabled%26_r.copa-filter-builder..filter-to-edit%3D%5B%7B"type":1,"fieldName":"landingPage","evaluationType":3,"expressionList":%5B"' + this.item.id + '"%5D,"complement":false,"isCaseSensitive":true,"expression":""%7D%5D%26_u.date00%3D20251027%26_u.date01%3D20251027&r=top-events';
+      const today = new Date();
+      const todayFormatted = this.formatDate(today);
+      const yesterday = new Date(today);
+      const yesterdayFormatted = this.formatDate(yesterday);
+      let link = 'https://analytics.google.com/analytics/web/#/a290955276p413408402/reports/explorer?params=_r.explorerCard..selmet%3D%5B"eventCount"%5D%26_r.explorerCard..seldim%3D%5B"eventName","landingPage"%5D%26_r.explorerCard..selectedRows%3D%5B"click_whatsapp"%5D%26_r.explorerCard..filterTerm%3Dclick_whatsapp%26_r.explorerCard..startRow%3D0%26_r..dataFilters%3D%5B%7B"type":1,"fieldName":"landingPage","evaluationType":3,"expressionList":%5B"' + this.item.id + '"%5D,"complement":false,"isCaseSensitive":true,"expression":""%7D%5D%26_u.comparisonOption%3Ddisabled%26_r.copa-filter-builder..filter-to-edit%3D%5B%7B"type":1,"fieldName":"landingPage","evaluationType":3,"expressionList":%5B"' + this.item.id + '"%5D,"complement":false,"isCaseSensitive":true,"expression":""%7D%5D%26_u.date00%3D' + yesterdayFormatted + '%26_u.date01%3D' + todayFormatted + '&r=top-events';
       return link;
     },
     getDateClass: function () {
