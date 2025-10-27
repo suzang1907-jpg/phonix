@@ -4676,7 +4676,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::FONnBpr1SG3NWADG',
+            '_route' => 'generated::gIIAECxlg8JoKuYR',
           ),
           1 => 
           array (
@@ -4773,7 +4773,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008b00000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008af0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -4823,7 +4823,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008b20000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008b10000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -4873,7 +4873,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008b40000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008b30000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -4923,7 +4923,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008b60000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008b50000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -4973,7 +4973,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008b80000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008b70000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5022,7 +5022,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008ba0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008b90000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5072,7 +5072,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008bc0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008bb0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5122,7 +5122,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008be0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008bd0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5172,7 +5172,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008c00000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008bf0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5222,7 +5222,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008c20000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008c10000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5272,7 +5272,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008c40000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008c30000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5322,7 +5322,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008c60000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008c50000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5372,7 +5372,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008c80000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008c70000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5422,7 +5422,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008ca0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008c90000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5472,7 +5472,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008cc0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008cb0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5522,7 +5522,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008ce0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008cd0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5572,7 +5572,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008d00000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008cf0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5622,7 +5622,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008d20000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008d10000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5672,7 +5672,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008d40000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008d30000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5722,7 +5722,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008d60000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008d50000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5772,7 +5772,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008d80000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008d70000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5822,7 +5822,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008da0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008d90000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5872,7 +5872,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008dc0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008db0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5922,7 +5922,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008de0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008dd0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -5972,7 +5972,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008e00000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008df0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6022,7 +6022,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008e20000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008e10000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6072,7 +6072,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008e40000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008e30000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6122,7 +6122,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008e60000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008e50000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6172,7 +6172,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008e80000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008e70000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6222,7 +6222,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008ea0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008e90000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6272,7 +6272,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008ec0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008eb0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6294,7 +6294,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::FONnBpr1SG3NWADG' => 
+    'generated::gIIAECxlg8JoKuYR' => 
     array (
       'methods' => 
       array (
@@ -6314,13 +6314,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:95:"function () {
                 return \\App\\Routing\\Amp::redirect(\'amp.home.show\');
-            }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000a250000000000000000";}}',
+            }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000a240000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::FONnBpr1SG3NWADG',
+        'as' => 'generated::gIIAECxlg8JoKuYR',
       ),
       'fallback' => true,
       'defaults' => 
@@ -6361,7 +6361,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008ad0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008ac0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6408,7 +6408,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008f10000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008f00000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6455,7 +6455,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008f30000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008f20000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6502,7 +6502,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008f50000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008f40000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6549,7 +6549,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008f70000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008f60000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6596,7 +6596,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008f90000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008f80000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6643,7 +6643,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008fb0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008fa0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6690,7 +6690,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008fd0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008fc0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6737,7 +6737,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008ff0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008fe0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6784,7 +6784,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009010000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009000000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6831,7 +6831,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009030000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009020000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6878,7 +6878,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009050000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009040000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6925,7 +6925,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008ef0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008ee0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -6972,7 +6972,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009070000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009060000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7019,7 +7019,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009090000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009080000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7066,7 +7066,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000090b0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000090a0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7113,7 +7113,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000090d0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000090c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7160,7 +7160,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000090f0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000090e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7207,7 +7207,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009110000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009100000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7254,7 +7254,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009130000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009120000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7301,7 +7301,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009150000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009140000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7348,7 +7348,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009170000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009160000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7395,7 +7395,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009190000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009180000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7442,7 +7442,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000091b0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000091a0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7651,7 +7651,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009270000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009260000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7699,7 +7699,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009290000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009280000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7743,7 +7743,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008ab0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000008aa0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7787,7 +7787,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000091d0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000091c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7842,7 +7842,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000092f0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000092e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7892,7 +7892,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009310000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009300000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7942,7 +7942,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009330000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009320000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -7992,7 +7992,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009350000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009340000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8041,7 +8041,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009370000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009360000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8091,7 +8091,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009390000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009380000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8141,7 +8141,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000093b0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000093a0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8191,7 +8191,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000093d0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000093c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8241,7 +8241,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000093f0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000093e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8291,7 +8291,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009410000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009400000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8341,7 +8341,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009430000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009420000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8391,7 +8391,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009450000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009440000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8441,7 +8441,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009470000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009460000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8490,7 +8490,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009490000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009480000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8540,7 +8540,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000094b0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000094a0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8590,7 +8590,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000094d0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000094c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8639,7 +8639,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000094f0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000094e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8689,7 +8689,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009510000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009500000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8739,7 +8739,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009530000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009520000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8789,7 +8789,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009550000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009540000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8839,7 +8839,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009570000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009560000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8888,7 +8888,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009590000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009580000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8938,7 +8938,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000095b0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000095a0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -8988,7 +8988,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000095d0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000095c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9037,7 +9037,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000095f0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000095e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9087,7 +9087,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009610000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009600000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9137,7 +9137,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009630000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009620000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9186,7 +9186,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009650000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009640000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9236,7 +9236,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009670000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009660000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9286,7 +9286,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009690000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009680000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9335,7 +9335,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000096d0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000096c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9385,7 +9385,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000096c0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000096b0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9435,7 +9435,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000096f0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000096e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9484,7 +9484,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009710000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009700000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9534,7 +9534,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009730000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009720000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9584,7 +9584,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009750000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009740000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9634,7 +9634,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009770000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009760000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9684,7 +9684,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009790000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009780000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9734,7 +9734,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000097b0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000097a0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9783,7 +9783,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000097d0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000097c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9833,7 +9833,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000097f0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000097e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9882,7 +9882,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009810000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009800000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9932,7 +9932,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009830000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009820000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -9982,7 +9982,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009850000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009840000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10032,7 +10032,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009870000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009860000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10081,7 +10081,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009890000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009880000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10131,7 +10131,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000098b0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000098a0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10180,7 +10180,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000098d0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000098c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10230,7 +10230,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000098f0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000098e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10279,7 +10279,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009910000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009900000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10329,7 +10329,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009930000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009920000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10379,7 +10379,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009950000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009940000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10429,7 +10429,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009970000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009960000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10478,7 +10478,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009990000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009980000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10528,7 +10528,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000099b0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000099a0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10577,7 +10577,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000099d0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000099c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10627,7 +10627,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000099f0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000099e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10677,7 +10677,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009a10000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009a00000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10726,7 +10726,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009a30000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009a20000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10776,7 +10776,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009a50000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009a40000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10825,7 +10825,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009a70000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009a60000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10875,7 +10875,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009a90000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009a80000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10925,7 +10925,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ab0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009aa0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -10975,7 +10975,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ad0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ac0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11024,7 +11024,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009af0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ae0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11074,7 +11074,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009b10000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009b00000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11123,7 +11123,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009b30000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009b20000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11173,7 +11173,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009b50000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009b40000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11222,7 +11222,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009b70000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009b60000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11272,7 +11272,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009b90000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009b80000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11322,7 +11322,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009bb0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ba0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11372,7 +11372,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009bd0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009bc0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11421,7 +11421,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009bf0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009be0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11471,7 +11471,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009c10000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009c00000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11521,7 +11521,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009c30000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009c20000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11571,7 +11571,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009c50000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009c40000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11626,7 +11626,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009c70000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009c60000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11676,7 +11676,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009c90000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009c80000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11726,7 +11726,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009cb0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ca0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11776,7 +11776,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009cd0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009cc0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11826,7 +11826,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009cf0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ce0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11876,7 +11876,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009d10000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009d00000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11926,7 +11926,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009d30000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009d20000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -11976,7 +11976,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009d50000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009d40000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12025,7 +12025,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009d70000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009d60000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12075,7 +12075,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009d90000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009d80000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12125,7 +12125,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009db0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009da0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12174,7 +12174,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000092d0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000092c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12223,7 +12223,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009dd0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009dc0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12272,7 +12272,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009e10000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009e00000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12320,7 +12320,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009e30000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009e20000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12368,7 +12368,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000092b0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"000000000000092a0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12416,7 +12416,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009df0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009de0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12464,7 +12464,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009e50000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009e40000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12511,7 +12511,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009e70000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009e60000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12559,7 +12559,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009e90000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009e80000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12607,7 +12607,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009eb0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ea0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12654,7 +12654,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ed0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ec0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12702,7 +12702,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ef0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ee0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12750,7 +12750,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009f10000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009f00000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12797,7 +12797,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009f30000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009f20000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12845,7 +12845,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009f50000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009f40000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12892,7 +12892,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009f70000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009f60000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12940,7 +12940,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009f90000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009f80000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -12988,7 +12988,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009fb0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009fa0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13036,7 +13036,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009fd0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009fc0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13085,7 +13085,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a030000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a020000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13133,7 +13133,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a050000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a040000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13181,7 +13181,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009ff0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009fe0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13229,7 +13229,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a010000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a000000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13277,7 +13277,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a070000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a060000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13325,7 +13325,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a090000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a080000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13373,7 +13373,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a0b0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a0a0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13420,7 +13420,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a0d0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a0c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13467,7 +13467,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009250000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"00000000000009240000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13513,7 +13513,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a0f0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a0e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13561,7 +13561,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a150000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a140000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13609,7 +13609,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a170000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a160000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13657,7 +13657,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a190000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a180000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13705,7 +13705,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a1b0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a1a0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13753,7 +13753,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a1d0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a1c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13798,7 +13798,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a110000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a100000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13843,7 +13843,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a130000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a120000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13888,7 +13888,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a1f0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a1e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -13936,7 +13936,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a260000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a250000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -13984,7 +13984,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a280000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a270000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14032,7 +14032,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a2a0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a290000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14080,7 +14080,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a2c0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a2b0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14128,7 +14128,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a2e0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a2d0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14176,7 +14176,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a300000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a2f0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14224,7 +14224,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a320000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a310000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14272,7 +14272,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a340000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a330000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14320,7 +14320,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a360000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a350000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14368,7 +14368,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a380000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a370000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14416,7 +14416,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a3a0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a390000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14464,7 +14464,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a3c0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a3b0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14512,7 +14512,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a3e0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a3d0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14560,7 +14560,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a400000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a3f0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14608,7 +14608,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a420000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a410000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14656,7 +14656,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a440000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a430000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14704,7 +14704,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a460000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a450000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14752,7 +14752,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a480000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a470000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14800,7 +14800,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a4a0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a490000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14848,7 +14848,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a4c0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a4b0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14896,7 +14896,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a4e0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a4d0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14944,7 +14944,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a500000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a4f0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -14992,7 +14992,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a520000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a510000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -15040,7 +15040,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a540000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a530000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -15088,7 +15088,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a560000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a550000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -15136,7 +15136,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a580000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a570000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -15184,7 +15184,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a5a0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a590000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 
@@ -15232,7 +15232,7 @@ app('router')->setCompiledRoutes(
                         \'routeName\' => $routeName,
                         \'contextName\' => $context_name
                     ]);
-                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a5c0000000000000000";}}',
+                }";s:5:"scope";s:26:"Dev\\LaravelHighway\\Highway";s:4:"this";N;s:4:"self";s:32:"0000000000000a5b0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '/amp/c/{can}',
         'where' => 

@@ -34,10 +34,16 @@ class UrlSyncWithDomain extends Action
         }
 
         try {
-            URL::forceScheme('https');
-            $domain = DomainService::getDomain();
+            if (config("x.force_https")) {
+                URL::forceScheme('https');
+                $domain = DomainService::getDomain();
 
-            $url = 'https://' . $domain->domain;
+                $url = 'https://' . $domain->domain;
+            } else {
+                $domain = DomainService::getDomain();
+                $url = 'http://' . $domain->domain;
+            }
+
             URL::forceRootUrl($url);
             config([
                 'app.url' => $domain->domain

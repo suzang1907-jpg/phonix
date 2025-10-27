@@ -30,7 +30,11 @@ class OnlyDomainPrimary
         }
 
         if (empty($domain)) {
-            return redirect()->secure(Domain::random()->limit(1)->get()->first()->domain);
+            if (config('x.force_https')) {
+                return redirect()->secure(Domain::random()->limit(1)->get()->first()->domain);
+            } else {
+                return redirect(Domain::random()->limit(1)->get()->first()->domain);
+            }
         }
 
         if ($domain->type != DomainType::$primary) {

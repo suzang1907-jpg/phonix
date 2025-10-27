@@ -13,16 +13,16 @@
     'name' => 'Laravel',
     'chat_access_key' => NULL,
     'chat_token_url' => NULL,
-    'env' => 'production',
-    'domain' => 'guzelbayan.xyz',
-    'debug' => false,
-    'url' => 'https://guzelbayan.xyz',
+    'env' => 'debug',
+    'domain' => 'localhost:4002',
+    'debug' => true,
+    'url' => 'https://localhost:4002',
     'asset_url' => NULL,
     'timezone' => 'Europe/Berlin',
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:+2tZlQest4U7k66qggDMnEP4fYGP6n8qKO5Yl4GuXwE=',
+    'key' => 'base64:UlD1dVVj6LyQfq94cxIoaLBH4Sfal4n+x4f1AdHPEjI=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -276,7 +276,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'atlantis',
+        'database' => 'test',
         'prefix' => '',
         'foreign_key_constraints' => true,
       ),
@@ -284,11 +284,11 @@
       array (
         'driver' => 'mysql',
         'url' => NULL,
-        'host' => '127.0.0.1',
+        'host' => 'mysql',
         'port' => '3306',
-        'database' => 'atlantis',
-        'username' => 'atlantis',
-        'password' => '3d923bf.7240f4san4',
+        'database' => 'test',
+        'username' => 'test',
+        'password' => 'test',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -304,11 +304,11 @@
       array (
         'driver' => 'pgsql',
         'url' => NULL,
-        'host' => '127.0.0.1',
+        'host' => 'mysql',
         'port' => '3306',
-        'database' => 'atlantis',
-        'username' => 'atlantis',
-        'password' => '3d923bf.7240f4san4',
+        'database' => 'test',
+        'username' => 'test',
+        'password' => 'test',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -319,11 +319,11 @@
       array (
         'driver' => 'sqlsrv',
         'url' => NULL,
-        'host' => '127.0.0.1',
+        'host' => 'mysql',
         'port' => '3306',
-        'database' => 'atlantis',
-        'username' => 'atlantis',
-        'password' => '3d923bf.7240f4san4',
+        'database' => 'test',
+        'username' => 'test',
+        'password' => 'test',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -380,7 +380,7 @@
       array (
         'driver' => 'local',
         'root' => '/var/www/html/storage/app/public',
-        'url' => 'https://guzelbayan.xyz/storage',
+        'url' => 'https://localhost:4002/storage',
         'visibility' => 'public',
       ),
       'private' => 
@@ -422,7 +422,7 @@
     'disk' => 'public',
     'path' => 'fonts',
     'inline' => false,
-    'fallback' => true,
+    'fallback' => false,
     'user_agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15',
   ),
   'hashing' => 
@@ -3074,7 +3074,7 @@
       2 => '127.0.0.1',
       3 => '127.0.0.1:8000',
       4 => '::1',
-      5 => 'guzelbayan.xyz',
+      5 => 'localhost:4002',
     ),
     'guard' => 
     array (
@@ -3094,7 +3094,7 @@
       2 => '127.0.0.1',
       3 => '127.0.0.1:8000',
       4 => '::1',
-      5 => 'guzelbayan.xyz',
+      5 => 'localhost',
     ),
   ),
   'session' => 
@@ -3126,6 +3126,10 @@
       0 => '/var/www/html/resources/views',
     ),
     'compiled' => '/var/www/html/storage/framework/views',
+  ),
+  'x' => 
+  array (
+    'force_https' => false,
   ),
   'tinker' => 
   array (

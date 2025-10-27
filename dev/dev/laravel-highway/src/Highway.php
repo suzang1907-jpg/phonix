@@ -25,7 +25,20 @@ abstract class Highway
 
     public static function redirect(string $route, array $parameters = [])
     {
-        return redirect()->secure(static::route($route, $parameters));
+        if (config('x.force_https')) {
+            return redirect()->secure(static::route($route, $parameters));
+        } else {
+            return redirect(static::route($route, $parameters));
+        }
+    }
+
+    public static function redirectUrl(string $url)
+    {
+        if (config('x.force_https')) {
+            return redirect()->secure($url);
+        } else {
+            return redirect($url);
+        }
     }
 
     public static function raw(mixed $page, string $path = '/', string $method = 'show', string $routeType = 'get')

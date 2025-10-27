@@ -77,15 +77,20 @@ class DevSetup extends Command
             return;
         }
 
-        $subdomain = Action::build(DomainStore::class)->data([
-            'project_id' => $project->id,
-            'domain' => config('dev.sub_domain'),
-            'type' => DomainType::$primary
-        ])->run()->getData('domain');
+        $this->info('Domain: ' . $domain->domain);
+        $this->info('Origin: ' . $domain->site->origin);
 
-        if (empty($subdomain)) {
-            $this->error('Error while storing subdomain.');
-            return;
+        if (! empty(config('dev.sub_domain'))) {
+            $subdomain = Action::build(DomainStore::class)->data([
+                'project_id' => $project->id,
+                'domain' => config('dev.sub_domain'),
+                'type' => DomainType::$primary
+            ])->run()->getData('domain');
+
+            if (empty($subdomain)) {
+                $this->error('Error while storing subdomain.');
+                return;
+            }
         }
 
         $logo = base64_encode(file_get_contents(public_path('logo.jpg')));

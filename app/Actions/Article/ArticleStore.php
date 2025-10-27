@@ -54,6 +54,7 @@ class ArticleStore extends Action
         $image = Action::build(ImageStore::class)->data([
             'file' => $main_image,
             'disk' => 'public',
+            'path' => 'i_' . $id
         ])->options([
             'base64' => true
         ])->run()->getData('image');

@@ -21,7 +21,11 @@ class UrlRedirect
 
         if (! empty($url)) {
             if (! empty($url->target_path)) {
-                return redirect()->secure($url->target_path);
+                if (config('x.force_https')) {
+                    return redirect()->secure($url->target_path);
+                } else {
+                    return redirect($url->target_path);
+                }
             }
 
             UrlService::setUrl($url);

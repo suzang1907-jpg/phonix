@@ -28,7 +28,7 @@ abstract class Action
     public abstract function handle();
 
     /** Called if validation failed, an empty value or a Boolean 'False' value was returned */
-    public function error(Response $response)
+    public function error(Response $response = null)
     {
         return $response;
     }

@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use App\Actions\Url\UrlSyncWithDomain;
 use Closure;
 use Dev\PHPActions\Action;
+use Illuminate\Support\Facades\App;
 
 class CalculateOrigin
 {

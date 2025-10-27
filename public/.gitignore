@@ -1,0 +1,9 @@
+*
+!.gitignore
+!.htaccess
+!ads.txt
+!index.php
+!logo.jpg
+!build
+!fonts
+!xbuild
