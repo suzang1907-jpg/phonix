@@ -31,7 +31,7 @@ $page = $page ?? App\Services\WebPage::current();
         {{ __('policy.cookies') }}
     </p>
     <p class="text-center text-sm mt-2">
-        © 2024 <a href="{{ route('web.home.show') }}" aria-label="{{ $page->domain()->domain }}"
+        © 2025 <a href="{{ route('web.home.show') }}" aria-label="{{ $page->domain()->domain }}"
             class="footer-link">{{ $page->domain()->domain }}</a>
         <br>{{ __('policy.all_rights_reserved') }}
     </p>

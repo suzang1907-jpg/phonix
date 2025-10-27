@@ -19,7 +19,7 @@
             {{ __('policy.cookies') }}
         </p>
         <p class="text-center text-sm mt-2">
-            © 2024 <a href="{{ App\Routing\Amp::route('amp.home.show') }}" aria-label="{{ $page->domain()->domain }}"
+            © 2025 <a href="{{ App\Routing\Amp::route('amp.home.show') }}" aria-label="{{ $page->domain()->domain }}"
                 class="footer-link link-home-listener">{{ $page->domain()->domain }}</a>
             <br>{{ __('policy.all_rights_reserved') }}
         </p>
