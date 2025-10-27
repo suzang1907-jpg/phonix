@@ -37,29 +37,30 @@ class ArticleCheck extends Command
 
             $renew_at = $article_meta['renew_at'] ?? null;
 
-if (empty($renew_at)) {
-continue;
-}
+            if (empty($renew_at)) {
+                continue;
+            }
 
-$date = $renew_at['date'] ?? null;
+            $date = $renew_at['date'] ?? null;
 
-if (empty($date)) {
-continue;
-}
+            if (empty($date)) {
+                continue;
+            }
 
-$date = Carbon::parse($date);
+            $date = Carbon::parse($date);
 
-try {
+            try {
 
-$hour_to_add = $renew_at['time'] ?? 0;
+                $hour_to_add = $renew_at['time'] ?? 0;
 
-$date->addHours($hour_to_add);
-} catch(Exception $e) {}
-$current_date = Carbon::now();
+                $date->addHours($hour_to_add);
+            } catch (Exception $e) {
+            }
+            $current_date = Carbon::now();
 
-if ($current_date->isAfter($date)) {
-$article->update(['hidden_at' => Carbon::now(),]);
-}
+            if ($current_date->isAfter($date)) {
+                $article->update(['hidden_at' => Carbon::now(),]);
+            }
         }
     }
 }
