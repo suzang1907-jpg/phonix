@@ -22,7 +22,7 @@ class ResponseStoryStore extends Action
         return Api::done(null, Admin::route('admin.story.list'));
     }
 
-    public function error(Response $response)
+    public function error(?Response $response = null)
     {
         return Api::error();
     }

@@ -22,7 +22,7 @@ class ResponseBlogUpdate extends Action
         return Api::done([], Admin::route('admin.blog.list'));
     }
 
-    public function error(Response $response)
+    public function error(?Response $response = null)
     {
         return Api::error();
     }

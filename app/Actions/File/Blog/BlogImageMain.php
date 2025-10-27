@@ -53,7 +53,7 @@ return response()->noContent();
         ]);
     }
 
-    public function error(Response $response)
+    public function error(?Response $response = null)
     {
         $project = ProjectService::getProject();
 
