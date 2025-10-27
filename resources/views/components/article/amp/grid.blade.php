@@ -20,7 +20,7 @@
                         <div class="absolute left-0 right-0 bottom-0 z-20">
                             <div class="relative py-4 flex flex-grow flex-col article-style-info">
                                 <div class="absolute inset-0 -z-10 article-style-layer"></div>
-                                <h2 class="font-bold text-center text-lg whitespace-nowrap">
+                                <h2 class="font-bold text-center text-lg whitespace-nowrap [text-shadow:_0_2px_2px_rgb(0_0_0_/_0.4)]">
                                     {{ $article['article']['title'] }}</h2>
                                 @unless (empty($article['number']))
                                     <p class="text-center font-bold text-lg whitespace-nowrap [text-shadow:_0_2px_2px_rgb(0_0_0_/_0.4)]">
@@ -30,8 +30,8 @@
                         </div>
 
                         @unless (empty($article['article']['info']))
-                            <div class="absolute top-2 left-2 px-2 py-2 bg-black/50 rounded">
-                                <p class="text-center text-sm whitespace-nowrap">
+                            <div class="absolute top-2 left-2 px-2 py-1 bg-black/50 rounded">
+                                <p class="text-center text-xs whitespace-nowrap">
                                     {{ $article['article']['info'] }}</p>
                             </div>
                         @endunless
