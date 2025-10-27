@@ -18,12 +18,14 @@
       </div>
     </td>
     <td v-if="this.item.customer_id">
-<div>
-      <div class="text-xs">
-        {{ this.item.customer_id }}
+      <div>
+        <div class="text-xs">
+          {{ this.item.customer_id }}
+        </div>
+        <a v-if="this.item.customer" target="_blank" class="btn btn-xs"
+          :href="'https://wa.me/' + this.item.customer.whatsapp_phone_number.replaceAll(' ', '').replaceAll('-', '')">Mesaj
+          yaz</a>
       </div>
-<a v-if="this.item.customer" target="_blank" class="btn btn-xs" :href="'https://wa.me/' + this.item.customer.whatsapp_phone_number.replaceAll(' ', '').replaceAll('-', '')">Mesaj yaz</a>
-</div>
     </td>
     <td>
       <p class="whitespace-nowrap">{{ this.item.title }}</p>
@@ -46,6 +48,7 @@
     <td>
       <div class="text-xs whitespace-nowrap" v-if="this.item.meta">V: {{ this.item.meta['view_count'] ?? 0 }}</div>
       <div class="text-xs whitespace-nowrap" v-if="!this.item.meta">0</div>
+      <a target="_blank" class="btn btn-xs" :href="this.getGoogleAnalyticsLink()">Google Analytics</a>
     </td>
     <td>
       <div class="flex flex-row items-center justify-center gap-1">
@@ -69,14 +72,17 @@
 export default {
   props: ["item"],
   methods: {
+    getGoogleAnalyticsLink: function () {
+      let link = 'https://analytics.google.com/analytics/web/#/a290955276p413408402/reports/explorer?params=_r.explorerCard..selmet%3D%5B"eventCount"%5D%26_r.explorerCard..seldim%3D%5B"eventName","landingPage"%5D%26_r.explorerCard..selectedRows%3D%5B"click_whatsapp"%5D%26_r.explorerCard..filterTerm%3Dclick_whatsapp%26_r.explorerCard..startRow%3D0%26_r..dataFilters%3D%5B%7B"type":1,"fieldName":"landingPage","evaluationType":3,"expressionList":%5B"' + this.item.id + '"%5D,"complement":false,"isCaseSensitive":true,"expression":""%7D%5D%26_u.comparisonOption%3Ddisabled%26_r.copa-filter-builder..filter-to-edit%3D%5B%7B"type":1,"fieldName":"landingPage","evaluationType":3,"expressionList":%5B"' + this.item.id + '"%5D,"complement":false,"isCaseSensitive":true,"expression":""%7D%5D%26_u.date00%3D20251027%26_u.date01%3D20251027&r=top-events';
+    },
     getDateClass: function () {
       if (this.item.hidden_at) {
         return "";
       }
 
-if (this.item.title == "**") {
-return "bg-info";
-}
+      if (this.item.title == "**") {
+        return "bg-info";
+      }
 
       var date = this.item.meta?.renew_at?.date;
 
