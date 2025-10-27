@@ -23,7 +23,7 @@
                                 <h2 class="font-bold text-center text-lg whitespace-nowrap">
                                     {{ $article['article']['title'] }}</h2>
                                 @unless (empty($article['number']))
-                                    <p class="text-center font-bold text-lg whitespace-nowrap">
+                                    <p class="text-center font-bold text-lg whitespace-nowrap [text-shadow:_0_2px_2px_rgb(0_0_0_/_0.4)]">
                                         {{ $article['number'] }}</p>
                                 @endunless
                             </div>
