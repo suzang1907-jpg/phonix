@@ -64,7 +64,7 @@
     "phpunit/phpunit": "^10.0.16"
   },
   "config": {
-    "process-timeout": 600000,
+    "process-timeout": 600,
     "optimize-autoloader": true,
     "preferred-install": "dist",
     "sort-packages": true,

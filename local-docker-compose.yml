@@ -6,6 +6,10 @@ networks:
   stack:
     external: false
 
+volumes:
+  db_data:
+    driver: local
+
 services:
   application:
     build:
@@ -15,10 +19,13 @@ services:
         USER_ID: $USER_ID
         GROUP_ID: $GROUP_ID
     ports:
-      - "4001:80"
+        - '${APP_PORT}:80'
+        - '${VITE_PORT:-5173}:${VITE_PORT:-5173}'
     networks:
       - stack
     working_dir: /var/www/html
+    environment:
+      COMPOSER_PROCESS_TIMEOUT: 600
     volumes:
       - ./docker/application/php.ini:/usr/local/etc/php/php.ini:cached
       - ./:/var/www/html
@@ -35,7 +42,34 @@ services:
       - stack
     tty: true
     working_dir: /var/www/html
+    environment:
+      COMPOSER_PROCESS_TIMEOUT: 1200
     volumes:
       - ./docker/tooling/php.ini:/usr/local/etc/php/php.ini:cached
       - ./:/var/www/html
     restart: always
+
+  mysql:
+        image: 'mysql/mysql-server:8.0'
+        platform: 'linux/x86_64'
+        ports:
+            - '${FORWARD_DB_PORT:-3307}:3306'
+        environment:
+            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_ROOT_HOST: '{DB_HOST}'
+            MYSQL_DATABASE: '${DB_DATABASE}'
+            MYSQL_USER: '${DB_USERNAME}'
+            MYSQL_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_ALLOW_EMPTY_PASSWORD: 1
+        volumes:
+            - db_data:/var/lib/mysql
+        networks:
+            - stack
+        healthcheck:
+            test:
+                - CMD
+                - mysqladmin
+                - ping
+                - '-p${DB_PASSWORD}'
+            retries: 3
+            timeout: 5s
