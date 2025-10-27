@@ -17,12 +17,15 @@
                                 class="object-cover w-full h-full cover amp-image-rounded"
                                 src="{{ $article['image'] }}"></amp-img>
                         </div>
-                      
+
                         <div class="absolute left-0 right-0 bottom-0 z-20">
-                            <div class="relative px-2 py-4 flex flex-grow flex-col rounded article-style-info">
-                                <h2 class="font-bold text-center">{{ $article['article']['title'] }}</h2>
-                                <p class="text-center text-sm">{{ $article['article']['info'] }}</p>
-                                  <div class="absolute inset-0 -z-10 article-style-layer"></div>
+                            <div class="relative py-4 flex flex-grow flex-col rounded article-style-info">
+                                <div class="absolute inset-0 -z-10 article-style-layer"></div>
+                                <h2 class="font-bold text-center text-lg whitespace-nowrap">{{ $article['article']['title'] }}</h2>
+                                @unless (empty($article['number']))
+                                    <p class="text-center font-bold text-lg whitespace-nowrap">
+                                        {{ $article['number'] }}</p>
+                                @endunless
                             </div>
                         </div>
                     </a>
