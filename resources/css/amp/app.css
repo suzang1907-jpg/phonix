@@ -32,13 +32,8 @@ body {
   inset: 0;
 }
 
-.amp-image-bottom-rounded > img {
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-
 .amp-image-rounded > img {
-  border-radius: 12px;
+  border-radius: 0.25rem;
 }
 
 .amp-image-bottom-rounded-full > img {

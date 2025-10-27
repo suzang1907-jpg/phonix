@@ -30,8 +30,9 @@ class Css extends BaseCss
 
         $tag = $tag ?? Tag::create('style')->addAttribute(Attribute::create('amp-custom'));
 
-        $raw_resource .= ' .article-style {' . $this->articleStyle() . '}';
-        $raw_resource .= ' .article-style-root {' . $this->articleStyleRoot() . '}'; 
+        $raw_resource .= ' .article-style-layer {' . $this->articleStyleLayer() . '}';
+        $raw_resource .= ' .article-style-info {' . $this->articleStyleInfo() . '}';
+        $raw_resource .= ' .article-style-root {' . $this->articleStyleRoot() . '}';
 
         $tagCollection->addTag($tag->setText($raw_resource));
 
@@ -61,13 +62,22 @@ class Css extends BaseCss
         ];
     }
 
-    public function articleStyle()
+    public function articleStyleInfo()
     {
-        $primary_color = $this->appStyle()['amp']['primary_color'];
-        $secondary_color = $this->appStyle()['amp']['secondary_color'];
+        $style = "";
+        return $style;
+    }
+
+    public function articleStyleLayer()
+    {
+        $primary_color = $this->appStyle()['amp']['primary_color'] ?? "#111111";
+        $secondary_color = $this->appStyle()['amp']['secondary_color'] ?? "#111111";
+
+        $primary_color .= "FF";
+        $secondary_color .= "00";
 
         if (!empty($primary_color) && !empty($secondary_color)) {
-            $style = "background-image: linear-gradient(to top right, var(--tw-gradient-stops));";
+            $style = "background-image: linear-gradient(to top, var(--tw-gradient-stops));";
             $style .= "--tw-gradient-from: " . $primary_color . " var(--tw-gradient-from-position);";
             $style .= "--tw-gradient-to: " . $secondary_color . " var(--tw-gradient-to-position);";
             $style .= "--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);";
@@ -87,7 +97,7 @@ class Css extends BaseCss
         }
 
         $style = "";
-        $style .= "background-color: #111111;";
+        $style .= "background-color: #11111100;";
         return $style;
     }
 
@@ -138,4 +148,3 @@ class Css extends BaseCss
         return $style;
     }
 }
-
