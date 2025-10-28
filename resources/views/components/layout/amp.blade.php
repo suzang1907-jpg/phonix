@@ -42,7 +42,7 @@
     {!! new \App\Resources\Amp\Css()->renderAsTag() !!}
 </head>
 
-<body class="no-scroll-bar bg-base-200 bg-linear-to-t from-red-200 to-blue-200" data-theme="amptheme">
+<body class="no-scroll-bar bg-base-200" data-theme="amptheme">
     @guest
         @unless (empty($page->project()->google_tag))
             <x-layout.amp.analytics :project="$page->project()" />
