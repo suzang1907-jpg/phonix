@@ -3,7 +3,7 @@
     $page = $page ?? App\Services\AmpPage::current();
 @endphp
 <footer class="mt-12">
-    <div class="bg-neutral-900 text-white p-2">
+    <div class="bg-base-100 p-2">
         <div class="flex flex-wrap gap-4 items-center justify-center">
             <a class="link-home-listener" rel="home" href="{{ App\Routing\Amp::route('amp.home.show') }}">{{ __('base.homepage') }}</a>
             <a class="link-posts-listener" href="{{ App\Routing\Amp::route('amp.blog.list') }}">{{ __('base.posts') }}</a>

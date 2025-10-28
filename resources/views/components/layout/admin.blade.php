@@ -8,7 +8,7 @@
     @vite(['resources/css/admin/app.css', 'resources/js/admin/app.js'], '/xbuild/admin')
 </head>
 
-<body class="no-scroll-bar text-invert bg-base-100">
+<body class="no-scroll-bar bg-base-100" data-theme="apptheme">
     <div id="app" class="min-h-dvh">
         {{ $slot }}
         <div id="loading-overlay" class="fixed inset-0 bg-base-100 flex flex-col items-center justify-center z-50">

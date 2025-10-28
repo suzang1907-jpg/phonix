@@ -48,7 +48,7 @@
     <td>
       <div class="text-xs whitespace-nowrap" v-if="this.item.meta">V: {{ this.item.meta['view_count'] ?? 0 }}</div>
       <div class="text-xs whitespace-nowrap" v-if="!this.item.meta">0</div>
-      <a target="_blank" class="btn btn-xs" :href="this.getGoogleAnalyticsLink()">Google Analytics</a>
+      <a target="_blank" class="btn btn-xs whitespace-nowrap" :href="this.getGoogleAnalyticsLink()">Google Analytics</a>
     </td>
     <td>
       <div class="flex flex-row items-center justify-center gap-1">
@@ -95,13 +95,13 @@ export default {
       }
 
       if (this.item.title == "**") {
-        return "bg-info";
+        return "bg-info text-info-content";
       }
 
       var date = this.item.meta?.renew_at?.date;
 
       if (!date) {
-        return "bg-success";
+        return "bg-success text-success-content";
       }
 
       date = new Date(date);
@@ -120,14 +120,14 @@ export default {
       const diffYear = year - currentYear;
 
       if (diffDay == 0 && diffMonth == 0 && diffYear == 0) {
-        return 'bg-error';
+        return 'bg-error text-error-content';
       }
 
       if (diffDay == 1 && diffMonth == 0 && diffYear == 0) {
-        return "bg-warning";
+        return "bg-warning text-warning-content";
       }
 
-      return "bg-success";
+      return "bg-success text-success-content";
     }
   },
 };

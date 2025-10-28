@@ -26,10 +26,11 @@
     <bs-input-text :xvalue="article.title" ref="title" title="Başlık" required id="title" name="title"></bs-input-text>
     <bs-input-text :xvalue="article.description" ref="description" title="Tanım" required id="description"
       name="description"></bs-input-text>
-<div class="text-xl font-bold">PNG veya JPEG / Herangi bir hata olursa lütfen başka resim ile deneyin!</div>
+    <div class="text-xl font-bold">PNG veya JPEG / Herangi bir hata olursa lütfen başka resim ile deneyin!</div>
     <components-input-image :placeholder="this.$root.route('file.article.main.image', { id: this.article.id }) + '?v=' + this.article.image_id
-      " ref="main_image" accept="image/png, image/jpeg"  id="main_image" name="main_image" title="Ana resim" required></components-input-image>
-    <components-input-images accept="image/png, image/jpeg"  :placeholder="this.article.images?.map((image) => {
+      " ref="main_image" accept="image/png, image/jpeg" id="main_image" name="main_image" title="Ana resim"
+      required></components-input-image>
+    <components-input-images accept="image/png, image/jpeg" :placeholder="this.article.images?.map((image) => {
       return this.$root.route('file.article.image', {
         id: this.article.id,
         image_id: image,
@@ -37,9 +38,9 @@
     })
       " ref="images" id="images" name="images" title="Resimler"></components-input-images>
     <bs-input-text :xvalue="article.info" ref="info" title="Bilgi" required id="info" name="info"></bs-input-text>
-    <bs-input-text :xvalue="article.telegram" ref="telegram" title="Telegram ID"
-      id="telegram" name="telegram"></bs-input-text>   
- <bs-input-text :xvalue="article.phone_number" ref="phone_number" title="Telefon numarası" id="phone_number"
+    <bs-input-text :xvalue="article.telegram" ref="telegram" title="Telegram ID" id="telegram"
+      name="telegram"></bs-input-text>
+    <bs-input-text :xvalue="article.phone_number" ref="phone_number" title="Telefon numarası" id="phone_number"
       name="phone_number"></bs-input-text>
     <bs-input-text :xvalue="article.whatsapp_number" ref="whatsapp_number" title="WhatsApp numarası"
       id="whatsapp_number" name="whatsapp_number"></bs-input-text>
@@ -211,7 +212,7 @@ export default {
           main_image: this.$refs.main_image.value,
           images: this.$refs.images.value,
           info: this.$refs.info.value,
-telegram: this.$refs.telegram.value,
+          telegram: this.$refs.telegram.value,
           phone_number: this.$refs.phone_number.value,
           whatsapp_number: this.$refs.whatsapp_number.value,
           whatsapp_message: this.$refs.whatsapp_message.value,

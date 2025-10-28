@@ -9,15 +9,4 @@ export default {
     "./resources/views/pages/employee/**/*.vue",
     "./resources/js/services/**/*.{js,jsx,ts,tsx}",
   ],
-  theme: {
-    extend: {
-      colors: {
-        border: "#EEEEEE",
-      },
-    },
-  },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["corporate"],
-  },
 };

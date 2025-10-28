@@ -9,7 +9,7 @@
 
 </head>
 
-<body class="no-scroll-bar text-invert bg-background">
+<body class="no-scroll-bar bg-base-100">
     <div id="app" class="min-h-dvh">
         {{ $slot }}
         <components-admin-alert-list></components-admin-alert-list>

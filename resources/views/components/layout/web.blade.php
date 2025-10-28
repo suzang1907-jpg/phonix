@@ -24,7 +24,7 @@
 
 </head>
 
-<body class="no-scroll-bar text-invert bg-background">
+<body class="no-scroll-bar bg-base-100">
     {{ $slot }}
 </body>
 

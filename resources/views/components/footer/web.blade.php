@@ -2,7 +2,7 @@
 @php
 $page = $page ?? App\Services\WebPage::current();
 @endphp
-<footer class="mt-12 bg-black text-white p-2">
+<footer class="mt-12 bg-base-100 p-2">
     <nav class="flex flex-wrap gap-12 items-start justify-center">
         <div class="flex flex-col gap-2">
             <strong>{{ __('base.about_us') }}</strong>

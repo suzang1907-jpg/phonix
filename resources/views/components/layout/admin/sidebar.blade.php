@@ -12,7 +12,7 @@
     search="{{ route('admin.search.show') }}" keywords="{{ route('admin.keyword.list') }}"></components-admin-layout>
 <components-admin-alert-list></components-admin-alert-list>
 
-<div id="content" class="min-h-dvh flex flex-col" x-cloak>
+<div id="content" class="min-h-dvh flex flex-col bg-base-200" x-cloak>
     <div class="flex flex-row items-center justify-between p-6">
         @unless (empty($title))
             <h2 class="text-xl font-bold">{{ $title }}</h2>
