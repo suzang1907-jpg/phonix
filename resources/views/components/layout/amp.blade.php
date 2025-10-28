@@ -39,6 +39,7 @@
         </style>
     </noscript>
     <x-styles.amp.boilerplate />
+    {!! (new \App\Resources\Amp\Css())->renderAsTag() !!}
 </head>
 
 <body class="no-scroll-bar bg-base-200" data-theme="amptheme">

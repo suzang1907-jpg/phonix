@@ -26,13 +26,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup PHP
-        # This action sets up PHP and required extensions
+        # This action sets up PHP, required extensions, and automatically handles Composer caching.
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.4' # Specify the PHP version compatible with your Laravel version
+          # Note: PHP 8.4 may not be stable in all CI environments yet. Use a stable version like '8.3' if issues arise.
+          php-version: '8.4' 
           extensions: mbstring, pdo, mysql, bcmath, ctype, fileinfo, json, tokenizer, xml, openssl, curl, zip
-          # Caching dependencies speeds up the workflow
-          # This should be configured for both Composer and NPM/Yarn dependencies
           tools: composer:v2
 
       - name: Copy .env
@@ -52,6 +51,31 @@ jobs:
 
       - name: Generate key
         run: php artisan key:generate
+
+      # --- Frontend Build Steps (Added for npm run build) ---
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Use a modern LTS version
+
+      - name: Cache Node Modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install Node Dependencies
+        # Only runs if node_modules cache misses
+        run: npm install
+
+      - name: Run Frontend Build
+        # Compiles assets necessary for some features/tests (e.g., Blade components)
+        run: npm run build
+
+      # --- End Frontend Build Steps ---
 
       - name: Run Migrations
         # The 'artisan migrate' command should run migrations on the test database

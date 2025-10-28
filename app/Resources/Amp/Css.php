@@ -70,8 +70,6 @@ class Css extends BaseCss
 
     public function articleStyleLayer()
     {
-                $style = "";
-        return $style;
         $primary_color = $this->appStyle()['amp']['primary_color'] ?? "#111111";
         $secondary_color = $this->appStyle()['amp']['secondary_color'] ?? "#111111";
 
@@ -102,8 +100,6 @@ class Css extends BaseCss
 
     public function articleStyleRoot()
     {
-        $style = "";
-        return $style;
         $primary_color = $this->appStyle()['amp']['primary_color'] ?? "#111111";
         $secondary_color = $this->appStyle()['amp']['secondary_color'] ?? "#11111100";
 
