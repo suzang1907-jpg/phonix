@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Models\Light;
 use Illuminate\Console\Command;
 use Carbon\Carbon;
+
 class LightReset extends Command
 {
     /**
@@ -26,12 +27,24 @@ class LightReset extends Command
      */
     public function handle(): void
     {
-$d = Carbon::now()->subHour();
+        $d = Carbon::now()->subHour();
+        $l = Light::whereDate('created_at', '<=', $d)->where('type', 'css')->get();
+        $this->info('Light Css: ' . count($l));
+        foreach ($l as $light) {
+            $light->delete();
+        }
+
+        $l = Light::whereDate('created_at', '<=', $d)->where('type', 'xml')->get();
+        $this->info('Light XML: ' . count($l));
+        foreach ($l as $light) {
+            $light->delete();
+        }
+
         $l = Light::whereDate('created_at', '<=', $d)->get();
-$this->info(count($l));
-foreach ($l as $light) {
-$light->delete();
-}
+        $this->info('Light All: ' . count($l));
+        foreach ($l as $light) {
+            $light->delete();
+        }
         $this->output->success('Done');
     }
 }
