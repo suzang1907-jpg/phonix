@@ -69,6 +69,7 @@ class ArticleUpdate extends Action
                 ]);
             }
             $phone_number = str_replace('+900', '+90', $phone_number);
+            $phone_number = str_replace('+0', '+90', $phone_number);
         }
 
         if (!empty($whatsapp_message)) {
@@ -95,6 +96,7 @@ class ArticleUpdate extends Action
                 ]);
             }
             $whatsapp_number = str_replace('+900', '+90', $whatsapp_number);
+            $whatsapp_number = str_replace('+0', '+90', $whatsapp_number);
         }
 
         $article = Article::where('id', $id)->get()->first();
