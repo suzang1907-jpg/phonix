@@ -9,7 +9,7 @@
     </div>
     <div class="max-w-screen-sm p-2 mx-auto">
         @unless (empty($page->getData('blog')))
-        <article class="border border-border rounded-md w-full h-full bg-background">
+        <article class="border border-base-300 rounded-md w-full h-full bg-base-100">
             <div class="flex flex-col p-2">
                 @php
                 $blogContent = $page->getData('blog')->getFormattedContent();

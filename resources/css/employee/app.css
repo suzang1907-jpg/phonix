@@ -4,7 +4,7 @@
 
 @plugin "daisyui/theme" {
   name: "apptheme";
-  default: true;
+  default: false;
   prefersdark: false;
   color-scheme: "dark";
   --color-base-100: oklch(24.353% 0 0);

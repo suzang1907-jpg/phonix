@@ -24,7 +24,7 @@
 
 </head>
 
-<body class="no-scroll-bar bg-base-100">
+<body class="no-scroll-bar bg-base-200" data-theme="apptheme">
     {{ $slot }}
 </body>
 
