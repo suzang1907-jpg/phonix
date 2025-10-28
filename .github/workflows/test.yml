@@ -71,15 +71,19 @@ jobs:
         # Only runs if node_modules cache misses
         run: npm install
 
-      - name: Run Frontend Build
-        # Compiles assets necessary for some features/tests (e.g., Blade components)
-        run: npm run build
-
       # --- End Frontend Build Steps ---
 
       - name: Run Migrations
         # The 'artisan migrate' command should run migrations on the test database
         run: php artisan migrate --force
+
+      - name: Export Routes
+        # Compiles assets necessary for some features/tests (e.g., Blade components)
+        run: php artisan route:export-js
+
+      - name: Run Frontend Build
+        # Compiles assets necessary for some features/tests (e.g., Blade components)
+        run: npm run build
 
       - name: Execute tests (PHPUnit/Pest)
         # Use your configured test runner command
