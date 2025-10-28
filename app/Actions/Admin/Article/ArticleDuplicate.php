@@ -50,7 +50,7 @@ class ArticleDuplicate extends Action
 
         $new_article_data = [
             'id' => 'a_' . strtolower(Str::random(32)),
-            'title' => "**",
+            'title' => "*",
             'description' => "Merhaba!",
             'whatsapp_message' => "Merhaba, [/location/] yazıyorum. Sizin ile görüşmek istiyorum.",
             'info' => "*",
