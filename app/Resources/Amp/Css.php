@@ -77,10 +77,7 @@ class Css extends BaseCss
         $secondary_color .= "00";
 
         if (!empty($primary_color) && !empty($secondary_color)) {
-            $style = "background-image: linear-gradient(to top, var(--tw-gradient-stops));";
-            $style .= "--tw-gradient-from: " . $primary_color . " var(--tw-gradient-from-position);";
-            $style .= "--tw-gradient-to: " . $secondary_color . " var(--tw-gradient-to-position);";
-            $style .= "--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);";
+            $style = "background-image: linear-gradient(to top, " . $primary_color . ", " . $secondary_color . ");";
             return $style;
         }
 
@@ -107,32 +104,28 @@ class Css extends BaseCss
         $secondary_color = $this->appStyle()['amp']['secondary_color'];
 
         if (!empty($primary_color) && !empty($secondary_color)) {
-            $style = "background-image: linear-gradient(to top right, var(--tw-gradient-stops));";
-            $style .= "--tw-gradient-from: " . $primary_color . " var(--tw-gradient-from-position);";
-            $style .= "--tw-gradient-to: " . $secondary_color . " var(--tw-gradient-to-position);";
-            $style .= "--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);";
+            $style = "background-image: linear-gradient(to top, " . $primary_color . ", " . $secondary_color . ");";
             $style .= "padding: 0.1rem;";
-            $style .= "background-image: linear-gradient(to bottom, var(--tw-gradient-stops));";
             return $style;
         }
 
         if (! empty($primary_color)) {
             $style = "";
             $style .= "background-color: " . $primary_color . ";";
-            $style .= "padding: 0.25rem;";
+            $style .= "padding: 0.1rem;";
             return $style;
         }
 
         if (! empty($secondary_color)) {
             $style = "";
             $style .= "background-color: " . $secondary_color . ";";
-            $style .= "padding: 0.25rem;";
+            $style .= "padding: 0.1rem;";
             return $style;
         }
 
         $style = "";
         $style .= "background-color: #111111;";
-        $style .= "padding: 0.25rem;";
+        $style .= "padding: 0.1rem;";
         return $style;
     }
 
