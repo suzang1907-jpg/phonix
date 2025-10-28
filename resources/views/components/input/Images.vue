@@ -5,20 +5,20 @@
     </div>
     <div class="ml-1 flex flex-col w-full relative">
       <div class="w-full relative flex flex-col">
-        <div v-if="this.value" class="flex flex-wrap w-full gap-1">
+        <div v-if="this.value" class="grid grid-cols-2 gap-1">
           <template v-for="(item, index) in this.value" :key="index">
-            <div class="max-h-56 h-56 w-56">
+            <div class="w-full h-full">
               <img v-if="item" :src="item"
-                class="rounded-md mb-1 border border-base-300 h-full max-h-56 object-contain aspect-square w-56" />
+                class="rounded-md border border-base-300 h-full w-full object-contain aspect-square" />
             </div>
           </template>
         </div>
         <div v-if="(!this.value || this.value.length == 0) && this.placeholder && this.placeholder.length != 0"
-          class="flex flex-col w-full">
+          class="grid grid-cols-2 gap-1">
           <template v-for="(item, index) in this.placeholder" :key="index">
-            <div class="max-h-56 w-56 h-56">
+            <div class="w-full h-full">
               <img v-if="item" :src="item"
-                class="rounded-md mb-1 border border-base-300 h-full max-h-56 object-contain aspect-square w-56" />
+                class="rounded-md border border-base-300 h-full w-full object-contain aspect-square" />
             </div>
           </template>
         </div>
