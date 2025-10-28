@@ -5,7 +5,7 @@
     </div>
     <div class="ml-1 flex flex-col w-full relative">
       <div class="w-full relative flex flex-col">
-        <div v-if="this.value" class="flex flex-col w-full">
+        <div v-if="this.value" class="flex flex-wrap w-full gap-1">
           <template v-for="(item, index) in this.value" :key="index">
             <div class="max-h-56 h-56 w-56">
               <img v-if="item" :src="item"
