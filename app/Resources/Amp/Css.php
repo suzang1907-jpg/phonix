@@ -100,8 +100,8 @@ class Css extends BaseCss
 
     public function articleStyleRoot()
     {
-        $primary_color = $this->appStyle()['amp']['primary_color'];
-        $secondary_color = $this->appStyle()['amp']['secondary_color'];
+        $primary_color = $this->appStyle()['amp']['primary_color'] ?? "#111111";
+        $secondary_color = $this->appStyle()['amp']['secondary_color'] ?? "#11111100";
 
         if (!empty($primary_color) && !empty($secondary_color)) {
             $style = "background-image: linear-gradient(to top, " . $primary_color . ", " . $secondary_color . ");";
