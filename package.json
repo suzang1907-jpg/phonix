@@ -8,7 +8,7 @@
     "build:web": "vite build --config vite.config.web.mjs",
     "build:amp": "vite build --config vite.config.amp.mjs",
     "build:employee": "vite build --config vite.config.employee.mjs",
-    "build": "npm run build:admin && npm run build:customer && npm run build:web && npm run build:amp"
+    "build": "npm run build:amp && npm run build:web && npm run build:admin && npm run build:customer && npm run build:employee"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",

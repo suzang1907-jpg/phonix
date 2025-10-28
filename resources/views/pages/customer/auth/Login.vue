@@ -8,9 +8,9 @@
       </p>
     </div>
 
-    <bs-button-solid :onclick="this.login" class="mt-2">
+    <button v-on:click="this.login" class="btn btn-primary w-full mt-2">
       Giriş
-    </bs-button-solid>
+    </button>
   </div>
 </template>
 <script>

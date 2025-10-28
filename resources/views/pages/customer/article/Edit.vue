@@ -10,7 +10,7 @@
       <div class="text-sm" v-if="article.meta?.renew_at.time"><span>Saat: </span><span class="font-bold">{{
         article.meta?.renew_at.time
           }}</span></div>
-      <div class="text-sm"><span class="font-bold">Referans: </span>{{ article.id }}</div>
+      <div class="text-sm"><span class="font-bold">İlan Referans: </span>{{ article.id }}</div>
       <div v-if="article.meta?.price" class="flex flex-col mt-2">
         <div class="text-sm font-bold">Ödeme bilgileri</div>
         <div class="flex flex-col mt-1">
@@ -175,7 +175,7 @@ export default {
       var date = this.article.meta?.renew_at?.date;
 
       if (!date) {
-        return "bg-success text-black p-2 rounded";
+        return "bg-success text-success-content p-2 rounded";
       }
 
       date = new Date(date);
@@ -194,14 +194,14 @@ export default {
       const diffYear = year - currentYear;
 
       if (diffDay == 0 && diffMonth == 0 && diffYear == 0) {
-        return 'bg-error text-black p-2 rounded';
+        return 'bg-error text-error-content p-2 rounded';
       }
 
       if (diffDay == 1 && diffMonth == 0 && diffYear == 0) {
-        return "bg-warning text-black p-2 rounded";
+        return "bg-warning text-warning-content p-2 rounded";
       }
 
-      return "bg-success text-black p-2 rounded";
+      return "bg-success text-success-content text-black p-2 rounded";
     },
     update: async function () {
       const response = await ApiRequest.post(
