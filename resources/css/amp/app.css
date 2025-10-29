@@ -368,19 +368,19 @@ video {
 }
 
 .py-1 {
-    padding-block: calc(var(--spacing) * 1) /* 0.25rem = 4px */;
+  padding-block: calc(var(--spacing) * 1) /* 0.25rem = 4px */;
 }
 
 .py-2 {
-    padding-block: calc(var(--spacing) * 2) /* 0.5rem = 8px */;
+  padding-block: calc(var(--spacing) * 2) /* 0.5rem = 8px */;
 }
 
 .block {
-    display: block;
+  display: block;
 }
 
 .px-3 {
-    padding-inline: calc(var(--spacing) * 3) /* 0.75rem = 12px */;
+  padding-inline: calc(var(--spacing) * 3) /* 0.75rem = 12px */;
 }
 
 /* px-2 */
@@ -471,7 +471,7 @@ video {
 }
 
 .justify-evenly {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .justify-center {
@@ -500,15 +500,15 @@ video {
 }
 
 .bg-phone-link {
-    background-image: linear-gradient(to right, #101828  #1e2939);
+  background-image: linear-gradient(to right, #101828, #1e2939);
 }
 
 .bg-telegram-link {
-    background-image: linear-gradient(to right, #101828  #1e2939);
+  background-image: linear-gradient(to right, #101828, #1e2939);
 }
 
 .bg-whatsapp-link {
-    background-image: linear-gradient(to right, #101828  #1e2939);
+  background-image: linear-gradient(to right, #101828, #1e2939);
 }
 
 .mt-12 {
@@ -635,7 +635,7 @@ video {
 }
 
 .flex-row {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 /* Appearance (Borders, Backgrounds, Radius) */
