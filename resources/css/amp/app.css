@@ -470,6 +470,10 @@ video {
   align-items: center;
 }
 
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
 .justify-center {
   justify-content: center;
 }
