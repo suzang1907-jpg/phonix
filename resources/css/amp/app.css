@@ -8,9 +8,45 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  color: inherit;
 }
 
+/* Injected by @tailwind base (Preflight) */
+
+/* The fundamental box-sizing reset */
+*, ::before, ::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb; /* default border color */
+}
+
+/* Common elements have margins removed */
+h1, h2, h3, h4, h5, h6, p, blockquote, figure, hr, ul, ol, dl, dd {
+  margin: 0; /* REMOVES BROWSER DEFAULT MARGINS */
+}
+
+/* Headings are "unstyled" by default */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit; /* They are the same size as normal text */
+  font-weight: inherit; /* They are not bold by default */
+}
+
+/* Anchor tags inherit color and lose decoration */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Images become block-level and responsive */
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  vertical-align: middle;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
 /*
 |--------------------------------------------------------------------------
 | Layout and Positioning
