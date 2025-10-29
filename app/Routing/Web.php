@@ -81,7 +81,11 @@ class Web extends Highway
             $ampParameters[$key] = $value ?? $data[$key] ?? request()->$key;
         }
 
-        $ampParameters["v"] = \Carbon\Carbon::now()->timestamp;
+        $currentTime = \Carbon\Carbon::now()->timestamp;
+
+        $intervalSeconds = 1 * 60;
+        $v = $currentTime - ($currentTime % $intervalSeconds);
+        $ampParameters["v"] = $v;
 
         if (Route::has($amp)) {
             $amp = Amp::route($amp, $ampParameters);
