@@ -865,6 +865,10 @@ body {
   text-shadow: 1px 1px 8px #000000dd;
 }
 
+.gap-2 {
+    gap: calc(var(--spacing) * 2) /* 0.5rem = 8px */;
+}
+
 .article-list div[role="list"] {
   display: grid;
   grid-gap: 0.25em;
