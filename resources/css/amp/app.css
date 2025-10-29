@@ -1,40 +1,690 @@
-@config "../../../tailwind.amp.config.js";
-@import "tailwindcss";
-@plugin "daisyui";
+:root {
+  --spacing: 0.25rem;
+}
 
-@plugin "daisyui/theme" {
-  name: "amptheme";
-  default: false;
-  prefersdark: false;
-  color-scheme: "dark";
-  --color-base-100: oklch(10% 0 0);
-  --color-base-200: oklch(5% 0 0);
-  --color-base-300: oklch(0% 0 0);
-  --color-base-content: oklch(84.87% 0 0);
-  --color-primary: oklch(70% 0.14 182.503);
-  --color-primary-content: oklch(27% 0.046 192.524);
-  --color-secondary: oklch(69% 0.17 162.48);
-  --color-secondary-content: oklch(26% 0.051 172.552);
-  --color-accent: oklch(67.271% 0.167 35.791);
-  --color-accent-content: oklch(13.454% 0.033 35.791);
-  --color-neutral: oklch(27.441% 0.013 253.041);
-  --color-neutral-content: oklch(85.488% 0.002 253.041);
-  --color-info: oklch(62% 0.214 259.815);
-  --color-info-content: oklch(28% 0.091 267.935);
-  --color-success: oklch(72% 0.219 149.579);
-  --color-success-content: oklch(26% 0.065 152.934);
-  --color-warning: oklch(76% 0.188 70.08);
-  --color-warning-content: oklch(27% 0.077 45.635);
-  --color-error: oklch(63% 0.237 25.331);
-  --color-error-content: oklch(25% 0.092 26.042);
-  --radius-selector: 0.5rem;
-  --radius-field: 0.5rem;
-  --radius-box: 0.5rem;
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-  --border: 1px;
-  --depth: 0;
-  --noise: 0;
+/*
+|--------------------------------------------------------------------------
+| Layout and Positioning
+|--------------------------------------------------------------------------
+*/
+
+/*
+|--------------------------------------------------------------------------
+| Layout and Positioning
+|--------------------------------------------------------------------------
+*/
+
+.max-w-screen-sm {
+    /* max-width: 640px */
+    max-width: 640px; 
+}
+
+.mx-auto {
+    /* margin-left: auto; margin-right: auto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Flexbox
+|--------------------------------------------------------------------------
+*/
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Spacing
+|--------------------------------------------------------------------------
+*/
+
+.p-2 {
+    /* padding: 0.5rem (8px) */
+    padding: 0.5rem; 
+}
+
+.mt-2 {
+    /* margin-top: 0.5rem (8px) */
+    margin-top: 0.5rem; 
+}
+
+/*
+|--------------------------------------------------------------------------
+| Appearance (Borders, Backgrounds, Radius)
+|--------------------------------------------------------------------------
+*/
+
+.border {
+    /* border-width: 1px; border-style: solid */
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-base-300 {
+    /* Custom color placeholder */
+    border-color: #000000;
+}
+
+.rounded-md {
+    /* border-radius: 0.375rem (6px) */
+    border-radius: 0.375rem; 
+}
+
+.bg-base-100 {
+    /* Custom color placeholder */
+    background-color: #000000;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Typography
+|--------------------------------------------------------------------------
+*/
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-sm {
+    /* font-size: 0.875rem (14px) */
+    font-size: 0.875rem; 
+}
+
+.text-xs {
+    /* font-size: 0.75rem (12px) */
+    font-size: 0.75rem; 
+}
+
+.max-w-screen-sm {
+    /* max-width: 640px */
+    max-width: 640px; 
+}
+
+.mx-auto {
+    /* margin-left: auto; margin-right: auto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.bottom-4 {
+    /* bottom: 1rem (16px) */
+    bottom: 1rem; 
+}
+
+.right-4 {
+    /* right: 1rem (16px) */
+    right: 1rem; 
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.max-w-48 {
+    /* max-width: 12rem (192px) */
+    max-width: 12rem;
+}
+
+.aspect-square {
+    /* aspect-ratio: 1 / 1 */
+    aspect-ratio: 1 / 1;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Layout and Positioning
+|--------------------------------------------------------------------------
+*/
+
+/* grid grid-cols-2 */
+.grid-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* relative */
+.relative {
+    position: relative;
+}
+
+/* absolute */
+.absolute {
+    position: absolute;
+}
+
+/* inset-0 */
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* left-0 */
+.left-0 {
+    left: 0;
+}
+
+/* right-0 */
+.right-0 {
+    right: 0;
+}
+
+/* bottom-0 */
+.bottom-0 {
+    bottom: 0;
+}
+
+/* top-2 */
+.top-2 {
+    /* top: 0.5rem (8px) */
+    top: 0.5rem;
+}
+
+/* left-2 */
+.left-2 {
+    /* left: 0.5rem (8px) */
+    left: 0.5rem;
+}
+
+/* w-full */
+.w-full {
+    width: 100%;
+}
+
+/* h-full */
+.h-full {
+    height: 100%;
+}
+
+/* min-h-40 */
+.min-h-40 {
+    /* min-height: 10rem (160px) */
+    min-height: 10rem;
+}
+
+/* aspect-[8/12] */
+.article-aspect {
+    aspect-ratio: 8 / 12;
+}
+
+/* z-20 */
+.z-20 {
+    z-index: 20;
+}
+
+/* -z-10 */
+.\-z-10 {
+    z-index: -10;
+}
+
+/* overflow-y-scroll */
+.overflow-y-scroll {
+    overflow-y: scroll;
+}
+
+/* h-screen */
+.h-screen {
+    height: 100vh;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Flexbox
+|--------------------------------------------------------------------------
+*/
+
+/* flex */
+.flex {
+    display: flex;
+}
+
+/* flex-col */
+.flex-col {
+    flex-direction: column;
+}
+
+/* flex-grow */
+.flex-grow {
+    flex-grow: 1;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Spacing, Appearance, and Effects
+|--------------------------------------------------------------------------
+*/
+
+/* py-4 */
+.py-4 {
+    /* padding-top: 1rem (16px); padding-bottom: 1rem (16px) */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* px-2 */
+.px-2 {
+    /* padding-left: 0.5rem (8px); padding-right: 0.5rem (8px) */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* bg-black/50 */
+.bg-black\/50 {
+    /* Background black with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* rounded */
+.rounded {
+    /* border-radius: 0.25rem (4px) */
+    border-radius: 0.25rem;
+}
+
+/* object-cover */
+.object-cover {
+    object-fit: cover;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Typography
+|--------------------------------------------------------------------------
+*/
+
+/* text-white */
+.text-white {
+    color: #fff;
+}
+
+/* font-bold */
+.font-bold {
+    font-weight: 700;
+}
+
+/* text-center */
+.text-center {
+    text-align: center;
+}
+
+/* text-lg */
+.text-lg {
+    /* font-size: 1.125rem (18px) */
+    font-size: 1.125rem;
+}
+
+/* text-xs */
+.text-xs {
+    /* font-size: 0.75rem (12px) */
+    font-size: 0.75rem;
+}
+
+/* whitespace-nowrap */
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+/* [text-shadow:_0_2px_2px_rgb(0_0_0_/_0.4)] */
+.article-text-shadow {
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* The 'cover' class is likely a redundant utility for object-fit: cover. */
+
+/*
+|--------------------------------------------------------------------------
+| Flexbox
+|--------------------------------------------------------------------------
+*/
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Spacing
+|--------------------------------------------------------------------------
+*/
+
+.pt-12 {
+    /* padding-top: 3rem (48px) */
+    padding-top: 3rem; 
+}
+
+.pb-2 {
+    /* padding-bottom: 0.5rem (8px) */
+    padding-bottom: 0.5rem; 
+}
+
+.mt-2 {
+    /* margin-top: 0.5rem (8px) */
+    margin-top: 0.5rem; 
+}
+
+.p-2 {
+    /* padding: 0.5rem (8px) */
+    padding: 0.5rem; 
+}
+
+.p-0\.5 {
+    /* padding: 0.125rem (2px) */
+    padding: 0.125rem; 
+}
+
+/*
+|--------------------------------------------------------------------------
+| Typography and Color
+|--------------------------------------------------------------------------
+*/
+
+.text-invert {
+    color: #ffffff;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-lg {
+    /* font-size: 1.125rem (18px) */
+    font-size: 1.125rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Backgrounds, Borders, and Effects
+|--------------------------------------------------------------------------
+*/
+
+.bg-background {
+    background-color: #000000;
+}
+
+.bg-green-400 {
+    /* Default Tailwind green-400 */
+    background-color: #48bb78; 
+}
+
+.bg-gray-400 {
+    /* Default Tailwind gray-400 */
+    background-color: #9fa6b2;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Sizing (Width/Height)
+|--------------------------------------------------------------------------
+*/
+
+.h-6 {
+    /* height: 1.5rem (24px) */
+    height: 1.5rem;
+}
+
+.w-6 {
+    /* width: 1.5rem (24px) */
+    width: 1.5rem;
+}
+
+/* The 'cover' class is likely a redundant utility for object-fit: cover and is often not needed if object-fit is already set. */
+/* 'amp-image-bottom-rounded-full' is a custom class, not a standard Tailwind utility. */
+
+.max-w-screen-sm {
+    max-width: 640px; 
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+/* Spacing and Sizing */
+.p-2 {
+    padding: 0.5rem; 
+}
+
+.mt-2 {
+    margin-top: 0.5rem; 
+}
+
+/* Flexbox */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+/* Appearance (Borders, Backgrounds, Radius) */
+.border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-base-300 {
+    border-color: #000000;
+}
+
+.rounded-md {
+    border-radius: 0.375rem; /* 6px */
+}
+
+.bg-base-100 {
+    background-color: #000000;
+}
+
+/* Typography */
+.font-bold {
+    font-weight: 700;
+}
+
+.text-sm {
+    font-size: 0.875rem; /* 14px */
+}
+
+.text-xs {
+    font-size: 0.75rem; /* 12px */
+}
+
+.main-container {
+  /* max-w-screen-sm: typically 640px */
+  max-width: 640px;
+  /* mx-auto */
+  margin-left: auto;
+  margin-right: auto;
+  /* text-invert */
+  color: #ffffff ;
+  /* bg-background */
+  background-color: #000000 ;
+}
+
+/* Spacing Helpers: pb-2, mt-2, p-2 */
+.pb-2 {
+  /* padding-bottom: 0.5rem (8px) */
+  padding-bottom: 0.5rem;
+}
+
+.mt-2 {
+  /* margin-top: 0.5rem (8px) */
+  margin-top: 0.5rem;
+}
+
+.p-2 {
+  /* padding: 0.5rem (8px) */
+  padding: 0.5rem;
+}
+
+/* Article Element: relative w-full text-white flex-col pt-12 */
+.article-styles {
+  /* relative */
+  position: relative;
+  /* w-full */
+  width: 100%;
+  /* text-white */
+  color: #fff;
+  /* flex-col */
+  display: flex;
+  flex-direction: column;
+  /* pt-12: 3rem (48px) */
+  padding-top: 3rem;
+}
+
+/* Image Wrapper: relative aspect-square rounded-full mx-auto max-w-48 */
+.image-wrapper {
+  /* relative */
+  position: relative;
+  /* aspect-square */
+  aspect-ratio: 1 / 1;
+  /* rounded-full */
+  border-radius: 9999px;
+  /* mx-auto */
+  margin-left: auto;
+  margin-right: auto;
+  /* max-w-48: 12rem (192px) */
+  max-width: 12rem;
+}
+
+/* amp-img styling: object-cover w-full h-full */
+.image-element {
+  /* object-cover */
+  object-fit: cover;
+  /* w-full h-full */
+  width: 100%;
+  height: 100%;
+  /* The 'cover' class is often a utility for object-fit: cover and can be ignored if object-fit is set */
+}
+
+/* Heading (H2): text-lg font-bold text-center mt-2 */
+.article-heading {
+  /* text-lg: 1.125rem (18px) */
+  font-size: 1.125rem;
+  /* font-bold */
+  font-weight: 700;
+  /* text-center */
+  text-align: center;
+  /* mt-2: 0.5rem (8px) */
+  margin-top: 0.5rem;
+}
+
+/* Description (P): text-center */
+.article-description {
+  /* text-center */
+  text-align: center;
+}
+
+/* |--------------------------------------------------------------------------
+| Status Indicator 
+|--------------------------------------------------------------------------
+*/
+
+/* Status Indicator Wrapper: absolute bottom-4 right-4 rounded-full bg-background flex flex-col items-center justify-center p-0.5 h-6 w-6 */
+.status-indicator-wrapper {
+  /* absolute */
+  position: absolute;
+  /* bottom-4 right-4: 1rem (16px) */
+  bottom: 1rem;
+  right: 1rem;
+  /* rounded-full */
+  border-radius: 9999px;
+  /* bg-background */
+  background-color: #48bb78 ;
+  /* flex flex-col items-center justify-center */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* p-0.5: 0.125rem (2px) */
+  padding: 0.125rem;
+  /* h-6 w-6: 1.5rem (24px) */
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Online Status Dot: bg-green-400 rounded-full h-full w-full */
+.status-dot-online {
+  /* bg-green-400 (Tailwind default) */
+  background-color: #48bb78;
+  /* rounded-full */
+  border-radius: 9999px;
+  /* h-full w-full */
+  height: 100%;
+  width: 100%;
+}
+
+/* Offline Status Dot: bg-gray-400 rounded-full h-full w-full */
+.status-dot-offline {
+  /* bg-gray-400 (Tailwind default) */
+  background-color: #9fa6b2;
+  /* rounded-full */
+  border-radius: 9999px;
+  /* h-full w-full */
+  height: 100%;
+  width: 100%;
 }
 
 .no-scroll-bar {
@@ -77,7 +727,7 @@ body {
   text-shadow: 1px 1px 8px #000000dd;
 }
 
-.article-list div[role='list'] {
+.article-list div[role="list"] {
   display: grid;
   grid-gap: 0.25em;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -87,6 +737,6 @@ body {
   padding: 0.5rem;
   height: 100vh;
 }
-.article-list div[role='list']::-webkit-scrollbar {
+.article-list div[role="list"]::-webkit-scrollbar {
   display: none;
 }

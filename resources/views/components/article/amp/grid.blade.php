@@ -9,10 +9,10 @@
         @endphp
         <div class="grid grid-cols-2">
             @foreach ($sorted_articles as $article)
-                <article class="relative w-full text-white flex-col aspect-[8/12] article-style-root">
+                <article class="relative w-full text-white flex-col article-aspect article-style-root">
                     <a class="link-article-listener" aria-label="{{ $article['article']['title'] }}" target="_blank"
                         href="{{ $article['url'] }}">
-                        <div class="min-h-40 relative aspect-[8/12]">
+                        <div class="min-h-40 relative article-aspect">
                             <amp-img layout="fill" alt="{{ $article['article']['title'] }}"
                                 class="object-cover w-full h-full cover" src="{{ $article['image'] }}"></amp-img>
                         </div>
@@ -20,10 +20,10 @@
                         <div class="absolute left-0 right-0 bottom-0 z-20">
                             <div class="relative py-4 flex flex-grow flex-col article-style-info">
                                 <div class="absolute inset-0 -z-10 article-style-layer"></div>
-                                <h2 class="font-bold text-center text-lg whitespace-nowrap [text-shadow:_0_2px_2px_rgb(0_0_0_/_0.4)]">
+                                <h2 class="font-bold text-center text-lg whitespace-nowrap article-text-shadow">
                                     {{ $article['article']['title'] }}</h2>
                                 @unless (empty($article['number']))
-                                    <p class="text-center font-bold text-lg whitespace-nowrap [text-shadow:_0_2px_2px_rgb(0_0_0_/_0.4)]">
+                                    <p class="text-center font-bold text-lg whitespace-nowrap article-text-shadow">
                                         {{ $article['number'] }}</p>
                                 @endunless
                             </div>
