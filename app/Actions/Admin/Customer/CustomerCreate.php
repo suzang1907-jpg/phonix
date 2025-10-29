@@ -11,7 +11,7 @@ class CustomerCreate extends Action
     public function handle()
     {
         return [
-            'title' => 'Customer Create',
+            'title' => __('base.create_customer'),
         ];
     }
 }

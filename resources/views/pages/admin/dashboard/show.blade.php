@@ -10,7 +10,7 @@
                     <div class="stat-value">{{ $customer_count }}</div>
                     <div class="stat-desc">
                         <a href="{{ route('admin.customer.list') }}">
-                            List all
+                            {{ __('base.list_all') }}
                         </a>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
                     <div class="stat-value">{{ $article_count }}</div>
                     <div class="stat-desc">
                         <a href="{{ route('admin.article.list') }}">
-                            List all
+                            {{ __('base.list_all') }}
                         </a>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                 </components-list>
                 <div class="flex grow flex-col items-start justify-end p-2">
                     <a href="{{ route('admin.customer.list') }}" class="btn btn-sm">
-                        Show more
+                        {{ __('base.list_all') }}
                     </a>
                 </div>
 
@@ -43,11 +43,11 @@
             <div class="card card-border border-base-300 bg-base-100 rounded-md flex flex-col">
                 <components-table :paginate="false" class="p-2" title="{{ __('base.articles') }}"
                     :collection='@vue($latest_articles)' item="components-admin-article-table-item"
-                    :fields='["Renew", "Customer", "Info", "Contact", "Premium", "Analytics", ""]'>
+                    :fields='["{{ __('base.renewal') }}", "{{ __('base.customer') }}", "{{ __('base.info') }}", "{{ __('base.contact') }}", "{{ __('base.analytics') }}", ""]'>
                 </components-table>
                 <div class="flex grow flex-col items-start justify-end p-2">
                     <a href="{{ route('admin.article.list') }}" class="btn btn-sm">
-                        Show more
+                        {{ __('base.list_all') }}
                     </a>
                 </div>
             </div>

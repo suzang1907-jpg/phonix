@@ -22,7 +22,8 @@
             </div>
           </template>
         </div>
-        <div class="absolute top-2 right-2 z-0"> <button class="mb-1 btn btn-error btn-sm" v-if="this.value" v-on:click="clear">
+        <div class="absolute top-2 right-2 z-0"> <button class="mb-1 btn btn-error btn-sm" v-if="this.value"
+            v-on:click="clear">
             Kaldır
           </button>
         </div>

@@ -21,5 +21,17 @@ return [
     'random_post' => 'Random post',
     'about_us' => 'About us',
     'customer' => 'Customer',
-    'customers' => 'Customers'
+    'customers' => 'Customers',
+    "new_customer" => 'New Customer',
+    "edit_customer" => 'Edit Customer',
+    "edit_article" => 'Edit Article',
+    "new_article" => 'New Article',
+    "edit" => 'Edit',
+    "info" => "Info",
+    "contact" => "Contact",
+    'analytics' => 'Analytics',
+    'renew' => 'Renew',
+    'renewal' => 'Renewal',
+    'list_all' => 'List All',
+    'delete_customer' => 'Delete Customer'
 ];

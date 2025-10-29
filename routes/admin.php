@@ -175,7 +175,9 @@ Route::middleware(['shield', 'calculate.origin', 'localize'])->group(function ()
                 /** Workspace */
                 Admin::get(Workspace::class, 'show', 'show');
                 Admin::get(Workspace::class, 'edit', 'edit');
+                Admin::get(Workspace::class, 'create', 'create');
                 Admin::post(Workspace::class, 'update', 'update');
+                Admin::post(Workspace::class, 'store', 'store');
                 Admin::get(Workspace::class, 'cache/clear', 'cache.clear');
                 Admin::get(Workspace::class, 'cloudflare/sync', 'cloudflare.sync');
             });

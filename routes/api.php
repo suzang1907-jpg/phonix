@@ -16,9 +16,9 @@ Route::middleware(['shield', 'calculate.origin', 'localize'])->group(function ()
             Api::post(Search::class, 'admin/dashboard', 'adminDashboard');
             Api::post(Customer::class, 'search', 'search');
         });
-Route::middleware(['verify.employee.token'])->group(function () {
-Api::post(Customer::class, 'search/employee', 'search.employee');
-});
+        Route::middleware(['verify.employee.token'])->group(function () {
+            Api::post(Customer::class, 'search/employee', 'search.employee');
+        });
     });
 });
 

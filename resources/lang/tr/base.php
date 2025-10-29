@@ -19,5 +19,19 @@ return [
     'tags' => 'Etiketler',
     'websites' => 'Web siteleri',
     'random_post' => 'Rasgele gönderi',
-    'about_us' => 'Hakkımızda'
+    'about_us' => 'Hakkımızda',
+    'customer' => 'Kullanıcı',
+    'customers' => 'Kullanıcılar',
+    "new_customer" => 'Yeni Kullanıcı',
+    "edit_customer" => 'Kullanıcıyı Düzenle',
+    "edit_article" => 'İlanı Düzenle',
+    "new_article" => 'Yeni İlan',
+    "edit" => 'Düzenle',
+    "info" => "Bilgi",
+    "contact" => "İletişim",
+    'analytics' => 'İstatistikler',
+    'renew' => 'Yenile',
+    'renewal' => 'Yenileme',
+    'list_all' => 'Hepsini Göster',
+    'delete_customer' => 'Kullanıcıyı Sil'
 ];

@@ -18,9 +18,9 @@ class CustomerDestroy extends Action
             return redirect(Admin::route('admin.customer.list'));
         }
 
-if (! empty($customer->articles()->count())) {
-return redirect()->back();
-}
+        if (! empty($customer->articles()->count())) {
+            return redirect()->back();
+        }
 
         $customer->delete();
 

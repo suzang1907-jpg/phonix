@@ -40,12 +40,6 @@
       <div class="text-xs whitespace-nowrap" v-if="this.item.telegram">T: {{ this.item.telegram }}</div>
     </td>
     <td>
-      <div class="text-xs whitespace-nowrap" v-if="this.item.meta?.premium ?? false">Premium</div>
-      <div class="text-xs whitespace-nowrap" v-if="!this.item.meta?.premium ?? false">Basic</div>
-      <div class="text-xs whitespace-nowrap" v-if="this.item.meta?.highlight ?? false">Highlight</div>
-      <div class="text-xs whitespace-nowrap" v-if="!this.item.meta?.highlight ?? false">Basic</div>
-    </td>
-    <td>
       <div class="text-xs whitespace-nowrap" v-if="this.item.meta">V: {{ this.item.meta['view_count'] ?? 0 }}</div>
       <div class="text-xs whitespace-nowrap" v-if="!this.item.meta">0</div>
       <a target="_blank" class="btn btn-xs whitespace-nowrap" :href="this.getGoogleAnalyticsLink()">Google Analytics</a>

@@ -19,7 +19,7 @@ class CustomerEdit extends Action
         }
 
         return [
-            'title' => 'Customer Edit',
+            'title' => __('base.edit_customer'),
             'customer' => $customer
         ];
     }
