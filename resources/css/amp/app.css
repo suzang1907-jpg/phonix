@@ -13,7 +13,9 @@ h6 {
 /* Injected by @tailwind base (Preflight) */
 
 /* The fundamental box-sizing reset */
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   border-width: 0;
   border-style: solid;
@@ -21,12 +23,30 @@ h6 {
 }
 
 /* Common elements have margins removed */
-h1, h2, h3, h4, h5, h6, p, blockquote, figure, hr, ul, ol, dl, dd {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+hr,
+ul,
+ol,
+dl,
+dd {
   margin: 0; /* REMOVES BROWSER DEFAULT MARGINS */
 }
 
 /* Headings are "unstyled" by default */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit; /* They are the same size as normal text */
   font-weight: inherit; /* They are not bold by default */
 }
@@ -38,12 +58,20 @@ a {
 }
 
 /* Images become block-level and responsive */
-img, svg, video, canvas, audio, iframe, embed, object {
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
   display: block;
   vertical-align: middle;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
 }
@@ -212,6 +240,11 @@ img, video {
 .grid-cols-2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 /* relative */
@@ -446,6 +479,10 @@ img, video {
   margin-top: 0.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem /* 3rem = 48px */;
+}
+
 .p-2 {
   /* padding: 0.5rem (8px) */
   padding: 0.5rem;
@@ -601,7 +638,7 @@ img, video {
 }
 
 .text-base-content {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .main-container {
