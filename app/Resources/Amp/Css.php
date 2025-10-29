@@ -33,6 +33,7 @@ class Css extends BaseCss
         $raw_resource .= ' .article-style-layer {' . $this->articleStyleLayer() . '}';
         $raw_resource .= ' .article-style-info {' . $this->articleStyleInfo() . '}';
         $raw_resource .= ' .article-style-root {' . $this->articleStyleRoot() . '}';
+        $raw_resource .= ' .support-banner-style {' . $this->supportBannerStyle() . '}';
 
         $tagCollection->addTag($tag->setText($raw_resource));
 
@@ -65,6 +66,36 @@ class Css extends BaseCss
     public function articleStyleInfo()
     {
         $style = "";
+        return $style;
+    }
+
+        public function supportBannerStyle()
+    {
+        $primary_color = $this->appStyle()['amp']['primary_color'] ?? "#111111";
+        $secondary_color = $this->appStyle()['amp']['secondary_color'] ?? "#111111";
+
+        $primary_color .= "FF";
+        $secondary_color .= "00";
+
+        if (!empty($primary_color) && !empty($secondary_color)) {
+            $style = "background-image: linear-gradient(to top, " . $primary_color . ", " . $secondary_color . ");";
+            return $style;
+        }
+
+        if (! empty($primary_color)) {
+            $style = "";
+            $style .= "background-color: " . $primary_color . ";";
+            return $style;
+        }
+
+        if (! empty($secondary_color)) {
+            $style = "";
+            $style .= "background-color: " . $secondary_color . ";";
+            return $style;
+        }
+
+        $style = "";
+        $style .= "background-color: #11111100;";
         return $style;
     }
 

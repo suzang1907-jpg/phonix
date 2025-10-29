@@ -1,19 +1,12 @@
 @props(['amp' => false, 'domain' => ''])
 
-@if(empty($domain->site->project->supportBanner))
-<div></div>
+@if ($amp)
+    <a class="link-support-listener relative" target="_blank" href="{{ App\Routing\Amp::route('amp.share.support') }}">
+        <div class="relative w-full py-2 flex-shrink-0 mx-auto max-w-md flex flex-col items-center">
+            <p class="text-center article-text-shadow">İlan & Şikayet Hattı</p>
+        </div>
+        <div class="inset-0 absolute support-banner-style -z-10"></div>
+    </a>
 @else
-@if($amp)
-<a class="link-support-listener" target="_blank" href="{{ App\Routing\Amp::route('amp.share.support') }}">
-    <div class="relative w-full h-20 flex flex-shrink-0 mx-auto max-w-md">
-        <amp-img class="cover" layout="fill" alt="Support" src="{{ route('file.project.reference.banner', ['reference' => $domain->getCanonicalDomain()]) }}"></amp-img>
-    </div>
-</a>
-@else
-<a class="h-24 link-support-listener" target="_blank" href="{{ App\Routing\Amp::route('amp.share.support') }}">
-    <div class="relative w-full h-20 flex flex-shrink-0 mx-auto max-w-md">
-        <img loading="lazy" decoding="async" alt="Support" class="relative w-full h-full" src="{{ route('file.project.banner') }}" />
-    </div>
-</a>
-@endif
+    <div></div>
 @endif

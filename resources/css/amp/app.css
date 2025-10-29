@@ -503,6 +503,11 @@ video {
   margin-top: 0.5rem;
 }
 
+.mb-2 {
+  /* margin-top: 0.5rem (8px) */
+  margin-bottom: 0.5rem;
+}
+
 .flex-shrink-0 {
     flex-shrink: 0;
 }
