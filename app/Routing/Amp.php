@@ -86,16 +86,18 @@ class Amp extends Highway
         $district = LocationService::getDistrict();
 
         $articles_raw = Article::query()->random()->get();
-	$articles = [];
-$filtered_a = $articles_raw->filter( function ($n) {return $n->title != "**";})->all();
-	foreach ($articles_raw as $a) {
-$atmp = $a;
-$article_copy = $filtered_a[array_rand($filtered_a)];
-if ($atmp->title == "**") {
-$atmp->title = $article_copy->title;
-}
-	array_push($articles, $atmp);
-	}
+        $articles = [];
+        $filtered_a = $articles_raw->filter(function ($n) {
+            return $n->title != "**";
+        })->all();
+        foreach ($articles_raw as $a) {
+            $atmp = $a;
+            $article_copy = $filtered_a[array_rand($filtered_a)];
+            if ($atmp->title == "**") {
+                $atmp->title = $article_copy->title;
+            }
+            array_push($articles, $atmp);
+        }
 
         $pageData = array_merge([
             'story' => $story,
