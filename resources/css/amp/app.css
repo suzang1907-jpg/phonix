@@ -600,6 +600,10 @@ img, video {
   font-size: 0.75rem; /* 12px */
 }
 
+.text-base-content {
+    color: #ffffff;
+}
+
 .main-container {
   /* max-w-screen-sm: typically 640px */
   max-width: 640px;
