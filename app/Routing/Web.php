@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 use \Dev\LaravelHighway\Highway;
 use Dev\PHPActions\Action;
 use Illuminate\Support\Facades\Log;
+
 class Web extends Highway
 {
     protected static $namespace = 'App';
@@ -37,15 +38,15 @@ class Web extends Highway
 
             $domain = DomainService::getDomain();
         }
-$url = null;
-try {
-        $url = route($route, $parameters);
-} catch (Exception $e) {
-Log::info($domain->domain);
-Log::info($route);
-Log::info($parameters);
-Log::error($e);
-}
+        $url = null;
+        try {
+            $url = route($route, $parameters);
+        } catch (Exception $e) {
+            Log::info($domain->domain);
+            Log::info($route);
+            Log::info($parameters);
+            Log::error($e);
+        }
         $canonical = $domain->getCanonicalDomain();
 
         if ($canonical?->type != DomainType::$primary && $domain->type != DomainType::$primary) {
@@ -78,8 +79,9 @@ Log::error($e);
 
         foreach ($parameters as $key => $value) {
             $ampParameters[$key] = $value ?? $data[$key] ?? request()->$key;
-$ampParameters["v"] = \Carbon\Carbon::now()->timestamp;
         }
+
+        $ampParameters["v"] = \Carbon\Carbon::now()->timestamp;
 
         if (Route::has($amp)) {
             $amp = Amp::route($amp, $ampParameters);
