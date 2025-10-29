@@ -321,7 +321,7 @@
 
 /* text-white */
 .text-white {
-    color: #fff;
+    color: #ffffff;
 }
 
 /* font-bold */
@@ -535,6 +535,10 @@
 }
 
 .bg-base-100 {
+    background-color: #000000;
+}
+
+.bg-base-200 {
     background-color: #000000;
 }
 
