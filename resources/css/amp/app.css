@@ -503,6 +503,14 @@ video {
   margin-top: 0.5rem;
 }
 
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.h-20 {
+    height: calc(var(--spacing) * 20) /* 5rem = 80px */;
+}
+
 .bg-phone-link {
   background-image: linear-gradient(to right, #101828, #1e2939);
 }
