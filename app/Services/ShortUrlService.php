@@ -27,6 +27,7 @@ class ShortUrlService
         $params = str_replace('amp/c/', 'ac-', $params);
         $params = str_replace('blog/', 'bc-', $params);
         $params = str_replace('location/', 'lc-', $params);
+        $params = str_replace('keyword/', 'kc-', $params);
         $params = str_replace('country=', 'c-', $params);
         $params = str_replace('city=', 's-', $params);
         $params = str_replace('district=', 'd-', $params);
