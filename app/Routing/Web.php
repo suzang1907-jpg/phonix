@@ -18,6 +18,7 @@ use App\Services\DomainService;
 use App\Services\FastService;
 use App\Services\LocationService;
 use App\Services\Page;
+use App\Services\ShortUrlService;
 use App\Services\WebPage;
 use Exception;
 use Illuminate\Support\Facades\Route;
@@ -81,14 +82,9 @@ class Web extends Highway
             $ampParameters[$key] = $value ?? $data[$key] ?? request()->$key;
         }
 
-        $currentTime = \Carbon\Carbon::now()->timestamp;
-
-        $intervalSeconds = 1 * 60;
-        $v = $currentTime - ($currentTime % $intervalSeconds);
-        $ampParameters["v"] = $v;
-
         if (Route::has($amp)) {
             $amp = Amp::route($amp, $ampParameters);
+            $amp = ShortUrlService::get($amp);
         } else {
             $amp = null;
         }
