@@ -31,6 +31,7 @@ class ShortUrlService
         $params = str_replace('country=', 'c-', $params);
         $params = str_replace('city=', 's-', $params);
         $params = str_replace('district=', 'd-', $params);
+        $params = str_replace('page=', 'p-', $params);
         $params = str_replace('.', 'f-', $params);
         $params = str_replace(':', 'g-', $params);
         $params = str_replace('/', 'b-', $params);
