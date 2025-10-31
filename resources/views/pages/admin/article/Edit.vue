@@ -4,25 +4,25 @@
       <canvas ref="chart" class="w-full" id="chart"></canvas>
     </div>
     <bs-input-date :xvalue="article.meta?.renew_at?.date ? new Date(article.meta.renew_at?.date) : null"
-      ref="renew_at_date" title="Renew at date" />
-    <bs-input-text :xvalue="article.meta?.renew_at?.time" ref="renew_at_time" title="Renew at time" id="renew_at_time"
+      ref="renew_at_date" title="Yenileme Tarihi" />
+    <bs-input-text :xvalue="article.meta?.renew_at?.time" ref="renew_at_time" title="Yenileme Saati" id="renew_at_time"
       name="renew_at_time"></bs-input-text>
     <components-admin-customer-search :xvalue="this.customer" ref="customer"></components-admin-customer-search>
     <bs-input-text :xvalue="article.title" ref="title" title="Title" required id="title" name="title"></bs-input-text>
-    <bs-input-text :xvalue="article.description" ref="description" title="Description" required id="description"
+    <bs-input-text :xvalue="article.description" ref="description" title="Bilgi" required id="description"
       name="description"></bs-input-text>
     <div class="collapse border border-border">
       <input type="checkbox" />
-      <div class="collapse-title font-medium">Edit main image</div>
+      <div class="collapse-title font-medium">Ana Resim</div>
       <div class="collapse-content">
         <components-input-image :placeholder="this.$root.route('file.article.main.image', { id: this.article.id }) + '?v=' + this.article.image_id
-          " accept="image/png, image/jpeg" ref="main_image" id="main_image" name="main_image" title="Main Image"
+          " accept="image/png, image/jpeg" ref="main_image" id="main_image" name="main_image" title="Ana Resim"
           required></components-input-image>
       </div>
     </div>
     <div class="collapse border border-border">
       <input type="checkbox" />
-      <div class="collapse-title font-medium">Edit images</div>
+      <div class="collapse-title font-medium">Resimler</div>
       <div class="collapse-content">
         <components-input-images :placeholder="this.article.images?.map((image) => {
           return this.$root.route('file.article.image', {
@@ -31,22 +31,22 @@
           });
         })
           " accept="image/png, image/jpeg" ref="images" id="images" name="images"
-          title="Images"></components-input-images>
+          title="Resimler"></components-input-images>
       </div>
     </div>
     <bs-input-text :xvalue="article.info" ref="info" title="Info" required id="info" name="info"></bs-input-text>
-    <bs-input-text :xvalue="article.phone_number" ref="phone_number" title="Phone Number" id="phone_number"
+    <bs-input-text :xvalue="article.phone_number" ref="phone_number" title="Telefon Numarası" id="phone_number"
       name="phone_number"></bs-input-text>
     <bs-input-text :xvalue="article.telegram" ref="telegram" title="Telegram ID" id="telegram"
       name="telegram"></bs-input-text>
-    <bs-input-text :xvalue="article.whatsapp_number" ref="whatsapp_number" title="WhatsApp Number" id="whatsapp_number"
+    <bs-input-text :xvalue="article.whatsapp_number" ref="whatsapp_number" title="WhatsApp Numarası" id="whatsapp_number"
       name="whatsapp_number"></bs-input-text>
-    <bs-input-text :xvalue="article.whatsapp_message" ref="whatsapp_message" title="WhatsApp Message"
+    <bs-input-text :xvalue="article.whatsapp_message" ref="whatsapp_message" title="WhatsApp Mesaj"
       id="whatsapp_message" name="whatsapp_message"></bs-input-text>
 
-    <bs-button-solid :onclick="this.update" class="mt-2">
-      Save
-    </bs-button-solid>
+    <button v-on:click="this.update" class="btn mt-2 btn-success">
+      Kaydet
+    </button>
   </div>
 </template>
 <script>

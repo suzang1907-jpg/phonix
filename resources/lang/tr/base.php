@@ -33,5 +33,6 @@ return [
     'renew' => 'Yenile',
     'renewal' => 'Yenileme',
     'list_all' => 'Hepsini Göster',
-    'delete_customer' => 'Kullanıcıyı Sil'
+    'delete_customer' => 'Kullanıcıyı Sil',
+    'open_in_whatsapp' => 'WhatsApp üzerinde aç'
 ];

@@ -2,16 +2,16 @@
     <div>
         <div v-if="!this.value" class="bg-base-100 p-2 flex flex-col border border-base-200">
             <h3 class="text-sm">Customer</h3>
-            <p class="py-4 text-center text-sm">Customer not selected.</p>
-            <button class="btn" v-on:click="this.openModal">Select customer</button>
+            <p class="py-4 text-center text-sm">Kullanıcı seçilmedi.</p>
+            <button class="btn" v-on:click="this.openModal">Kullanıcı Seç</button>
         </div>
         <div v-if="this.value" class="bg-base-100 p-2 flex flex-col border border-base-200">
-            <h3 class="text-sm">Customer</h3>
+            <h3 class="text-sm">Kullanıcı</h3>
             <div class="py-4">
                 <p class="text-center text-sm">{{ this.value.id }}</p>
                 <p class="text-center text-sm">{{ this.value.whatsapp_phone_number }}</p>
             </div>
-            <button class="btn mt-2" v-on:click="this.openModal">Select customer</button>
+            <button class="btn mt-2" v-on:click="this.openModal">Kullanıcı Seç</button>
             <button class="btn btn-ghost mt-2" v-on:click="this.resetValue">Seçimi sıfırla</button>
         </div>
         <dialog ref="modal" id="customer_search_modal" class="modal">
@@ -19,9 +19,9 @@
                 <form method="dialog">
                     <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                 </form>
-                <h3 class="text-lg font-bold">Search customer</h3>
+                <h3 class="text-lg font-bold">Kullanıcı Ara</h3>
                 <label class="form-control w-full mt-6">
-                    <input :name="'customer_search'" v-model="search" type="text" placeholder="Search for customer"
+                    <input :name="'customer_search'" v-model="search" type="text" placeholder="Kullanıcı"
                         class="input input-bordered w-full" />
                 </label>
                 <div v-if="this.customers" class="overflow-x-auto">
@@ -40,7 +40,7 @@
                                     <td>{{ customer.whatsapp_phone_number }}</td>
                                     <th>
                                         <button v-on:click="selectCustomer(customer)"
-                                            class="btn btn-ghost btn-xs">Select</button>
+                                            class="btn btn-ghost btn-xs">Seç</button>
                                     </th>
                                 </tr>
                             </template>

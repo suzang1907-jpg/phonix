@@ -33,5 +33,6 @@ return [
     'renew' => 'Renew',
     'renewal' => 'Renewal',
     'list_all' => 'List All',
-    'delete_customer' => 'Delete Customer'
+    'delete_customer' => 'Delete Customer',
+    'open_in_whatsapp' => 'Open in WhatsApp'
 ];
