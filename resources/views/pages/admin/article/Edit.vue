@@ -8,8 +8,8 @@
     <bs-input-text :xvalue="article.meta?.renew_at?.time" ref="renew_at_time" title="Yenileme Saati" id="renew_at_time"
       name="renew_at_time"></bs-input-text>
     <components-admin-customer-search :xvalue="this.customer" ref="customer"></components-admin-customer-search>
-    <bs-input-text :xvalue="article.title" ref="title" title="Title" required id="title" name="title"></bs-input-text>
-    <bs-input-text :xvalue="article.description" ref="description" title="Bilgi" required id="description"
+    <bs-input-text :xvalue="article.title" ref="title" title="Başlık" required id="title" name="title"></bs-input-text>
+    <bs-input-text :xvalue="article.description" ref="description" title="Tanım" required id="description"
       name="description"></bs-input-text>
     <div class="collapse border border-border">
       <input type="checkbox" />
@@ -34,7 +34,7 @@
           title="Resimler"></components-input-images>
       </div>
     </div>
-    <bs-input-text :xvalue="article.info" ref="info" title="Info" required id="info" name="info"></bs-input-text>
+    <bs-input-text :xvalue="article.info" ref="info" title="Bilgi" required id="info" name="info"></bs-input-text>
     <bs-input-text :xvalue="article.phone_number" ref="phone_number" title="Telefon Numarası" id="phone_number"
       name="phone_number"></bs-input-text>
     <bs-input-text :xvalue="article.telegram" ref="telegram" title="Telegram ID" id="telegram"
