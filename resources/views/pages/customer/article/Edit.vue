@@ -56,9 +56,9 @@
       </p>
     </div>
 
-    <bs-button-solid :onclick="this.update" class="mt-2">
+    <button v-on:click="this.update" class="btn btn-success mt-2">
       Kaydet
-    </bs-button-solid>
+    </button>
   </div>
 </template>
 <script>
