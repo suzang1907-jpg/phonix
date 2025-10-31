@@ -9,7 +9,7 @@
     </div>
 
     <button v-on:click="this.login" class="btn btn-primary w-full mt-2">
-      Giriş
+      Giriş Yap
     </button>
   </div>
 </template>
