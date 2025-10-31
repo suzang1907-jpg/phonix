@@ -25,16 +25,16 @@ class ArticleEdit extends Action
 
 
 
-$customer_id = $this->getData('customer_id');
-$article_customer = $article->customer;
-if (! empty($customer_id) && empty($article_customer)) {
-$article_customer = Customer::where('id', $customer_id)->first();
-}
+        $customer_id = $this->getData('customer_id');
+        $article_customer = $article->customer;
+        if (! empty($customer_id) && empty($article_customer)) {
+            $article_customer = Customer::where('id', $customer_id)->first();
+        }
 
         return [
-'article_customer' => $article_customer,
+            'article_customer' => $article_customer,
             'article' => $article,
-            'title' => 'İlan / Düzenle'
+            'title' => __('base.edit_article')
         ];
     }
 }
