@@ -46,6 +46,7 @@ class Web extends Highway
             Log::info($domain->domain);
             Log::info($route);
             Log::info($parameters);
+            Log::info(url()->full());
             Log::error($e);
         }
         $canonical = $domain->getCanonicalDomain();
