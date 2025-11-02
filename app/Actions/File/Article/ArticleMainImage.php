@@ -2,6 +2,7 @@
 
 namespace App\Actions\File\Article;
 
+use App\Actions\File\Project\ProjectLogo;
 use Dev\PHPActions\Action;
 use App\Models\Article;
 
@@ -23,26 +24,27 @@ class ArticleMainImage extends Action
             return response()->noContent();
         }
 
-if ($article->title == "**") {
-//$ran_article = Article::where("title", "!=", "**")->inRandomOrder()->first();
-//$article->image = $ran_article->image;
-}
-
         $image = $article->image;
 
         if (empty($image)) {
-            return response()->noContent();
+            return Action::build(ProjectLogo::class)->data([
+                'size' => 400,
+            ])->run();
         }
 
         $path = $image->path();
 
         if (empty($path)) {
-            return response()->noContent();
+            return Action::build(ProjectLogo::class)->data([
+                'size' => 400,
+            ])->run();
         }
 
-	if (! file_exists($path)) {
-		return response()->noContent();
-}
+        if (! file_exists($path)) {
+            return Action::build(ProjectLogo::class)->data([
+                'size' => 400,
+            ])->run();
+        }
 
         return response()->file($path, [
             "Cache-Control" => "private, max-age=31536000",

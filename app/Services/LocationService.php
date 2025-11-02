@@ -36,6 +36,11 @@ class LocationService
             $domain = DomainService::getDomain();
         }
 
+        if (empty($domain)) {
+            Log::error('Domain is empty for: ' . url()->full());
+            return;
+        }
+
         $location = null;
 
         $location = Blog::current()?->location;
@@ -46,11 +51,6 @@ class LocationService
         }
 
         $location = self::getFromParameters();
-
-        if (empty($domain)) {
-            Log::error('Domain is empty for: ' . url()->full());
-return;
-        }
 
         if (empty($location) && $domain->type == DomainType::$primary) {
             $location = Action::build(LocationGetFromUrl::class)->run()->getData('location');
@@ -138,7 +138,7 @@ return;
         $location = Location::query();
 
         if (!empty($districts) && !$districts->isEmpty()) {
-            $location->where(function ($query) use($districts) {
+            $location->where(function ($query) use ($districts) {
                 foreach ($districts as $district) {
                     $query->orWhere('district_id', $district->id);
                 }
