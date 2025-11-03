@@ -36,7 +36,7 @@ export default {
       }
 
       if (diffDay > 0) {
-        return day + "." + (month + 1) + "." + year + " (" + diffDay + ") Gün";
+        return day + "." + (month + 1) + "." + year + " / " + diffDay + " Gün";
       }
 
       if (date.getTime() > currentDate.getTime()) {
@@ -51,10 +51,10 @@ export default {
           if (diffMinutes < 1) {
             return "Bugün";
           }
-          return diffMinutes + " Bugün";
+          return "Bugün";
         }
 
-        return diffHours + " Bugün";
+        return "Bugün";
       }
 
       if (diffDay == -1 && diffMonth == 0 && diffYear == 0) {
