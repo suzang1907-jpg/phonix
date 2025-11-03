@@ -36,7 +36,7 @@ export default {
       }
 
       if (diffDay > 0) {
-        return day + "." + (month + 1) + "." + year + " (" + diffDay + ") gün";
+        return day + "." + (month + 1) + "." + year + " (" + diffDay + ") Gün";
       }
 
       if (date.getTime() > currentDate.getTime()) {
