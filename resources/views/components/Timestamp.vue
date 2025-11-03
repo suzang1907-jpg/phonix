@@ -32,7 +32,7 @@ export default {
       const diffYear = year - currentYear;
 
       if (diffDay == 1) {
-        return day + "." + (month + 1) + "." + year + " (Yarın)";
+        return day + "." + (month + 1) + "." + year + " / Yarın";
       }
 
       if (diffDay > 0) {
@@ -49,16 +49,16 @@ export default {
           const currentMinutes = currentDate.getMinutes();
           const diffMinutes = currentMinutes - minutes;
           if (diffMinutes < 1) {
-            return "Bugün";
+            return day + "." + (month + 1) + "." + year + " / Bugün";
           }
-          return "Bugün";
+          return day + "." + (month + 1) + "." + year + " / Bugün";
         }
 
-        return "Bugün";
+        return day + "." + (month + 1) + "." + year + " / Bugün";
       }
 
       if (diffDay == -1 && diffMonth == 0 && diffYear == 0) {
-        return "Dün";
+        return day + "." + (month + 1) + "." + year + " / Dün";
       }
 
       return day + "." + (month + 1) + "." + year;
