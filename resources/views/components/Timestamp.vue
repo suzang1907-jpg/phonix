@@ -8,12 +8,12 @@ export default {
   methods: {
     format: function () {
       let date = new Date(this.timestamp);
-try {
-if (this.time)
-{
- date.setTime(date.getTime() + this.time * 3_600_000);
-}}
-catch(e) {}
+      try {
+        if (this.time) {
+          date.setTime(date.getTime() + this.time * 3_600_000);
+        }
+      }
+      catch (e) { }
       const hours = date.getHours();
       const day = date.getDate();
       const month = date.getMonth();
@@ -31,9 +31,13 @@ catch(e) {}
       const diffMonth = month - currentMonth;
       const diffYear = year - currentYear;
 
-if (date.getTime() > currentDate.getTime()) {
- return day + "." + (month + 1) + "." + year;
-}
+      if (diffDay > 0) {
+        return day + "." + (month + 1) + "." + year + " (" + diffDay + ") gün)";
+      }
+
+      if (date.getTime() > currentDate.getTime()) {
+        return day + "." + (month + 1) + "." + year;
+      }
 
       if (diffDay == 0 && diffMonth == 0 && diffYear == 0) {
         if (diffHours < 1) {
@@ -41,12 +45,12 @@ if (date.getTime() > currentDate.getTime()) {
           const currentMinutes = currentDate.getMinutes();
           const diffMinutes = currentMinutes - minutes;
           if (diffMinutes < 1) {
-            return "moments ago";
+            return "Bugün";
           }
-          return diffMinutes + " dakika önce";
+          return diffMinutes + " Bugün";
         }
 
-        return diffHours + " saat önce";
+        return diffHours + " Bugün";
       }
 
       if (diffDay == -1 && diffMonth == 0 && diffYear == 0) {
