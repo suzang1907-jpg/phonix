@@ -63,6 +63,10 @@
   </tr>
 </template>
 <script>
+import dayjs from 'dayjs';
+import isSameOrBefore from 'dayjs/plugin/isSameOrBefore';
+dayjs.extend(isSameOrBefore);
+
 export default {
   props: ["item"],
   methods: {
@@ -92,32 +96,21 @@ export default {
         return "bg-info text-info-content";
       }
 
-      var date = this.item.meta?.renew_at?.date;
+      const dateString = this.item.meta?.renew_at?.date;
 
-      if (!date) {
+      if (!dateString) {
         return "bg-success text-success-content";
       }
+      
+      const dateToCheck = dayjs(dateString).startOf('day');
+      const today = dayjs().startOf('day');
+      const tomorrow = dayjs().add(1, 'day').startOf('day');
 
-      date = new Date(date);
-      const currentDate = new Date();
-
-      const day = date.getDate();
-      const month = date.getMonth();
-      const year = date.getFullYear();
-
-      const currentDay = currentDate.getDate();
-      const currentMonth = currentDate.getMonth();
-      const currentYear = currentDate.getFullYear();
-
-      const diffDay = day - currentDay;
-      const diffMonth = month - currentMonth;
-      const diffYear = year - currentYear;
-
-      if (diffDay == 0 && diffMonth == 0 && diffYear == 0) {
+      if (dateToCheck.isSameOrBefore(today, 'day')) {
         return 'bg-error text-error-content';
       }
 
-      if (diffDay == 1 && diffMonth == 0 && diffYear == 0) {
+      if (dateToCheck.isSame(tomorrow, 'day')) {
         return "bg-warning text-warning-content";
       }
 
