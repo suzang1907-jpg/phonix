@@ -31,8 +31,12 @@ export default {
       const diffMonth = month - currentMonth;
       const diffYear = year - currentYear;
 
+      if (diffDay == 1) {
+        return day + "." + (month + 1) + "." + year + " (Yarın)";
+      }
+
       if (diffDay > 0) {
-        return day + "." + (month + 1) + "." + year + " (" + diffDay + ") gün)";
+        return day + "." + (month + 1) + "." + year + " (" + diffDay + ") gün";
       }
 
       if (date.getTime() > currentDate.getTime()) {
