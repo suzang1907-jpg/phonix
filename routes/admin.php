@@ -154,6 +154,7 @@ Route::middleware(['shield', 'calculate.origin', 'localize'])->group(function ()
                 /** Article */
                 Admin::get(Article::class, '{id}/disable', 'disable');
                 Admin::get(Article::class, '{id}/enable', 'enable');
+                Admin::get(Article::class, '{id}/renew', 'renew');
 
                 /** Dashboard */
                 Admin::get(Dashboard::class, '');

@@ -57,7 +57,7 @@ class ArticleDuplicate extends Action
             'project_id' => $article->project_id,
             'location_id' => $article->location_id,
             'hidden_at' => Carbon::now(),
-            'image_id' => $image_id
+            'image_id' => $image_id,
         ];
 
         $new_article = Article::create($new_article_data);

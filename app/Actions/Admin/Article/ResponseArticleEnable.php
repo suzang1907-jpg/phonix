@@ -27,8 +27,6 @@ class ResponseArticleEnable extends Action
             'hidden_at' => null,
         ]);
 
-        Action::build(CacheClear::class)->run();
-
         return redirect()->back();
     }
 }

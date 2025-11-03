@@ -11,9 +11,14 @@
 
         <div class="bg-base-100 flex flex-col w-full pb-2">
             <div class="flex flex-col p-2 max-w-xl mx-auto w-full">
+                <div>
+                    <a class="btn btn-info w-full" href="{{ route('admin.article.renew', ['id' => $article->id]) }}"
+                        target="_self">Yenile</a>
+                </div>
                 @unless (empty($article_customer))
                     <div>
-                        <a class="btn btn-sm w-full" href="{{ route('admin.customer.edit', ['id' => $article_customer->id]) }}"
+                        <a class="btn btn-sm w-full mt-2"
+                            href="{{ route('admin.customer.edit', ['id' => $article_customer->id]) }}"
                             target="_self">{{ __('base.edit_customer') }}</a>
                     </div>
                     <div>
