@@ -1,5 +1,5 @@
 @props(['city' => null, 'district' => null, 'domain' => null, 'blog' => null])
-<div class="mt-12 gap-2 grid grid-cols-1">
+<div class="keyword-list">
     @php
         $keywords = App\Models\Keyword::get() ?? [];
         $city = $city ?? App\Services\LocationService::getCity();

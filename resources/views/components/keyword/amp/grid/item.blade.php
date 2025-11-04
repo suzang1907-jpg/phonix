@@ -1,5 +1,5 @@
 @props(['alias' => null, 'keyword'])
-<div class="keyword-item">
+<div>
     @if(empty($alias))
     <a class="link-keyword-listener" aria-label="{{ $keyword->keyword  }}" target="_self" href="{{ App\Routing\Amp::route('amp.keyword.show', ['id' => $keyword->id]) }}">
         <strong>{{ $keyword->keyword }}</strong>
