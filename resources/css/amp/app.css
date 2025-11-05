@@ -931,6 +931,11 @@ body {
   font-size: 0.875rem;
 }
 
+body > section {
+  margin-inline: auto;
+  max-width: 640px;
+}
+
 footer {
   margin-top: 3rem;
   padding: 0.5rem;
