@@ -57,7 +57,7 @@ class ImageService
                 return null;
             }
 
-            $optimized_image = SpatieImage::load($image->path())->height($size)->width($size)->save($path);
+            $optimized_image = SpatieImage::load($image->path())->height($size)->width($size)->format('webp')->save($path);
         } catch (Exception $e) {
             Log::error($e);
         }
@@ -123,7 +123,7 @@ class ImageService
                 return null;
             }
 
-            $optimized_image = SpatieImage::load($image->path())->fit(Fit::Max, $width, $height)->save($path);
+            $optimized_image = SpatieImage::load($image->path())->fit(Fit::Max, $width, $height)->format('webp')->save($path);
         } catch (Exception $e) {
             Log::error($e);
         }
