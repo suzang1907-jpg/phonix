@@ -46,11 +46,11 @@ class ImageService
                     return null;
                 }
 
-                $path = storage_path('/app/images/' . $image->id . '_w_' . $size . '.webp');
-                $s_path = 'images/' . $image->id . '_w_' . $size . '.webp';
+                $path = storage_path('images-optimized-tmp/' . $image->id . '_w_' . $size . '.webp');
+                $s_path = 'images-optimized/' . $image->id . '_w_' . $size . '.webp';
             } else {
-                $path = $image->path() . '_w_' . $size . '.webp';
-                $s_path = $image->path() . '_w_' . $size . '.webp';
+                $path = storage_path('images-optimized-tmp/' . $image->id . '_w_' . $size . '.webp');
+                $s_path = 'images-optimized/' . $image->id . '_w_' . $size . '.webp';
             }
 
             if (! file_exists($image->path())) {
@@ -112,11 +112,11 @@ class ImageService
                     return null;
                 }
 
-                $path = storage_path('/app/images/' . $image->id . '_w_' . $size . '.webp');
-                $s_path = 'images/' . $image->id . '_w_' . $size . '.webp';
+                $path = storage_path('images-optimized-tmp/' . $image->id . '_w_' . $size . '.webp');
+                $s_path = 'images-optimized/' . $image->id . '_w_' . $size . '.webp';
             } else {
-                $path = $image->path() . '_w_' . $size . '.webp';
-                $s_path = $image->path() . '_w_' . $size . '.webp';
+                $path = storage_path('images-optimized-tmp/' . $image->id . '_w_' . $size . '.webp');
+                $s_path = 'images-optimized/' . $image->id . '_w_' . $size . '.webp';
             }
 
             if (! file_exists($image->path())) {
