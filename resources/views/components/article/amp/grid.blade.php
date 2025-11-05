@@ -27,7 +27,7 @@
                                         {{ $article['number'] }}</p>
                                 @endunless
                                 @unless (empty($article['linkphone']) || empty($article['linkwhatsapp']))
-                                    <div class="flex flex-row gap-1 w-full">
+                                    <div class="grid-cols-2 gap-1 w-full">
                                         @unless (empty($article['linkphone']))
                                             <x-link.phone-s :value="$article['linkphone']" ></x-link.phone-s>
                                         @endunless
