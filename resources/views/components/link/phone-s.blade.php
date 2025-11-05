@@ -1,4 +1,4 @@
-@props(['link' => null, 'roudned' => false])
+@props(['link' => null, 'rounded' => false])
 <div class="flex grow col-span-1 h-full">
     @unless (empty($link))
         <a class="px-3 py-2 bg-phone-link text-white flex grow link-phone h-full rounded-l-md {{ $rounded ? 'rounded-r-md' : '' }}"
