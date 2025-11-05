@@ -81,8 +81,8 @@ class ImageService
 
         $exploded_size = explode('x', $size);
 
-        $width = $exploded_size[0];
-        $height = $exploded_size[1];
+        $width = intval($exploded_size[0]);
+        $height = intval($exploded_size[1]);
 
         $id = $image->id . '_w_' . $size;
 
