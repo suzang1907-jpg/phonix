@@ -29,10 +29,10 @@
                                 @unless (empty($article['linkphone']) || empty($article['linkwhatsapp']))
                                     <div class="grid grid-cols-2 gap-2">
                                         @unless (empty($article['linkphone']))
-                                            <x-link.phone-s :value="$article['linkphone']" />
+                                            <x-link.phone-s :value="$article['linkphone']" ></x-link.phone-s>
                                         @endunless
                                         @unless (empty($article['linkwhatsapp']))
-                                            <x-link.whatsapp-s :value="$article['linkwhatsapp']" />
+                                            <x-link.whatsapp-s :value="$article['linkwhatsapp']" ></x-link.whatsapp-s>
                                         @endunless
                                     </div>
                                 @endunless
