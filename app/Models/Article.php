@@ -52,7 +52,7 @@ class Article extends Model
             $model->analytics()->delete();
         });
     }
-   public function scopeOrderByRenewAt($query, $direction = 'asc', $castAs = null)
+    public function scopeOrderByRenewAt($query, $direction = 'asc', $castAs = null)
     {
         $sql = "JSON_EXTRACT(meta, '$.renew_at.date')";
 
@@ -159,18 +159,17 @@ class Article extends Model
 
         if (auth('user')->check() || auth('employee')->check()) {
             $data['location'] = $this->location?->vue();
-$data['customer'] = $this->customer?->vue();
+            $data['customer'] = $this->customer?->vue();
             $data['routes'] = [
                 'amp' => $this->amp()
             ];
-
         } else {
             unset($meta['prev_view_count']);
             unset($meta['trc20_wallet']);
             unset($meta['chat_enabled']);
             unset($meta['view_count']);
             unset($meta['highlight']);
-           // unset($meta['renew_at']);
+            // unset($meta['renew_at']);
             unset($meta['online']);
             unset($meta['premium']);
             unset($meta['note']);

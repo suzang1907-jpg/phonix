@@ -1,10 +1,9 @@
-@props(['article' => null])
-<div class="w-full h-full">
-    @unless (empty($article->phone_number))
-        <a class="h-full block px-3 py-2 bg-phone-link text-white w-full link-phone" target="_blank"
-            href="{{ $article->getFormattedPhoneNumberLink() }}">
+@props(['value' => null])
+<div>
+    @unless (empty($value))
+        <a class="block px-3 py-2 bg-phone-link text-white w-full link-phone" target="_blank" href="tel://{{ $value }}">
             <div class="py-1 w-full text-center flex flex-row items-center justify-evenly font-bold">
-                <x-svg.phone-s />
+                <x-svg.phone />
             </div>
         </a>
     @endunless

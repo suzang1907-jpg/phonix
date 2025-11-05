@@ -28,15 +28,25 @@ class ArticleFetch extends Action
                 }
             }
             $article_data['meta'] = $meta;
-            $article_number = $article->phone_number;
-            if (empty($article_number)) {
-                $article_number = $article->whatsapp_number;
+            $phone_number = $article->phone_number;
+            if (! empty($phone_number)) {
+                $phone_number = str_replace(' ', '', $phone_number);
+            }
+            $whatsapp_number = $article->whatsapp_number;
+            if (! empty($whatsapp_number)) {
+                $whatsapp_number = str_replace(' ', '', $whatsapp_number);
             }
 
-            $article_number = str_replace(' ', '', $article_number);
+            $article_number = $phone_number;
+            if (empty($article_number)) {
+                $article_number = $whatsapp_number;
+            }
 
             return [
                 'number' => $article_number,
+                'wpnumber' => $whatsapp_number,
+                'linkphone' => $article->getFormattedPhoneNumberLink(),
+                'linkwhatsapp' => $article->getFormattedWhatsappLink(),
                 'article' => $article_data,
                 'url' => $article->amp(),
                 'image' => route('file.article.main.image', ['id' => $article->id, 'xversion' => $article->image_id, 'size' => '400x600']),

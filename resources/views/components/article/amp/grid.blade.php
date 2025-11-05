@@ -26,6 +26,16 @@
                                     <p class="text-center font-bold text-lg whitespace-nowrap article-text-shadow">
                                         {{ $article['number'] }}</p>
                                 @endunless
+                                @unless (empty($article['wpnumber']) || empty($article['phonenumber']))
+                                    <div class="grid grid-cols-2 gap-2">
+                                        @unless (empty($article['phonenumber']))
+                                            <x-link.phone-s :value="$article['phonenumber']" />
+                                        @endunless
+                                        @unless (empty($article['wpnumber']))
+                                            <x-link.whatsapp-s :value="$article['wpnumber']" />
+                                        @endunless
+                                    </div>
+                                @endunless
                             </div>
                         </div>
 
