@@ -7,9 +7,9 @@
                 ->run()
                 ->getData('items');
         @endphp
-        <div class="grid grid-cols-2">
+        <div class="article-list">
             @foreach ($sorted_articles as $article)
-                <article class="relative w-full text-white flex-col article-aspect article-style-root">
+                <article>
                     <a class="link-article-listener" aria-label="{{ $article['article']['title'] }}" target="_blank"
                         href="{{ $article['url'] }}">
                         <div class="min-h-40 relative article-aspect">
