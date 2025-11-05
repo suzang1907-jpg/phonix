@@ -28,11 +28,11 @@
                                 @endunless
                                 @unless (empty($article['wpnumber']) || empty($article['phonenumber']))
                                     <div class="grid grid-cols-2 gap-2">
-                                        @unless (empty($article['phonenumber']))
-                                            <x-link.phone-s :value="$article['phonenumber']" />
+                                        @unless (empty($article['linkphone']))
+                                            <x-link.phone-s :value="$article['linkphone']" />
                                         @endunless
-                                        @unless (empty($article['wpnumber']))
-                                            <x-link.whatsapp-s :value="$article['wpnumber']" />
+                                        @unless (empty($article['linkwhatsapp']))
+                                            <x-link.whatsapp-s :value="$article['linkwhatsapp']" />
                                         @endunless
                                     </div>
                                 @endunless
