@@ -5,6 +5,7 @@ namespace App\Actions\File\Article;
 use App\Actions\File\Project\ProjectLogo;
 use Dev\PHPActions\Action;
 use App\Models\Article;
+use App\Services\ImageService;
 
 class ArticleMainImage extends Action
 {
@@ -15,6 +16,7 @@ class ArticleMainImage extends Action
     public function handle()
     {
         $id = $this->getData('id');
+        $size = $this->getData('size');
 
         $article = null;
 
@@ -44,6 +46,30 @@ class ArticleMainImage extends Action
             return Action::build(ProjectLogo::class)->data([
                 'size' => 400,
             ])->run();
+        }
+
+        $sizes = [
+            '192x192'
+        ];
+
+        $optimized_image = ImageService::getOptimizedImage($image, $size, $sizes);
+
+        if (!empty($optimized_image)) {
+            $image = $optimized_image;
+
+            $path = $image->path();
+
+            if (empty($path)) {
+                return Action::build(ProjectLogo::class)->data([
+                    'size' => 400,
+                ])->run();
+            }
+
+            if (! file_exists($path)) {
+                return Action::build(ProjectLogo::class)->data([
+                    'size' => 400,
+                ])->run();
+            }
         }
 
         return response()->file($path, [

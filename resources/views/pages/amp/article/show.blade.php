@@ -17,7 +17,7 @@
             <div class="relative aspect-square rounded-full mx-auto max-w-48">
                 <amp-img layout="fill" alt="{{ $article->title }}"
                     class="object-cover w-full h-full cover amp-image-bottom-rounded-full"
-                    src="{{ route('file.article.main.image', ['id' => $article->id, 'xversion' => $article->image_id]) }}"></amp-img>
+                    src="{{ route('file.article.main.image', ['id' => $article->id, 'size' => '192x192', 'xversion' => $article->image_id]) }}"></amp-img>
                 @if ($article->isOnline() || true)
                     <div
                         class="absolute bottom-4 right-4 rounded-full bg-background flex flex-col items-center justify-center p-0.5 h-6 w-6">

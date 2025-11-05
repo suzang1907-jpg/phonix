@@ -36,16 +36,15 @@ class ArticleImage extends Action
             return response()->noContent();
         }
 
-$path = $image->path();
+        $path = $image->path();
 
-if (empty($path)) {
-return response()->noContent();
-}
+        if (empty($path)) {
+            return response()->noContent();
+        }
 
-
-	if (! file_exists($path)) {
-		return response()->noContent();
-	}
+        if (! file_exists($path)) {
+            return response()->noContent();
+        }
 
         return response()->file($path, [
             "Cache-Control" => "private, max-age=31536000",

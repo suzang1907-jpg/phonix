@@ -50,8 +50,8 @@
     "matomo/device-detector": "^6.1",
     "predis/predis": "^2.2",
     "spatie/async": "^1.5",
-    "spatie/image": "^3.6",
-    "spatie/image-optimizer": "^1.7"
+    "spatie/image": "^3.8.6",
+    "spatie/image-optimizer": "1.8.0"
   },
   "require-dev": {
     "brianium/paratest": "^7.1.1",

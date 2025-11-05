@@ -43,9 +43,9 @@ class BlogImageMain extends Action
             return;
         }
 
-if (! file_exists($image)) {
-return response()->noContent();
-}
+        if (! file_exists($image)) {
+            return response()->noContent();
+        }
 
         return response()->file($image, [
             "Cache-Control" => "private, max-age=31536000",
