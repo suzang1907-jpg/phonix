@@ -50,6 +50,7 @@ class ArticleMainImage extends Action
 
         $sizes = [
             '400x400',
+            '412x412',
             '400x600'
         ];
 
