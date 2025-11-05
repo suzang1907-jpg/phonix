@@ -5,6 +5,7 @@ namespace App\Actions\File\Article;
 use Dev\PHPActions\Action;
 use App\Models\Article;
 use App\Scopes\ArticleActiveScope;
+use App\Services\ImageService;
 
 class ArticleImage extends Action
 {
@@ -17,6 +18,7 @@ class ArticleImage extends Action
     {
         $id = $this->getData('id');
         $image_id = $this->getData('image_id');
+        $size = $this->getData('size');
 
         $article = null;
 
@@ -44,6 +46,26 @@ class ArticleImage extends Action
 
         if (! file_exists($path)) {
             return response()->noContent();
+        }
+
+        $sizes = [
+            '400x600'
+        ];
+
+        $optimized_image = ImageService::getOptimizedImageWH($image, $size, $sizes);
+
+        if (!empty($optimized_image)) {
+            $image = $optimized_image;
+
+            $path = $image->path();
+
+            if (empty($path)) {
+                return response()->noContent();
+            }
+
+            if (! file_exists($path)) {
+                return response()->noContent();
+            }
         }
 
         return response()->file($path, [

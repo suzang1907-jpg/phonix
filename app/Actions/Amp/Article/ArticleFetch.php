@@ -39,9 +39,7 @@ class ArticleFetch extends Action
                 'number' => $article_number,
                 'article' => $article_data,
                 'url' => $article->amp(),
-                'image' => route('file.article.main.image', ['id' => $article->id, 'xversion' => $article->image_id]),
-                'articlestyle' => $this->articleStyle(),
-                'articlestyleroot' => $this->articleStyleRoot($article),
+                'image' => route('file.article.main.image', ['id' => $article->id, 'xversion' => $article->image_id, 'size' => '400x600']),
             ];
         });
 
@@ -99,114 +97,5 @@ class ArticleFetch extends Action
         ], 200, [
             'Content-Type' => 'application/json'
         ]);
-    }
-
-    public function appStyle()
-    {
-        $domain = DomainService::getDomain();
-        $canonicalDomain = $domain->getCanonicalDomain();
-
-        $current_project_meta_data = ProjectService::getProject()->getMetaData();
-        $canonical_project_meta_data = $canonicalDomain?->site?->project->getMetaData();
-
-        $app_name = $canonical_project_meta_data['app_name'] ?? $current_project_meta_data['app_name'] ?? [];
-
-        $amp_data = $canonical_project_meta_data['amp'] ?? $current_project_meta_data['amp'] ?? [];
-
-        return [
-            'app_name' => $app_name,
-            'amp' => [
-                'primary_color' => $amp_data['primary_color'] ?? null,
-                'secondary_color' => $amp_data['secondary_color'] ?? null,
-                'grid_cols' => $amp_data['grid_cols'] ?? 2,
-                'grid_gap' => $amp_data['grid_gap'] ?? 0.5,
-            ]
-        ];
-    }
-
-    public function articleStyle()
-    {
-        $primary_color = $this->appStyle()['amp']['primary_color'];
-        $secondary_color = $this->appStyle()['amp']['secondary_color'];
-
-        if (!empty($primary_color) && !empty($secondary_color)) {
-            $style = "background-image: linear-gradient(to top right, var(--tw-gradient-stops));";
-            $style .= "--tw-gradient-from: " . $primary_color . " var(--tw-gradient-from-position);";
-            $style .= "--tw-gradient-to: " . $secondary_color . " var(--tw-gradient-to-position);";
-            $style .= "--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);";
-            return $style;
-        }
-
-        if (! empty($primary_color)) {
-            $style = "";
-            $style .= "background-color: " . $primary_color . ";";
-            return $style;
-        }
-
-        if (! empty($secondary_color)) {
-            $style = "";
-            $style .= "background-color: " . $secondary_color . ";";
-            return $style;
-        }
-
-        $style = "";
-        $style .= "background-color: #111111;";
-        return $style;
-    }
-
-    public function articleStyleRoot($article)
-    {
-
-        if (empty($article->meta)) {
-            return '';
-        }
-
-        if (empty($article->meta['highlight'] ?? false)) {
-            return '';
-        }
-
-        $primary_color = $this->appStyle()['amp']['primary_color'];
-        $secondary_color = $this->appStyle()['amp']['secondary_color'];
-
-        if (!empty($primary_color) && !empty($secondary_color)) {
-            $style = "background-image: linear-gradient(to top right, var(--tw-gradient-stops));";
-            $style .= "--tw-gradient-from: " . $primary_color . " var(--tw-gradient-from-position);";
-            $style .= "--tw-gradient-to: " . $secondary_color . " var(--tw-gradient-to-position);";
-            $style .= "--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);";
-            $style .= "padding: 0.1rem;";
-            $style .= "background-image: linear-gradient(to bottom, var(--tw-gradient-stops));";
-            return $style;
-        }
-
-        if (! empty($primary_color)) {
-            $style = "";
-            $style .= "background-color: " . $primary_color . ";";
-            $style .= "padding: 0.25rem;";
-            return $style;
-        }
-
-        if (! empty($secondary_color)) {
-            $style = "";
-            $style .= "background-color: " . $secondary_color . ";";
-            $style .= "padding: 0.25rem;";
-            return $style;
-        }
-
-        $style = "";
-        $style .= "background-color: #111111;";
-        $style .= "padding: 0.25rem;";
-        return $style;
-    }
-
-    public function ampGridStyle()
-    {
-        $style = "";
-
-        $grid_cols = $this->appStyle()['amp']['grid_cols'] ?? 2;
-        $grid_gap = $this->appStyle()['amp']['grid_gap'] ?? 0.5;
-
-        $style .= "grid-template-columns: repeat(" . $grid_cols . ", minmax(0, 1fr));";
-        $style .= "gap: " . $grid_gap . "rem ";
-        return $style;
     }
 }

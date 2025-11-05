@@ -49,7 +49,8 @@ class ArticleMainImage extends Action
         }
 
         $sizes = [
-            '192x192'
+            '192x192',
+            '400x600'
         ];
 
         $optimized_image = ImageService::getOptimizedImageWH($image, $size, $sizes);

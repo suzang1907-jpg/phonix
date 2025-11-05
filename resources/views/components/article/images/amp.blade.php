@@ -4,7 +4,7 @@
         @foreach ($article->images ?? [] as $articleImage)
             <div class="w-full h-full min-h-48 article-aspect relative">
                 <amp-img class="object-cover w-full h-full cover amp-image-rounded" layout="fill" alt="{{ $article->title }}"
-                    src="{{ route('file.article.image', ['id' => $article->id, 'image_id' => $articleImage->id]) }}"></amp-img>
+                    src="{{ route('file.article.image', ['id' => $article->id, 'image_id' => $articleImage->id, 'size' => '400x600']) }}"></amp-img>
             </div>
         @endforeach
     </div>
