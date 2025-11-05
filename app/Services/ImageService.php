@@ -112,10 +112,10 @@ class ImageService
                     return null;
                 }
 
-                $path = storage_path('images-optimized-tmp/' . $image->id . '_w_' . $size . '.webp');
+                $path = storage_path('app/public/images-optimized-tmp/' . $image->id . '_w_' . $size . '.webp');
                 $s_path = 'images-optimized/' . $image->id . '_w_' . $size . '.webp';
             } else {
-                $path = storage_path('images-optimized-tmp/' . $image->id . '_w_' . $size . '.webp');
+                $path = storage_path('app/public/images-optimized-tmp/' . $image->id . '_w_' . $size . '.webp');
                 $s_path = 'images-optimized/' . $image->id . '_w_' . $size . '.webp';
             }
 
