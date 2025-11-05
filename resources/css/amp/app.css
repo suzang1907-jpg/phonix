@@ -941,8 +941,9 @@ body > header {
 }
 
 body > header > h1 {
-      text-align: center;
-      font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 700;
 }
 
 body > section {
