@@ -9,7 +9,7 @@
         @endphp
         <div class="article-list">
             @foreach ($sorted_articles as $article)
-                <article>
+                <article class="article-list-item">
                     <a class="link-article-listener" aria-label="{{ $article['article']['title'] }}" target="_blank"
                         href="{{ $article['url'] }}">
                         <div class="min-h-40 relative article-aspect">

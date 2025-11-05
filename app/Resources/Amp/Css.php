@@ -32,7 +32,7 @@ class Css extends BaseCss
 
         $raw_resource .= ' .article-style-layer {' . $this->articleStyleLayer() . '}';
         $raw_resource .= ' .article-style-info {' . $this->articleStyleInfo() . '}';
-        $raw_resource .= ' article-list>article {' . $this->articleStyleRoot() . '}';
+        $raw_resource .= ' .article-list-item {' . $this->articleStyleRoot() . '}';
         $raw_resource .= ' .support-banner-style {' . $this->supportBannerStyle() . '}';
 
         $tagCollection->addTag($tag->setText($raw_resource));
