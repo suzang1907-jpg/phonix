@@ -881,6 +881,10 @@ body {
   gap: calc(var(--spacing) * 2) /* 0.5rem = 8px */;
 }
 
+.gap-1 {
+  gap: calc(var(--spacing) * 1) /* 0.5rem = 8px */;
+}
+
 .article-list div[role="list"] {
   display: grid;
   grid-gap: 0.25em;
