@@ -219,6 +219,10 @@ class Article extends Model
 
         $phone_number = preg_replace('/\s+/', '', $phone_number);
 
+        if (empty($phone_number)) {
+            return null;
+        }
+
         $url = "tel://" . $phone_number;
 
         return $url;
@@ -240,6 +244,10 @@ class Article extends Model
         $whatsapp_number = str_replace(' ', '', $whatsapp_number);
 
         $whatsapp_number = preg_replace('/\s+/', '', $whatsapp_number);
+
+        if (empty($whatsapp_number)) {
+            return null;
+        }
 
         $url = "https://wa.me/" . urlencode($whatsapp_number) . "?text=" . urlencode($this->getFormattedWhatsAppMessage());
 
