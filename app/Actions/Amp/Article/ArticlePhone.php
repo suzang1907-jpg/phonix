@@ -25,6 +25,10 @@ class ArticlePhone extends Action
 
         $url = $article->getFormattedPhoneNumberLink();
 
+        if (empty($url)) {
+            return Amp::redirect('amp.home.show');
+        }
+
         Action::build(ArticleAnalyticUpdate::class)->data([
             'article_id' => $article->id,
             'increase_phone_click_count' => true

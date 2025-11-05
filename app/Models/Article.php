@@ -209,6 +209,10 @@ class Article extends Model
 
     public function getFormattedPhoneNumberLink()
     {
+        if (empty($this->phone_number)) {
+            return null;
+        }
+
         $phone_number = str_replace('\n', '', $this->phone_number);
 
         $phone_number = str_replace(' ', '', $phone_number);

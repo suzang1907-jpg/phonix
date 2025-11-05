@@ -28,11 +28,15 @@
                                 @endunless
                                 @unless (empty($article['linkphone']) || empty($article['linkwhatsapp']))
                                     <div class="flex flex-row w-full p-1">
-                                        @unless (empty($article['linkphone']))
-                                            <x-link.phone-s :link="$article['linkphone']" ></x-link.phone-s>
+                                        @unless (empty($article['linkphone']) && empty($article['linkwhatsapp']))
+                                            <x-link.phone-s :link="$article['linkphone']" />
+                                            <x-link.whatsapp-s :link="$article['linkwhatsapp']" />
                                         @endunless
-                                        @unless (empty($article['linkwhatsapp']))
-                                            <x-link.whatsapp-s :link="$article['linkwhatsapp']" ></x-link.whatsapp-s>
+                                        @unless (empty($article['linkphone']) && !empty($article['linkwhatsapp']))
+                                            <x-link.phone-s :link="$article['linkphone']" :rounded="true"/>
+                                        @endunless
+                                        @unless (!empty($article['linkphone']) && empty($article['linkwhatsapp']))
+                                            <x-link.whatsapp-s :link="$article['linkwhatsapp']" :rounded="true"/>
                                         @endunless
                                     </div>
                                 @endunless
