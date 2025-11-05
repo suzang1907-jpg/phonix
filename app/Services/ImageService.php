@@ -123,7 +123,7 @@ class ImageService
                 return null;
             }
 
-            $optimized_image = SpatieImage::load($image->path())->fit(Fit::Contain, $width, $height)->save($path);
+            $optimized_image = SpatieImage::load($image->path())->fit(Fit::Contain, $width)->save($path);
         } catch (Exception $e) {
             Log::error($e);
         }

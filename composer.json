@@ -51,7 +51,7 @@
     "predis/predis": "^2.2",
     "spatie/async": "^1.5",
     "spatie/image": "^3.8.6",
-    "spatie/image-optimizer": "1.8.0"
+    "spatie/image-optimizer": "^1.8"
   },
   "require-dev": {
     "brianium/paratest": "^7.1.1",
