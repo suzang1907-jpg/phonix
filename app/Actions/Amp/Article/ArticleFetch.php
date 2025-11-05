@@ -44,7 +44,6 @@ class ArticleFetch extends Action
 
             return [
                 'number' => $article_number,
-                'wpnumber' => $whatsapp_number,
                 'linkphone' => $article->getFormattedPhoneNumberLink(),
                 'linkwhatsapp' => $article->getFormattedWhatsappLink(),
                 'article' => $article_data,
