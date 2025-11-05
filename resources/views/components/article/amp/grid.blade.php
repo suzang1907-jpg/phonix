@@ -18,7 +18,7 @@
                         </div>
 
                         <div class="absolute left-0 right-0 bottom-0 z-20">
-                            <div class="relative py-4 flex flex-grow flex-col article-style-info">
+                            <div class="relative pt-4 flex flex-grow flex-col article-style-info">
                                 <div class="absolute inset-0 -z-10 article-style-layer"></div>
                                 <h2 class="font-bold text-center text-lg whitespace-nowrap article-text-shadow">
                                     {{ $article['article']['title'] }}</h2>
@@ -27,7 +27,7 @@
                                         {{ $article['number'] }}</p>
                                 @endunless
                                 @unless (empty($article['linkphone']) || empty($article['linkwhatsapp']))
-                                    <div class="flex flex-row w-full">
+                                    <div class="flex flex-row w-full p-1 gap-1">
                                         @unless (empty($article['linkphone']))
                                             <x-link.phone-s :link="$article['linkphone']" ></x-link.phone-s>
                                         @endunless

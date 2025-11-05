@@ -380,6 +380,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.pt-4 {
+  /* padding-top: 1rem (16px); padding-bottom: 1rem (16px) */
+  padding-top: 1rem;
+}
+
 .py-1 {
   padding-block: calc(var(--spacing) * 1) /* 0.25rem = 4px */;
 }
@@ -523,6 +528,10 @@ video {
 
 .h-20 {
   height: calc(var(--spacing) * 20) /* 5rem = 80px */;
+}
+
+.h-6 {
+  height: calc(var(--spacing) * 6) /* 5rem = 80px */;
 }
 
 .bg-phone-link {
