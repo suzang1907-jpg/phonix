@@ -841,6 +841,8 @@ video {
 
 body {
   font-family: "Noto Sans", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 :root {
