@@ -9,6 +9,7 @@ use Dev\LaravelAssets\Actions\Image\ImageStore;
 use Dev\LaravelAssets\Models\Image;
 use Spatie\Image\Image as SpatieImage;
 use Spatie\Image\Enums\CropPosition;
+use Spatie\Image\Enums\Fit;
 
 class ImageService
 {
@@ -122,7 +123,7 @@ class ImageService
                 return null;
             }
 
-            $optimized_image = SpatieImage::load($image->path())->crop($width, $height, CropPosition::Center)->save($path);
+            $optimized_image = SpatieImage::load($image->path())->fit(Fit::Contain, $width, $height)->save($path);
         } catch (Exception $e) {
             Log::error($e);
         }
