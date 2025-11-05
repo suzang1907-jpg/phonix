@@ -52,7 +52,7 @@ class ArticleMainImage extends Action
             '192x192'
         ];
 
-        $optimized_image = ImageService::getOptimizedImage($image, $size, $sizes);
+        $optimized_image = ImageService::getOptimizedImageWH($image, $size, $sizes);
 
         if (!empty($optimized_image)) {
             $image = $optimized_image;
