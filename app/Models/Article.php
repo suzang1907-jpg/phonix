@@ -231,6 +231,10 @@ class Article extends Model
 
     public function getFormattedWhatsappLink()
     {
+        if (empty($this->whatsapp_number)) {
+            return null;
+        }
+
         $whatsapp_number = str_replace('\n', '', $this->whatsapp_number);
 
         $whatsapp_number = str_replace(' ', '', $whatsapp_number);
