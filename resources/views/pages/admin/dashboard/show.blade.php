@@ -1,6 +1,6 @@
 <x-layout.admin :page="$page">
     <x-layout.admin.sidebar :page="$page" title="{{ __('base.dashboard') }}">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 p-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 p-2">
             <div class="stats shadow stats-vertical md:stats-horizontal">
                 <div class="stat">
                     <div class="stat-figure text-secondary">
