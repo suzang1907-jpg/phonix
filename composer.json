@@ -41,7 +41,7 @@
     "dev/php-actions": "@dev",
     "dev/php-sitemap": "@dev",
     "doctrine/dbal": "^3.1",
-    "google/analytics-data": "*",
+    "google/analytics-data": "^0.23.1",
     "google/apiclient": "*",
     "google/apiclient-services": "*",
     "guzzlehttp/guzzle": "^7.8.1",

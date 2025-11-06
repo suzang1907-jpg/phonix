@@ -38,7 +38,9 @@ class DashboardShow extends Action
         $propertyId = config('google.property_id');
 
         if (empty($serviceAccountKeyFile) || empty($propertyId)) {
-            return null;
+            return [
+                'status' => 'error',
+            ];
         }
 
         $activeUsers = Cache::remember($cacheKey, $cacheTtlSeconds, function () use ($serviceAccountKeyFile, $propertyId) {
@@ -75,8 +77,11 @@ class DashboardShow extends Action
 
         // The result is either from the cache (fast) or the API (slow, then cached)
         return [
-            'active_users' => (int) $activeUsers,
-            'cached_at' => now()->toDateTimeString(),
+            'status' => 'done',
+            'data' => [
+                'value' => (int) $activeUsers,
+                'cached_at' => now()->toDateTimeString(),
+            ]
         ];
     }
 }
