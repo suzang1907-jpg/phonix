@@ -26,16 +26,18 @@
                                 <p class="text-center font-bold text-lg whitespace-nowrap article-text-shadow">
                                     {{ $article['number'] }}</p>
                             @endunless
-                            <div class="flex flex-row w-full p-1">
-                                @if (!empty($article['linkphone']) && !empty($article['linkwhatsapp']))
-                                    <x-link.phone-s :link="$article['linkphone']" />
-                                    <x-link.whatsapp-s :link="$article['linkwhatsapp']" />
-                                @elseif (!empty($article['linkphone']) && empty($article['linkwhatsapp']))
-                                    <x-link.phone-s :link="$article['linkphone']" :rounded="true" />
-                                @elseif (empty($article['linkphone']) && !empty($article['linkwhatsapp']))
-                                    <x-link.whatsapp-s :link="$article['linkwhatsapp']" :rounded="true" />
-                                @endif
-                            </div>
+                            @if (false)
+                                <div class="flex flex-row w-full p-1">
+                                    @if (!empty($article['linkphone']) && !empty($article['linkwhatsapp']))
+                                        <x-link.phone-s :link="$article['linkphone']" />
+                                        <x-link.whatsapp-s :link="$article['linkwhatsapp']" />
+                                    @elseif (!empty($article['linkphone']) && empty($article['linkwhatsapp']))
+                                        <x-link.phone-s :link="$article['linkphone']" :rounded="true" />
+                                    @elseif (empty($article['linkphone']) && !empty($article['linkwhatsapp']))
+                                        <x-link.whatsapp-s :link="$article['linkwhatsapp']" :rounded="true" />
+                                    @endif
+                                </div>
+                            @endif
                         </div>
                     </div>
 
