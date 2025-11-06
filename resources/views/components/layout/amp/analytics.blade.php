@@ -17,7 +17,10 @@
                     "request": "event",
                     "vars": {
                         "eventLabel": "Send Whatsapp Message",
-                        "event_name": "click_whatsapp"
+                        "event_name": "click_whatsapp",
+                        "country": "QUERY_PARAM(country)",
+                        "city": "QUERY_PARAM(city)",
+                        "district": "QUERY_PARAM(district)"
                     }
                 },
                 "trackClickOnTelegramMessageLink": {
@@ -26,7 +29,10 @@
                     "request": "event",
                     "vars": {
                         "eventLabel": "Send Telegram Message",
-                        "event_name": "click_telegram"
+                        "event_name": "click_telegram",
+                        "country": "QUERY_PARAM(country)",
+                        "city": "QUERY_PARAM(city)",
+                        "district": "QUERY_PARAM(district)"
                     }
                 },
                 "trackClickOnAdLink": {
@@ -44,7 +50,10 @@
                     "request": "event",
                     "vars": {
                         "eventLabel": "Phone Call",
-                        "event_name": "click_phone"
+                        "event_name": "click_phone",
+                        "country": "QUERY_PARAM(country)",
+                        "city": "QUERY_PARAM(city)",
+                        "district": "QUERY_PARAM(district)"
                     }
                 },
                 "trackClickOnSupport": {
@@ -53,7 +62,10 @@
                     "request": "event",
                     "vars": {
                         "eventLabel": "Support Click",
-                        "event_name": "click_support"
+                        "event_name": "click_support",
+                        "country": "QUERY_PARAM(country)",
+                        "city": "QUERY_PARAM(city)",
+                        "district": "QUERY_PARAM(district)"
                     }
                 },
                 "trackClickOnArticle": {
@@ -62,7 +74,10 @@
                     "request": "event",
                     "vars": {
                         "eventLabel": "Article Click",
-                        "event_name": "click_article"
+                        "event_name": "click_article",
+                        "country": "QUERY_PARAM(country)",
+                        "city": "QUERY_PARAM(city)",
+                        "district": "QUERY_PARAM(district)"
                     }
                 },
                 "trackClickOnBlog": {
@@ -71,7 +86,10 @@
                     "request": "event",
                     "vars": {
                         "eventLabel": "Blog Click",
-                        "event_name": "click_blog"
+                        "event_name": "click_blog",
+                        "country": "QUERY_PARAM(country)",
+                        "city": "QUERY_PARAM(city)",
+                        "district": "QUERY_PARAM(district)"
                     }
                 },
                 "trackClickOnKeyword": {
@@ -80,7 +98,10 @@
                     "request": "event",
                     "vars": {
                         "eventLabel": "Keyword Click",
-                        "event_name": "click_keyword"
+                        "event_name": "click_keyword",
+                        "country": "QUERY_PARAM(country)",
+                        "city": "QUERY_PARAM(city)",
+                        "district": "QUERY_PARAM(district)"
                     }
                 },
                 "trackClickOnHome": {
@@ -89,7 +110,10 @@
                     "request": "event",
                     "vars": {
                         "eventLabel": "Home Click",
-                        "event_name": "click_home"
+                        "event_name": "click_home",
+                        "country": "QUERY_PARAM(country)",
+                        "city": "QUERY_PARAM(city)",
+                        "district": "QUERY_PARAM(district)"
                     }
                 },
                 "trackClickOnPosts": {
@@ -98,7 +122,10 @@
                     "request": "event",
                     "vars": {
                         "eventLabel": "Posts Click",
-                        "event_name": "click_posts"
+                        "event_name": "click_posts",
+                        "country": "QUERY_PARAM(country)",
+                        "city": "QUERY_PARAM(city)",
+                        "district": "QUERY_PARAM(district)"
                     }
                 },
                 "trackClickOnStories": {
@@ -107,7 +134,10 @@
                     "request": "event",
                     "vars": {
                         "eventLabel": "Stories Click",
-                        "event_name": "click_stories"
+                        "event_name": "click_stories",
+                        "country": "QUERY_PARAM(country)",
+                        "city": "QUERY_PARAM(city)",
+                        "district": "QUERY_PARAM(district)"
                     }
                 }
             }
