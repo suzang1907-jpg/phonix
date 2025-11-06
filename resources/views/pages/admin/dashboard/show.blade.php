@@ -33,7 +33,7 @@
                         <font-awesome-icon size="xl" icon="fa-solid fa-users" />
                     </div>
                     <div class="stat-title">Ziyaretciler 30 DK</div>
-                    <div class="stat-value">{{ $analytics['active_users']['status'] == 'done' ? $analytics['active_users']['value'] : 0 }}</div>
+                    <div class="stat-value">{{ $analytics['active_users']['status'] == 'done' ? $analytics['active_users']['data']['value'] : 0 }}</div>
                     <div class="stat-desc">
                         <a href="https://analytics.google.com/analytics/web/#">
                             Google Analytics
