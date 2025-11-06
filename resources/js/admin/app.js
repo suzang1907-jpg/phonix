@@ -1,6 +1,6 @@
 import "../../css/admin/app.css";
 import { createApp } from "vue";
-import globals from "../globals";
+import globals from "../globals-admin";
 import fortawesome from "./fortawesome";
 import { i18nVue } from "laravel-vue-i18n";
 import routes from "../routes";
