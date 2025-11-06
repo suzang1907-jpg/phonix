@@ -18,7 +18,7 @@
                     </div>
 
                     <div class="absolute left-0 right-0 bottom-0 z-20">
-                        <div class="relative pt-4 flex flex-grow flex-col article-style-info">
+                        <div class="relative pt-4 pb-4 flex flex-grow flex-col article-style-info">
                             <div class="absolute inset-0 -z-10 article-style-layer"></div>
                             <h2 class="font-bold text-center text-lg whitespace-nowrap article-text-shadow">
                                 {{ $article['article']['title'] }}</h2>
