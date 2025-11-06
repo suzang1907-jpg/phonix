@@ -4,50 +4,25 @@
       <div>{{ this.title }}</div>
     </template>
     <div class="flex flex-row items-center">
-      <div class="flex-row items-center hidden md:flex">
-        <bs-link-outline
-          class="ml-2"
-          size="sm"
-          :href="this.$root.route('admin.auth.logout')"
-        >
+      <div class="flex-row items-center hidden md:flex gap-2">
+        <a class="btn btn-square" :href="this.$root.route('admin.auth.logout')">
           <font-awesome-icon icon="fa-solid fa-sign-out" />
-        </bs-link-outline>
-        <bs-link-outline
-          class="ml-2"
-          size="sm"
-          :href="this.project"
-        >
+        </a>
+        <a class="btn btn-square" :href="this.project">
           <font-awesome-icon icon="fa-solid fa-cog" />
-        </bs-link-outline>
+        </a>
       </div>
-      <bs-button-outline
-        class="ml-2"
-        size="sm"
-        @onclick="this.sidebarToggle"
-      >
+      <button class="btn btn-square" v-on:click="this.sidebarToggle">
         <font-awesome-icon icon="fa-solid fa-bars" />
-      </bs-button-outline>
+      </button>
     </div>
   </bs-app-bar>
 
-  <components-admin-sidebar
-    @ontoggle="this.sidebarToggle()"
-    :open="this.sideIsOpen"
-    :current="current"
-    :project="this.project"
-    :locations="this.locations"
-    :tags="this.tags"
-    :articles="this.articles"
-    :domains="this.domains"
-    :sitemaps="this.sitemaps"
-    :stories="this.stories"
-    :blogs="this.blogs"
-    :customers="this.customers"
-    :dashboard="this.dashboard"
-    :search="this.search"
-    :keywords="this.keywords"
-    :workspace="this.workspace"
-  ></components-admin-sidebar>
+  <components-admin-sidebar @ontoggle="this.sidebarToggle()" :open="this.sideIsOpen" :current="current"
+    :project="this.project" :locations="this.locations" :tags="this.tags" :articles="this.articles"
+    :domains="this.domains" :sitemaps="this.sitemaps" :stories="this.stories" :blogs="this.blogs"
+    :customers="this.customers" :dashboard="this.dashboard" :search="this.search" :keywords="this.keywords"
+    :workspace="this.workspace"></components-admin-sidebar>
   <components-admin-alert-list></components-admin-alert-list>
 </template>
 <script>

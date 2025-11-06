@@ -7,6 +7,5 @@ export default {
     "./resources/views/pages/admin/**/*.js",
     "./resources/views/components/**/*.vue",
     "./resources/views/pages/admin/**/*.vue",
-    "./resources/js/services/**/*.{js,jsx,ts,tsx}",
   ],
 };

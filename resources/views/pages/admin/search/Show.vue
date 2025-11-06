@@ -1,33 +1,19 @@
 <template>
   <div class="flex flex-col gap-4 max-w-xl mx-auto w-full">
     <div class="flex flex-row items-center">
-      <bs-input-text
-        collapsed
-        class="mr-2"
-        placeholder="Search..."
-        ref="search"
-      ></bs-input-text>
+      <components-input-text class="mr-2" placeholder="Search..." ref="search"></components-input-text>
 
-      <bs-button-solid @onclick="onSearch">Search</bs-button-solid>
+      <button class="btn" v-on:click="onSearch">Search</button>
     </div>
     <div v-if="this.items" class="mt-6 p-2 bg-base-100">
       <template v-for="domain in this.items.domains.data">
-        <components-admin-domain-list-item
-          class="mb-2"
-          :item="domain"
-        ></components-admin-domain-list-item>
+        <div>{{ domain.id }}</div>
       </template>
       <template v-for="article in this.items.articles.data">
-        <components-admin-article-list-item
-          class="mb-2"
-          :item="article"
-        ></components-admin-article-list-item>
+        <div>{{ article.id }}</div>
       </template>
       <template v-for="blog in this.items.blogs.data">
-        <components-admin-blog-list-item
-          class="mb-2"
-          :item="blog"
-        ></components-admin-blog-list-item>
+        <div>{{ blog.id }}</div>
       </template>
     </div>
   </div>
