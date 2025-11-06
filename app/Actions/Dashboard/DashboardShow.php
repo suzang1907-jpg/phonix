@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Cache;
 use Google\Analytics\Data\V1beta\Client\BetaAnalyticsDataClient;
 use Google\Analytics\Data\V1beta\Metric;
 use Google\Analytics\Data\V1beta\RunRealtimeReportRequest;
+use Illuminate\Support\Facades\Log;
 
 class DashboardShow extends Action
 {
@@ -49,15 +50,12 @@ class DashboardShow extends Action
                     'credentials' => $serviceAccountKeyFile,
                 ]);
 
-                // Build the Realtime Report Request
                 $request = (new RunRealtimeReportRequest())
                     ->setProperty('properties/' . $propertyId)
                     ->setMetrics([new Metric(['name' => 'activeUsers'])]);
 
-                // Make the API call
                 $response = $client->runRealtimeReport($request);
 
-                // Extract the value
                 $users = 0;
                 if (count($response->getRows()) > 0) {
                     $users = $response->getRows()[0]->getMetricValues()[0]->getValue();
@@ -65,12 +63,9 @@ class DashboardShow extends Action
 
                 $client->close();
 
-                // Return the data to be cached for 60 seconds
                 return $users;
             } catch (\Exception $e) {
-                // IMPORTANT: Handle API errors gracefully.
-                // You may return a safe default (like 0) or throw the exception.
-                logger()->error("Google Analytics Realtime API Error: " . $e->getMessage());
+                Log::error($e);
                 return 0;
             }
         });
