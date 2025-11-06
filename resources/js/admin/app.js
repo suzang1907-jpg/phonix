@@ -1,9 +1,12 @@
 import "../../css/admin/app.css";
+import "../services/style-tailwind.css";
 import { createApp } from "vue";
-import globals from "../globals-admin";
+import globals from "../globals";
 import fortawesome from "./fortawesome";
 import { i18nVue } from "laravel-vue-i18n";
 import routes from "../routes";
+import * as brickstone from "../services/brickstone";
+import installer from "../services/installer";
 window.Buffer = window.Buffer || Buffer;
 
 const app = createApp({
@@ -66,6 +69,7 @@ const app = createApp({
 });
 
 app
+  .use(installer, brickstone)
   .use(globals)
   .use(fortawesome)
   .use(i18nVue, {
