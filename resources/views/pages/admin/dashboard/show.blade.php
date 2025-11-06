@@ -29,11 +29,36 @@
             </div>
             <div class="stats shadow stats-vertical md:stats-horizontal">
                 <div class="stat">
-                    <div class="stat-figure text-secondary">
-                        <font-awesome-icon size="xl" icon="fa-solid fa-users" />
-                    </div>
                     <div class="stat-title">Ziyaretciler 30 DK</div>
-                    <div class="stat-value">{{ $analytics['active_users']['status'] == 'done' ? $analytics['active_users']['data']['value'] : 0 }}</div>
+                    @if ($analytics['active_users']['status'] == 'done')
+                        @if ($analytics['active_users']['data']['value'] > 300)
+                            <div class="stat-figure text-success">
+                                <font-awesome-icon size="xl" icon="fa-solid fa-users" />
+                            </div>
+                            <div class="stat-value text-success">
+                                {{ $analytics['active_users']['data']['value'] }}
+                            </div>
+                        @elseif ($analytics['active_users']['data']['value'] > 200)
+                            <div class="stat-figure text-warning">
+                                <font-awesome-icon size="xl" icon="fa-solid fa-users" />
+                            </div>
+                            <div class="stat-value text-warning">
+                                {{ $analytics['active_users']['data']['value'] }}
+                            </div>
+                        @else
+                            <div class="stat-figure text-error">
+                                <font-awesome-icon size="xl" icon="fa-solid fa-users" />
+                            </div>
+                            <div class="stat-value text-error">
+                                {{ $analytics['active_users']['data']['value'] }}
+                            </div>
+                        @endif
+                    @else
+                        <div class="stat-figure text-error">
+                            <font-awesome-icon size="xl" icon="fa-solid fa-users" />
+                        </div>
+                        <div class="stat-value text-error">0</div>
+                    @endif
                     <div class="stat-desc">
                         <a href="https://analytics.google.com/analytics/web/#">
                             Google Analytics
