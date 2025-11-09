@@ -73,6 +73,16 @@ class ArticleUpdate extends Action
             $price = intval($price);
         }
 
+        if (!empty($telegram)) {
+            $telegram = trim($telegram);
+
+            if (strlen($telegram) > 500) {
+                $telegram = substr($telegram, 0, 500);
+            }
+
+            $telegram = str_replace('@', '', $telegram);
+        }
+
         $trc20_wallet =  $meta['trc20_wallet'] ?? null;
 
         if (! empty($trc20_wallet)) {
@@ -84,15 +94,15 @@ class ArticleUpdate extends Action
                 return;
             }
         }
-if (!empty($whatsapp_number)) {
-$whatsapp_number = str_replace(' ', '', $whatsapp_number);
-$whatsapp_number = str_replace('+900', '+90', $whatsapp_number);
-}
+        if (!empty($whatsapp_number)) {
+            $whatsapp_number = str_replace(' ', '', $whatsapp_number);
+            $whatsapp_number = str_replace('+900', '+90', $whatsapp_number);
+        }
 
-if (!empty($phone_number)) {
-$phone_number = str_replace(' ', '', $phone_number);
-$phone_number = str_replace('+900', '+90', $phone_number);
-}
+        if (!empty($phone_number)) {
+            $phone_number = str_replace(' ', '', $phone_number);
+            $phone_number = str_replace('+900', '+90', $phone_number);
+        }
 
         $article_meta = [
             'renew_at' => $renew_at,

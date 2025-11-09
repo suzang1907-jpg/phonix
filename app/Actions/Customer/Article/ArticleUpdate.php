@@ -55,6 +55,8 @@ class ArticleUpdate extends Action
             if (strlen($telegram) > 500) {
                 $telegram = substr($telegram, 0, 500);
             }
+
+            $telegram = str_replace('@', '', $telegram);
         }
 
         if (!empty($info)) {
