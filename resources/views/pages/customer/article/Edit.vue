@@ -38,7 +38,7 @@
     })
       " ref="images" id="images" name="images" title="Resimler"></components-input-images>
     <bs-input-text :xvalue="article.info" ref="info" title="Bilgi" required id="info" name="info"></bs-input-text>
-    <bs-input-text :xvalue="article.telegram" ref="telegram" title="Telegram ID" id="telegram"
+    <bs-input-text :xvalue="article.telegram" ref="telegram" title="Telegram Kullaıcı Adı" id="telegram"
       name="telegram"></bs-input-text>
     <bs-input-text :xvalue="article.phone_number" ref="phone_number" title="Telefon numarası" id="phone_number"
       name="phone_number"></bs-input-text>
