@@ -22,6 +22,9 @@
         <div class="text-xs">
           {{ this.item.customer_id }}
         </div>
+          <div v-if="this.item.customer" class="text-xs">
+          {{ this.item.customer.whatsapp_phone_number }}
+        </div>
         <a v-if="this.item.customer" target="_blank" class="btn btn-xs"
           :href="'https://wa.me/' + this.item.customer.whatsapp_phone_number.replaceAll(' ', '').replaceAll('-', '')">Mesaj
           yaz</a>
