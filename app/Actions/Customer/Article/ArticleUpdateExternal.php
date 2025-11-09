@@ -29,6 +29,7 @@ class ArticleUpdateExternal extends Action
         $whatsapp_message = $this->getData('whatsapp_message');
         $whatsapp_number = $this->getData('whatsapp_number');
         $password = $this->getData('p');
+        $telegram = $this->getData('telegram');
 
         if (empty($id)) {
             return Api::error();
@@ -47,6 +48,14 @@ class ArticleUpdateExternal extends Action
 
             if (strlen($description) > 500) {
                 $description = substr($description, 0, 500);
+            }
+        }
+
+        if (!empty($telegram)) {
+            $telegram = trim($telegram);
+
+            if (strlen($telegram) > 500) {
+                $telegram = substr($telegram, 0, 500);
             }
         }
 
@@ -118,6 +127,7 @@ class ArticleUpdateExternal extends Action
         ])->run()->getData('image');
 
         $article->update([
+            'telegram' => $telegram,
             'whatsapp_message' => $whatsapp_message,
             'info' => $info,
             'title' => $title,
