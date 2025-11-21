@@ -4,9 +4,15 @@ namespace App\Http\Middleware;
 
 use App\Models\Light;
 use Closure;
-
+use Illuminate\Support\Facades\Log;
 class LightRenderer
 {
+    private  function removeParam($url, $param)
+    {
+        $url = preg_replace('/(&|\?)' . preg_quote($param) . '=[^&]*$/', '', $url);
+        $url = preg_replace('/(&|\?)' . preg_quote($param) . '=[^&]*&/', '$1', $url);
+        return $url;
+    }
     /**
      * Handle an incoming request.
      *
@@ -20,24 +26,45 @@ class LightRenderer
             return $next($request);
         }
 
-        $light = Light::getForPath();
+        $path = url()->full();
 
-        if (empty($light)) {
+        $path = $this->removeParam($path, '_ga');
+        $path = $this->removeParam($path, '_gl');
+
+        $file = null;
+        $type = null;
+
+        $file_path = storage_path('app/private/light/text-html/' . str_replace('/', '-', $path));
+
+        if (file_exists($file_path)) {
+            $file = $file_path;
+            $type = 'text-html';
+        } else {
+            $file_path = storage_path('app/private/light/xml/' . str_replace('/', '-', $path));
+
+            if (file_exists($file_path)) {
+                $file = $file_path;
+                $type = 'xml';
+            }
+        }
+
+        if (empty($file)) {
             return $next($request);
         }
 
-    
+        Log::info($file);
+        Log::info($type);
 
-        $content = file_get_contents($light->getFilePath());
+        $content = file_get_contents($file);
 
-        if ($light->type == 'text-html') {
+        if ($type == 'text-html') {
             return response($content)
                 ->header('Content-Type', 'text/html');
         }
 
-	if ($light->type == 'xml') {
-		return response($content)->header('Content-Type', 'application/xml');
-}
+        if ($type == 'xml') {
+            return response($content)->header('Content-Type', 'application/xml');
+        }
 
         return $next($request);
     }
