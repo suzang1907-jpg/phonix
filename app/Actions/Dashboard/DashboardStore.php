@@ -29,7 +29,7 @@ class DashboardStore extends Action
         ]);
 
         if ($validator->fails()) {
-            return Admin::redirect('dashboard.show')->with('error', $validator->errors()->first());
+            return Admin::redirect('admin.dashboard.show')->with('error', $validator->errors()->first());
         }
 
         UpcomingDomain::create([
@@ -38,6 +38,6 @@ class DashboardStore extends Action
             'date' => Carbon::parse($data['date'])->format('Y-m-d'),
         ]);
 
-        return Admin::redirect('dashboard.show')->with('success', 'Upcoming domain added successfully!');
+        return Admin::redirect('admin.dashboard.show')->with('success', 'Upcoming domain added successfully!');
     }
 }
