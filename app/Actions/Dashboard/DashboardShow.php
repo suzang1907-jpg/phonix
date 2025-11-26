@@ -5,6 +5,7 @@ namespace App\Actions\Dashboard;
 use Dev\PHPActions\Action;
 use App\Models\Article;
 use App\Models\Customer;
+use App\Models\Project;
 use App\Models\UpcomingDomain;
 use App\Scopes\ArticleActiveScope;
 use App\Services\ProjectService;
@@ -28,6 +29,7 @@ class DashboardShow extends Action
             'latest_customers' => Customer::latest()->with('articles')->list(3),
             'latest_articles' => Article::withoutGlobalScope(ArticleActiveScope::class)->with('analytics')->latest()->list(3),
             'upcoming_domains' => UpcomingDomain::orderBy('date', 'asc')->get(),
+            'projects' => Project::all(),
         ];
     }
 

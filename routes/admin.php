@@ -158,6 +158,7 @@ Route::middleware(['shield', 'calculate.origin', 'localize'])->group(function ()
 
                 /** Dashboard */
                 Admin::get(Dashboard::class, '');
+                Admin::post(Dashboard::class, 'store', 'store');
 
                 /** Backup */
                 Admin::any(Backup::class, 'export', 'export');

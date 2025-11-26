@@ -97,6 +97,68 @@
             <div class="card card-border border-base-300 bg-base-100 rounded-md flex flex-col">
                 <div class="p-4">
                     <h2 class="text-xl font-bold mb-4">{{ __('Upcoming Domains') }}</h2>
+                    
+                    @if(session('success'))
+                        <div class="alert alert-success mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <span>{{ session('success') }}</span>
+                        </div>
+                    @endif
+                    
+                    @if(session('error'))
+                        <div class="alert alert-error mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <span>{{ session('error') }}</span>
+                        </div>
+                    @endif
+
+                    <!-- Add New Upcoming Domain Form -->
+                    <div class="card bg-base-200 mb-6">
+                        <div class="card-body">
+                            <h3 class="card-title text-lg mb-4">Add New Upcoming Domain</h3>
+                            <form action="{{ route('admin.dashboard.store') }}" method="POST" class="space-y-4">
+                                @csrf
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Project</span>
+                                        </label>
+                                        <select name="project_id" class="select select-bordered w-full" required>
+                                            <option value="">Select Project</option>
+                                            @foreach($projects as $project)
+                                                <option value="{{ $project->id }}">{{ $project->name ?? $project->id }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Domain</span>
+                                        </label>
+                                        <input type="text" name="domain" placeholder="example.com" class="input input-bordered w-full" required />
+                                    </div>
+                                    
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Release Date</span>
+                                        </label>
+                                        <input type="date" name="date" class="input input-bordered w-full" min="{{ date('Y-m-d') }}" required />
+                                    </div>
+                                </div>
+                                
+                                <div class="form-control">
+                                    <button type="submit" class="btn btn-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                                        </svg>
+                                        Add Upcoming Domain
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Domains List -->
                     @if($upcoming_domains->isEmpty())
                         <p class="text-gray-500">No upcoming domains found.</p>
                     @else
