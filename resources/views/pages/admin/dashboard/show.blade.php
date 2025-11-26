@@ -93,5 +93,38 @@
                 </div>
             </div>
         </div>
+        <div class="grid grid-cols-1 gap-2 p-2">
+            <div class="card card-border border-base-300 bg-base-100 rounded-md flex flex-col">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-4">{{ __('Upcoming Domains') }}</h2>
+                    @if($upcoming_domains->isEmpty())
+                        <p class="text-gray-500">No upcoming domains found.</p>
+                    @else
+                        <div class="overflow-x-auto">
+                            <table class="table table-zebra w-full">
+                                <thead>
+                                    <tr>
+                                        <th>Project ID</th>
+                                        <th>Domain</th>
+                                        <th>Release Date</th>
+                                        <th>Created At</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($upcoming_domains as $upcomingDomain)
+                                        <tr>
+                                            <td>{{ $upcomingDomain->project_id }}</td>
+                                            <td>{{ $upcomingDomain->domain }}</td>
+                                            <td>{{ \Carbon\Carbon::parse($upcomingDomain->date)->format('M d, Y') }}</td>
+                                            <td>{{ \Carbon\Carbon::parse($upcomingDomain->created_at)->format('M d, Y H:i') }}</td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    @endif
+                </div>
+            </div>
+        </div>
     </x-layout.admin.sidebar>
 </x-layout.admin>
