@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('upcoming_domains', function (Blueprint $table) {
-            $table->string('id')->primary();
-            $table->string('domain')->unique();
+            $table->string('domain')->primary();
+            $table->date('date');
             $table->timestamps();
         });
     }
