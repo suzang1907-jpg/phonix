@@ -13,7 +13,7 @@ class UpcomingDomainCreate extends Command
      *
      * @var string
      */
-    protected $signature = 'upcoming-domain:create {domain} {day} {month} {year}';
+    protected $signature = 'upcoming-domain:create {project_id} {domain} {day} {month} {year}';
 
     /**
      * The console command description.
@@ -27,6 +27,7 @@ class UpcomingDomainCreate extends Command
      */
     public function handle()
     {
+        $project_id = $this->argument('project_id');
         $domain = $this->argument('domain');
         $day = $this->argument('day');
         $month = $this->argument('month');
@@ -45,6 +46,7 @@ class UpcomingDomainCreate extends Command
         }
 
         UpcomingDomain::create([
+            'project_id' => $project_id,
             'domain' => $domain,
             'date' => $date->format('Y-m-d'),
         ]);

@@ -27,6 +27,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('queue:work --stop-when-empty')->everyFiveMinutes();
         $schedule->command('articles:save-analytics')->daily();
         $schedule->command('article:check')->everyFiveMinutes();
+        $schedule->command('upcoming-domain:process')->everyFiveMinutes();
     }
 
     /**

@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('upcoming_domains', function (Blueprint $table) {
             $table->string('domain')->primary();
+            $table->string('project_id');
             $table->date('date');
             $table->timestamps();
         });
