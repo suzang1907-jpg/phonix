@@ -29,7 +29,6 @@ class DashboardShow extends Action
             'latest_customers' => Customer::latest()->with('articles')->list(3),
             'latest_articles' => Article::withoutGlobalScope(ArticleActiveScope::class)->with('analytics')->latest()->list(3),
             'upcoming_domains' => UpcomingDomain::orderBy('date', 'asc')->get(),
-            'projects' => [ProjectService::getProject()],
         ];
     }
 

@@ -118,19 +118,7 @@
                             <h3 class="card-title text-lg mb-4">Add New Upcoming Domain</h3>
                             <form action="{{ route('admin.dashboard.store') }}" method="POST" class="space-y-4">
                                 @csrf
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                    <div class="form-control">
-                                        <label class="label">
-                                            <span class="label-text">Project</span>
-                                        </label>
-                                        <select name="project_id" class="select select-bordered w-full" required>
-                                            <option value="">Select Project</option>
-                                            @foreach($projects as $project)
-                                                <option value="{{ $project->id }}">{{ $project->name ?? $project->id }}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-                                    
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">                                    
                                     <div class="form-control">
                                         <label class="label">
                                             <span class="label-text">Domain</span>
@@ -166,7 +154,6 @@
                             <table class="table table-zebra w-full">
                                 <thead>
                                     <tr>
-                                        <th>Project ID</th>
                                         <th>Domain</th>
                                         <th>Release Date</th>
                                         <th>Created At</th>
@@ -175,7 +162,6 @@
                                 <tbody>
                                     @foreach($upcoming_domains as $upcomingDomain)
                                         <tr>
-                                            <td>{{ $upcomingDomain->project_id }}</td>
                                             <td>{{ $upcomingDomain->domain }}</td>
                                             <td>{{ \Carbon\Carbon::parse($upcomingDomain->date)->format('M d, Y') }}</td>
                                             <td>{{ \Carbon\Carbon::parse($upcomingDomain->created_at)->format('M d, Y H:i') }}</td>

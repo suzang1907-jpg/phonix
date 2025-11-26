@@ -7,17 +7,17 @@ use App\Routing\Admin;
 use Carbon\Carbon;
 use Dev\PHPActions\Action;
 use Illuminate\Support\Facades\Validator;
+use App\Services\ProjectService;
 
 class DashboardStore extends Action
 {
     public function handle()
     {
-        $project_id = $this->getData('project_id');
         $domain = $this->getData('domain');
         $date = $this->getData('date');
 
         $data = [
-            'project_id' => $project_id,
+            'project_id' => ProjectService::getProject()->id,
             'domain' => $domain,
             'date' => $date,
         ];
