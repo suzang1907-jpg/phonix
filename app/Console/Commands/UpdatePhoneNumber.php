@@ -21,7 +21,7 @@ class UpdatePhoneNumber extends Command
      *
      * @var string
      */
-    protected $description = 'App Heal';
+    protected $description = 'Update Support Phone Number';
 
     /**
      * Execute the console command.

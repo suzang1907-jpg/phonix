@@ -16,7 +16,7 @@ class Shield
      */
     public function handle($request, Closure $next)
   {
-
+return $next($request);
         $userAgent = $request->userAgent();
 
         if (true || empty($userAgent)) {

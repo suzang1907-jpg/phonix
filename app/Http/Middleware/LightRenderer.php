@@ -52,9 +52,6 @@ class LightRenderer
             return $next($request);
         }
 
-        Log::info($file);
-        Log::info($type);
-
         $content = file_get_contents($file);
 
         if ($type == 'text-html') {

@@ -96,11 +96,13 @@ class ArticleUpdate extends Action
         }
         if (!empty($whatsapp_number)) {
             $whatsapp_number = str_replace(' ', '', $whatsapp_number);
+$whatsapp_number = str_replace('-', '', $whatsapp_number);
             $whatsapp_number = str_replace('+900', '+90', $whatsapp_number);
         }
 
         if (!empty($phone_number)) {
             $phone_number = str_replace(' ', '', $phone_number);
+$phone_number = str_replace('-', '', $phone_number);
             $phone_number = str_replace('+900', '+90', $phone_number);
         }
 

@@ -81,6 +81,10 @@ class ArticleUpdateExternal extends Action
                     'message' => 'phone_number_must_start_with_plus'
                 ]);
             }
+
+            $phone_number = str_replace('+900', '+90', $phone_number);
+            $phone_number = str_replace('+0', '+90', $phone_number);
+$phone_number = str_replace('-', '', $phone_number);
         }
 
         if (!empty($whatsapp_message)) {
@@ -105,6 +109,10 @@ class ArticleUpdateExternal extends Action
                     'message' => 'whatsapp_number_must_start_with_plus'
                 ]);
             }
+            $whatsapp_number = str_replace('+900', '+90', $whatsapp_number);
+            $whatsapp_number = str_replace('+0', '+90', $whatsapp_number);
+$whatsapp_number = str_replace('-', '', $whatsapp_number);
+
         }
 
         $article = Article::where('id', $id)->get()->first();

@@ -3,9 +3,20 @@
         Options -MultiViews -Indexes
     </IfModule>
 
-    RewriteEngine On
-
 RewriteEngine On
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(meta-externalagent).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(meta-webindexer).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(Amzn-Searchbot).*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(Amazonbot).*$ [NC]
+RewriteRule .* - [F,L]
+
 RewriteCond %{HTTP_USER_AGENT} ^.*(dataforseo|dotbot|YandexBot|mj12bot).*$ [NC]
 RewriteRule .* - [F,L]
 
@@ -21,22 +32,19 @@ RewriteRule .* - [F,L]
 RewriteCond %{HTTP_USER_AGENT} ^.*(imagesift|coccocbot|Bytespider).*$ [NC]
 RewriteRule .* - [F,L]
 
-RewriteCond %{HTTP_USER_AGENT} ^.*(researchscan|Facebot|commoncrawl).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(researchscan|Facebot|commoncrawl|RealityCheats).*$ [NC]
 RewriteRule .* - [F,L]
 
-RewriteCond %{HTTP_USER_AGENT} ^.*(Fedora|BonEcho|Sundance|SeaMonkey).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Fedora|BonEcho|Sundance|SeaMonkey|Linguee).*$ [NC]
 RewriteRule .* - [F,L]
 
-RewriteCond %{HTTP_USER_AGENT} ^.*(BLEXBot|AwarioBot|FSL|Firefox|Crazy).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(BLEXBot|AwarioBot|FSL|Crazy).*$ [NC]
 RewriteRule .* - [F,L]
 
-RewriteCond %{QUERY_STRING} ^.*(CKRDM|CKRDM|Avant|FunWebProducts).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(CKRDM|CKRDM|Avant|FunWebProducts).*$ [NC]
 RewriteRule .* - [F,L]
 
-RewriteCond %{QUERY_STRING} ^.*(GrandParadiso|Conkeror|ELinks|RealityCheats|meta-externalagent).*$ [NC]
-RewriteRule .* - [F,L]
-
-RewriteCond %{QUERY_STRING} ^.*(meta-externalagent).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(GrandParadiso|Conkeror|ELinks|RealityCheats).*$ [NC]
 RewriteRule .* - [F,L]
 
     # Handle Authorization Header

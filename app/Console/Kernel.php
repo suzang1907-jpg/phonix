@@ -28,6 +28,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('articles:save-analytics')->daily();
         $schedule->command('article:check')->everyFiveMinutes();
         $schedule->command('upcoming-domain:process')->everyFiveMinutes();
+	$schedule->command('project:rotate-colors')->daily();
     }
 
     /**
