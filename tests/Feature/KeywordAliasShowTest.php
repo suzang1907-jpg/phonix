@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\Project;
 use App\Models\User;
 use App\Routing\Amp;
 use App\Routing\Web;
@@ -51,6 +52,10 @@ class KeywordAliasShowTest extends TestCase
         ]);
 
         $this->projectConnectWorkspace($domain->site->project_id, $workspace->id);
+
+        $project = Project::where('id', $domain->site->project_id);
+
+        $this->assertEquals($workspace->id, $project->workspace_id);
 
         $response = $this->get(Web::route('web.keyword.alias.show', [
             'id' => $keyword->id,

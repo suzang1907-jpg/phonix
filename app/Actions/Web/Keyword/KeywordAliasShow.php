@@ -25,7 +25,11 @@ class KeywordAliasShow extends Action
 
         $workspace = WorkspaceService::getWorkspace();
 
-        if (! $workspace?->isDynamicKeywordsEnabled()) {
+        if (empty($workspace)) {
+            return Web::redirect('web.keyword.show', ['id' => $keyword->id]);
+        }
+
+        if (! $workspace->isDynamicKeywordsEnabled()) {
             return Web::redirect('web.keyword.show', ['id' => $keyword->id]);
         }
 
