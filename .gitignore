@@ -1,3 +1,5 @@
 .env
+.env.testing
 node_modules
 vendor
+.container-docker-initialized.lock
