@@ -34,13 +34,16 @@ class LightRenderer
         $file = null;
         $type = null;
 
-        $file_path = storage_path('app/private/light/text-html/' . str_replace('/', '-', $path));
+        $date = now()->format('Y-m-d');
+        $filename = str_replace('/', '-', $path) . '-' . $date;
+
+        $file_path = storage_path('app/private/light/text-html/' . $filename);
 
         if (file_exists($file_path)) {
             $file = $file_path;
             $type = 'text-html';
         } else {
-            $file_path = storage_path('app/private/light/xml/' . str_replace('/', '-', $path));
+            $file_path = storage_path('app/private/light/xml/' . $filename);
 
             if (file_exists($file_path)) {
                 $file = $file_path;

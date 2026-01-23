@@ -51,9 +51,11 @@ class KeywordAliasShowTest extends TestCase
             'meta' => ['dynamic_keywords' => false]
         ]);
 
+        $this->assertEquals(false, $workspace->isDynamicKeywordsEnabled());
+
         $this->projectConnectWorkspace($domain->site->project_id, $workspace->id);
 
-        $project = Project::where('id', $domain->site->project_id);
+        $project = Project::where('id', $domain->site->project_id)->first();
 
         $this->assertEquals($workspace->id, $project->workspace_id);
 
