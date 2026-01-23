@@ -30,12 +30,18 @@ class KeywordAliasShowTest extends TestCase
 
         $this->projectConnectWorkspace($domain->site->project_id, $workspace->id);
 
-        $response = $this->get(Web::route('web.keyword.alias.show', [
+        $uri = Web::route('web.keyword.alias.show', [
             'id' => $keyword->id,
-            'alias' => 'test'
-        ]));
+            'alias' => 'testalias'
+        ]);
+
+        $this->assertStringStartsWith("http://" . $domain->id, $uri);
+
+        $response = $this->get($uri);
 
         $response->assertOk();
+
+        $response->assertSeeText("testalias");
     }
 
     /** @test */
@@ -59,10 +65,14 @@ class KeywordAliasShowTest extends TestCase
 
         $this->assertEquals($workspace->id, $project->workspace_id);
 
-        $response = $this->get(Web::route('web.keyword.alias.show', [
+        $uri = Web::route('web.keyword.alias.show', [
             'id' => $keyword->id,
             'alias' => 'test'
-        ]));
+        ]);
+
+        $this->assertStringStartsWith("http://" . $domain->id, $uri);
+
+        $response = $this->get($uri);
 
         $response->assertRedirect();
     }
