@@ -30,6 +30,13 @@ return new class extends Migration
             $table->string('logo_id')->nullable();
             $table->string('article_watermark_id')->nullable();
             $table->string('article_banner_id')->nullable();
+
+            $table->string('location_text')->nullable();
+            $table->string('workspace_id')->nullable();
+            $table->string('server_ip')->nullable();
+            $table->string('api_key')->nullable();
+            $table->json('api_ips')->nullable();
+            $table->json('meta_data')->nullable();
             $table->timestamps();
         });
     }

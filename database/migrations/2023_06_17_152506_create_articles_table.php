@@ -25,6 +25,13 @@ return new class extends Migration
             $table->string('info')->nullable();
             $table->timestamp('hidden_at')->nullable();
             $table->string('location_id')->nullable();
+            $table->string('customer_id')->nullable();
+            $table->string('telegram')->nullable();
+            $table->string('adsterra_link')->nullable();
+            $table->dateTime('last_seen_at')->nullable();
+            $table->json('meta')->nullable();
+            $table->string('ad_link')->nullable();
+            $table->string('edit_password')->nullable();
             $table->timestamps();
         });
     }

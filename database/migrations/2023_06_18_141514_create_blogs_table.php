@@ -15,13 +15,13 @@ return new class extends Migration
             $table->string('id')->primary();
             $table->string('project_id');
             $table->string('title');
-            $table->longText('description');
             $table->string('image_id')->nullable();
             $table->timestamp('location_connected_at')->nullable();
-            $table->longText('content')->nullable();
             $table->longText('content_raw')->nullable();
             $table->string('location_id')->nullable();
             $table->json('tags')->nullable();
+            $table->index('project_id');
+            $table->index('location_id');
             $table->timestamps();
         });
     }

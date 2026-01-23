@@ -35,15 +35,15 @@ class LightRenderer
         $type = null;
 
         $date = now()->format('Y-m-d');
-        $filename = str_replace('/', '-', $path) . '-' . $date;
+        $filename = str_replace('/', '-', $path);
 
-        $file_path = storage_path('app/private/light/text-html/' . $filename);
+        $file_path = storage_path('app/private/light/'.$date.'/text-html/' . $filename);
 
         if (file_exists($file_path)) {
             $file = $file_path;
             $type = 'text-html';
         } else {
-            $file_path = storage_path('app/private/light/xml/' . $filename);
+            $file_path = storage_path('app/private/light/'.$date.'/xml/' . $filename);
 
             if (file_exists($file_path)) {
                 $file = $file_path;

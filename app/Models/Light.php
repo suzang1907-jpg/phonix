@@ -54,9 +54,9 @@ class Light extends Model
             $url = self::removeParam($url, '_ga');
             $url = self::removeParam($url, '_gl');
             $date = now()->format('Y-m-d');
-            $filename = str_replace('/', '-', $url) . '-' . $date;
+            $filename = str_replace('/', '-', $url);
 
-            $file_path = storage_path('app/private/light/' . $type . '/' . $filename);
+            $file_path = storage_path('app/private/light/' . $date. '/' . $type . '/' . $filename);
 
             $light = Light::where('path', $url)->first();
 
@@ -109,8 +109,8 @@ class Light extends Model
 
         if (! empty($light)) {
             $date = now()->format('Y-m-d');
-            $filename = str_replace('/', '-', $light->path) . '-' . $date;
-            $file_path = storage_path('app/private/light/' . $light->type . '/' . $filename);
+            $filename = str_replace('/', '-', $light->path);
+            $file_path = storage_path('app/private/light/'. $date . '/' . $light->type . '/' . $filename);
 
             if (file_exists($file_path)) {
                 return $light;
@@ -125,8 +125,8 @@ class Light extends Model
     public function getFilePath(): string
     {
         $date = now()->format('Y-m-d');
-        $filename = str_replace('/', '-', $this->path) . '-' . $date;
-        return storage_path('app/private/light/' . $this->type . '/' . $filename);
+        $filename = str_replace('/', '-', $this->path);
+        return storage_path('app/private/light/' . $date . '/' . $this->type . '/' . $filename);
     }
 
     private static function writeContentToFile($path, $content): bool

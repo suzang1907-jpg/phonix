@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('location_id')->nullable();
             $table->string('type');
             $table->timestamp('dns_record_confirmed_at')->nullable();
+            $table->json('referal_domains')->nullable();
+            $table->json('meta')->nullable();
             $table->timestamps();
         });
     }

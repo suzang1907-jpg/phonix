@@ -16,6 +16,8 @@ return new class extends Migration
             $table->boolean('is_active');
             $table->string('whatsapp_phone_number')->nullable();
             $table->json('meta')->nullable();
+            $table->string('password')->nullable();
+            $table->rememberToken();
             $table->timestamps();
         });
     }

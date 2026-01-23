@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('workspaces', function (Blueprint $table) {
             $table->string('id')->primary();
             $table->string('name');
+            $table->json('meta')->nullable();
+            $table->text('dmca_script')->nullable();
             $table->timestamps();
         });
     }
