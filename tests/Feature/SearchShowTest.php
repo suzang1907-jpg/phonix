@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Routing\Amp;
 use App\Routing\Web;
+use App\Services\ShortUrlService;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -90,15 +91,15 @@ class SearchShowTest extends TestCase
 
         $response->assertOk();
 
-        $response->assertSee(Amp::route('amp.search.show', [
+        $response->assertSee(ShortUrlService::get(Amp::route('amp.search.show', [
             'search' => $search
-        ]));
+        ])));
 
 
         $response = $this->get(Web::route('web.search.show'));
 
         $response->assertOk();
 
-        $response->assertSee(Amp::route('amp.search.show'));
+        $response->assertSee(ShortUrlService::get(Amp::route('amp.search.show')));
     }
 }

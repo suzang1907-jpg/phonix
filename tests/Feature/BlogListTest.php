@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Routing\Amp;
 use App\Routing\Web;
+use App\Services\ShortUrlService;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -71,6 +72,6 @@ class BlogListTest extends TestCase
 
         $response->assertOk();
 
-        $response->assertSee(Amp::route('amp.blog.list'));
+        $response->assertSee(ShortUrlService::get(Amp::route('amp.blog.list')));
     }
 }
