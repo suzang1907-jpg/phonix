@@ -22,29 +22,45 @@ class LightReset extends Command
      */
     protected $description = 'Clear light Cache';
 
+    function deleteDir($dirPath) {
+    if (!is_dir($dirPath)) {
+        return;
+    }
+    $files = array_diff(scandir($dirPath), array('.', '..'));
+    foreach ($files as $file) {
+        (is_dir("$dirPath/$file")) ? deleteDir("$dirPath/$file") : unlink("$dirPath/$file");
+    }
+    return rmdir($dirPath);
+}
+
     /**
      * Execute the console command.
      */
     public function handle(): void
     {
-        $d = Carbon::now()->subHour();
-        $l = Light::whereDate('created_at', '<=', $d)->where('type', 'css')->get();
-        $this->info('Light Css: ' . count($l));
-        foreach ($l as $light) {
-            $light->delete();
-        }
 
-        $l = Light::whereDate('created_at', '<=', $d)->where('type', 'xml')->get();
-        $this->info('Light XML: ' . count($l));
-        foreach ($l as $light) {
-            $light->delete();
-        }
+    $date = new DateTime();
+$date->modify('-2 day');
 
-        $l = Light::whereDate('created_at', '<=', $d)->get();
-        $this->info('Light All: ' . count($l));
-        foreach ($l as $light) {
-            $light->delete();
+    for ($i = 0; $i < 7; $i++) {
+    $dateString = $date->format('Y-m-d');
+    
+    // Define your base path (adjust storage_path to your actual absolute path)
+    $base_path = "/var/www/html/storage/app/private/light/" . $dateString;
+    
+    $sub_folders = ['css', 'xml', 'text-html'];
+
+    foreach ($sub_folders as $folder) {
+        $full_path = $base_path . '/' . $folder;
+        $this->info('Deleting: ' . $full_path);
+        if (file_exists($full_path)) {
+            deleteDir($full_path);
         }
+    }
+
+    // Move to the previous day for the next iteration
+    $date->modify('-1 day');
+}
         $this->output->success('Done');
     }
 }
