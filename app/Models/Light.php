@@ -58,6 +58,10 @@ class Light extends Model
 
             $file_path = storage_path('app/private/light/' . $date. '/' . $type . '/' . $filename);
 
+            self::writeContentToFile($file_path, $content);
+            return null;
+            // Early Exit
+
             $light = Light::where('path', $url)->first();
 
             if (! empty($light)) {
