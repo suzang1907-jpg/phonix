@@ -2,65 +2,60 @@
 
 namespace App\Console\Commands;
 
-use App\Models\Light;
 use Illuminate\Console\Command;
 use Carbon\Carbon;
 
 class LightReset extends Command
 {
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
     protected $signature = 'light:reset';
-
-    /**
-     * The console command description.
-     *
-     * @var string
-     */
     protected $description = 'Clear light Cache';
 
-    function deleteDir($dirPath) {
-    if (!is_dir($dirPath)) {
-        return;
-    }
-    $files = array_diff(scandir($dirPath), array('.', '..'));
-    foreach ($files as $file) {
-        (is_dir("$dirPath/$file")) ? deleteDir("$dirPath/$file") : unlink("$dirPath/$file");
-    }
-    return rmdir($dirPath);
-}
-
     /**
-     * Execute the console command.
+     * Pure PHP recursive deletion
      */
+    private function deleteDir($dirPath) {
+        if (!is_dir($dirPath)) {
+            return;
+        }
+        $files = array_diff(scandir($dirPath), array('.', '..'));
+        foreach ($files as $file) {
+            $path = $dirPath . DIRECTORY_SEPARATOR . $file;
+            (is_dir($path)) ? $this->deleteDir($path) : unlink($path);
+        }
+        return rmdir($dirPath);
+    }
+
     public function handle(): void
     {
+        // Start from yesterday
+        $date = Carbon::yesterday();
 
-    $date = new DateTime();
-$date->modify('-2 day');
+        // Loop for 7 days
+        for ($i = 0; $i < 7; $i++) {
+            $dateString = $date->format('Y-m-d');
+            $basePath = storage_path("app/private/light/{$dateString}");
 
-    for ($i = 0; $i < 7; $i++) {
-    $dateString = $date->format('Y-m-d');
-    
-    // Define your base path (adjust storage_path to your actual absolute path)
-    $base_path = "/var/www/html/storage/app/private/light/" . $dateString;
-    
-    $sub_folders = ['css', 'xml', 'text-html'];
+            if (is_dir($basePath)) {
+                $this->info("Processing: {$dateString}");
 
-    foreach ($sub_folders as $folder) {
-        $full_path = $base_path . '/' . $folder;
-        $this->info('Deleting: ' . $full_path);
-        if (file_exists($full_path)) {
-            deleteDir($full_path);
+                // 1. Explicitly clean specific subfolders first
+                $subFolders = ['css', 'xml', 'text-html'];
+                foreach ($subFolders as $sub) {
+                    $fullSubPath = $basePath . DIRECTORY_SEPARATOR . $sub;
+                    if (is_dir($fullSubPath)) {
+                        $this->deleteDir($fullSubPath);
+                        $this->line(" - Cleaned subfolder: {$sub}");
+                    }
+                }
+
+                // 2. Finally, delete the parent date folder (and any stray files)
+                $this->deleteDir($basePath);
+                $this->line(" - Removed parent folder: {$dateString}");
+            }
+
+            $date->subDay();
         }
-    }
 
-    // Move to the previous day for the next iteration
-    $date->modify('-1 day');
-}
-        $this->output->success('Done');
+        $this->output->success('Cleanup Done');
     }
 }
