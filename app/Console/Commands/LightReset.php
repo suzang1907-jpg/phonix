@@ -28,11 +28,13 @@ class LightReset extends Command
     public function handle(): void
     {
         // Start from yesterday
-        $date = Carbon::yesterday();
+        $date = Carbon::now();
+        $date = $date->subDays(2);
 
         // Loop for 7 days
         for ($i = 0; $i < 7; $i++) {
             $dateString = $date->format('Y-m-d');
+            $this->info("Date: {$dateString}");
             $basePath = storage_path("app/private/light/{$dateString}");
 
             if (is_dir($basePath)) {
