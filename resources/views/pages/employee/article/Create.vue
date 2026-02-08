@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col gap-4 max-w-xl mx-auto w-full">
-    <bs-input-date ref="renew_at_date" title="Yenileme saati" />
+    <components-date-picker ref="renew_at_date" title="Yenileme saati" />
     <bs-input-text ref="renew_at_time" title="Yenileme tarihi" id="renew_at_time" name="renew_at_time"></bs-input-text>
  
     <bs-input-text ref="title" title="İsim" required id="title" name="title"></bs-input-text>
