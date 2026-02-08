@@ -67,11 +67,9 @@
                 </div>
                 <div class="stat">
                     <div class="stat-title">{{ "0" }}</div>
-                    <div class="stat-value">{{ \Carbon\Carbon::now() }}</div>
+                    <div class="stat-value">{{ "0" }}</div>
                     <div class="stat-desc">
-                        <a href="{{ "0" }}">
-                            {{ "0" }}
-                        </a>
+                       {{ \Carbon\Carbon::now() }}
                     </div>
                 </div>
             </div>
