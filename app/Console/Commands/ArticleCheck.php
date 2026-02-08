@@ -47,19 +47,32 @@ class ArticleCheck extends Command
                 continue;
             }
 
-            $date = Carbon::parse($date);
-
             try {
+                // If date is provided as YYYY-MM-DD (date-only) create from format
+                if (is_string($date) && preg_match('/^\d{4}-\d{2}-\d{2}$/', $date)) {
+                    $date = Carbon::createFromFormat('Y-m-d', $date)->startOfDay();
+                } else {
+                    $date = Carbon::parse($date);
+                }
 
+                // Handle time value: can be numeric hours or "HH:MM"
                 $hour_to_add = $renew_at['time'] ?? 0;
 
-                $date->addHours($hour_to_add);
+                if (is_numeric($hour_to_add)) {
+                    $date->addHours((int)$hour_to_add);
+                } elseif (is_string($hour_to_add) && strpos($hour_to_add, ':') !== false) {
+                    [$h, $m] = array_pad(explode(':', $hour_to_add), 2, 0);
+                    $date->addHours((int)$h)->addMinutes((int)$m);
+                }
             } catch (Exception $e) {
+                // If parsing fails, skip this article
+                continue;
             }
+
             $current_date = Carbon::now();
 
             if ($current_date->isAfter($date)) {
-                $article->update(['hidden_at' => Carbon::now(),]);
+                $article->update(['hidden_at' => Carbon::now()]);
             }
         }
     }

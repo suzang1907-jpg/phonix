@@ -3,8 +3,7 @@
     <div class="w-full">
       <canvas ref="chart" class="w-full" id="chart"></canvas>
     </div>
-    <bs-input-date :xvalue="article.meta?.renew_at?.date ? new Date(article.meta.renew_at?.date) : null"
-      ref="renew_at_date" title="Yenileme Tarihi" />
+    <components-date-picker :xvalue="article.meta?.renew_at?.date" ref="renew_at_date" title="Yenileme Tarihi" />
     <bs-input-text :xvalue="article.meta?.renew_at?.time" ref="renew_at_time" title="Yenileme Saati" id="renew_at_time"
       name="renew_at_time"></bs-input-text>
     <components-admin-customer-search :xvalue="this.customer" ref="customer"></components-admin-customer-search>
