@@ -2,7 +2,7 @@
   <div class="flex flex-col gap-4 max-w-xl mx-auto w-full px-6">
    
     <components-date-picker :xvalue="article.meta?.renew_at?.date" ref="renew_at_date"
-      ref="renew_at_date" title="Yenileme saati" />
+       title="Yenileme saati" />
     <bs-input-text :xvalue="article.meta?.renew_at?.time" ref="renew_at_time" title="Yenileme tarihi" id="renew_at_time"
       name="renew_at_time"></bs-input-text>
 <components-employee-customer-search :xvalue="this.customer" ref="customer"></components-employee-customer-search>
