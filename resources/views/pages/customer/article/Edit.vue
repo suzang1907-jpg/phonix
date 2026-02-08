@@ -85,7 +85,22 @@ export default {
       if (!value) {
         return null;
       }
-      return new Date(value);
+
+      try {
+        const raw = value;
+        const dateOnly = String(raw).split('T')[0];
+        const parsed = new Date(dateOnly + 'T00:00:00');
+
+        if (isNaN(parsed.getTime())) {
+          const fallback = new Date(raw);
+          return isNaN(fallback.getTime()) ? null : fallback;
+        }
+
+        return parsed;
+      } catch (e) {
+        const fallback = new Date(value);
+        return isNaN(fallback.getTime()) ? null : fallback;
+      }
     }
     const data = {
       labels: [
@@ -163,11 +178,21 @@ export default {
         return null;
       }
 
-      date = new Date(date);
+      const dateOnly = String(date).split('T')[0];
+      const d = new Date(dateOnly + 'T00:00:00');
 
-      const day = date.getDate();
-      const month = date.getMonth();
-      const year = date.getFullYear();
+      if (isNaN(d.getTime())) {
+        const fallback = new Date(date);
+        if (isNaN(fallback.getTime())) return null;
+        const day = fallback.getDate();
+        const month = fallback.getMonth();
+        const year = fallback.getFullYear();
+        return day + "." + (month + 1) + "." + year;
+      }
+
+      const day = d.getDate();
+      const month = d.getMonth();
+      const year = d.getFullYear();
 
       return day + "." + (month + 1) + "." + year;
     },
@@ -178,12 +203,13 @@ export default {
         return "bg-success text-success-content p-2 rounded";
       }
 
-      date = new Date(date);
+      const dateOnly = String(date).split('T')[0];
+      const d = new Date(dateOnly + 'T00:00:00');
       const currentDate = new Date();
 
-      const day = date.getDate();
-      const month = date.getMonth();
-      const year = date.getFullYear();
+      const day = d.getDate();
+      const month = d.getMonth();
+      const year = d.getFullYear();
 
       const currentDay = currentDate.getDate();
       const currentMonth = currentDate.getMonth();

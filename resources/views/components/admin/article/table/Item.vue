@@ -104,8 +104,13 @@ export default {
       if (!dateString) {
         return "bg-success text-success-content";
       }
-      
-      const dateToCheck = dayjs(dateString).startOf('day');
+
+      // Normalize to the date-only portion to avoid timezone shifts
+      // (e.g. timestamps like "2026-02-09T00:00:00.000Z" can become the
+      // previous day in local timezones). Using only the YYYY-MM-DD part
+      // ensures comparisons are date-based and not affected by TZ offsets.
+      const dateOnly = String(dateString).split('T')[0];
+      const dateToCheck = dayjs(dateOnly, 'YYYY-MM-DD', true).startOf('day');
       const today = dayjs().startOf('day');
       const tomorrow = dayjs().add(1, 'day').startOf('day');
 

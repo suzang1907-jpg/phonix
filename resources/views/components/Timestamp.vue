@@ -11,14 +11,21 @@ export default {
   methods: {
     format: function () {
       let date;
-      
+
       try {
-        date = dayjs(this.timestamp);
-        
+        const raw = this.timestamp;
+        const dateOnly = String(raw).split('T')[0];
+        date = dayjs(dateOnly, 'YYYY-MM-DD', true);
+
+        // Fallback to full parse if date-only parsing fails
+        if (!date.isValid()) {
+          date = dayjs(raw);
+        }
+
         if (this.time) {
           date = date.add(this.time, 'hour');
         }
-        
+
         if (!date.isValid()) {
           return 'Invalid Date';
         }
