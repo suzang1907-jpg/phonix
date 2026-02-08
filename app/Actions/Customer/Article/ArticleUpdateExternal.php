@@ -72,6 +72,8 @@ class ArticleUpdateExternal extends Action
         if (!empty($phone_number)) {
             $phone_number = trim($phone_number);
 
+                        $phone_number = str_replace('(', '', $phone_number);
+            $phone_number = str_replace(')', '', $phone_number);
             if (strlen($phone_number) > 20) {
                 $phone_number = substr($phone_number, 0, 20);
             }
@@ -99,6 +101,8 @@ $phone_number = str_replace('-', '', $phone_number);
 
         if (!empty($whatsapp_number)) {
             $whatsapp_number = trim($whatsapp_number);
+            $whatsapp_number = str_replace('(', '', $whatsapp_number);
+            $whatsapp_number = str_replace(')', '', $whatsapp_number);
 
             if (strlen($whatsapp_number) > 20) {
                 $whatsapp_number = substr($whatsapp_number, 0, 20);
