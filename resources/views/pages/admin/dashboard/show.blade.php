@@ -65,6 +65,15 @@
                         </a>
                     </div>
                 </div>
+                <div class="stat">
+                    <div class="stat-title">{{ "0" }}</div>
+                    <div class="stat-value">{{ \Carbon\Carbon::now() }}</div>
+                    <div class="stat-desc">
+                        <a href="{{ "0" }}">
+                            {{ "0" }}
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 p-2">
